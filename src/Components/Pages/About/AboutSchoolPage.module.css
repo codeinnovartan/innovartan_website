@@ -1,0 +1,38 @@
+.AContainer {
+    display: flex;
+    flex: row;
+    width: 100%;
+}
+
+.fDiv {
+    background-image: url('../../../../public/Images/AboutPageBackground.jpeg');
+    background-repeat: strech;
+    flex: 3;
+    display: flex;
+}
+
+.sDiv {
+    background-color: white;
+    flex: 5;
+    width: 60%;
+    flex-direction: column;
+    height: 100% + 100px;
+}
+
+.leftConatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 50px 0px 50px;
+}
+
+.badgeContainer {
+    margin-top: 50px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(84, 17, 17);
+    border-radius: 50px;
+}
