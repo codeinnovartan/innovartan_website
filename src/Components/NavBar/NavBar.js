@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 const NavBar = ({ children }) => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary" >
+      <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src="Images/innovartan_Logo.png"
@@ -48,7 +48,14 @@ const NavBar = ({ children }) => {
                   Contact
                 </Nav.Link>
               </Nav>
-              <Button className={classes.GSButton}>Login</Button>
+              <Button
+                className={classes.GSButton}
+                onClick={() => {
+                  window.location.href = "https://app.innovartan.com/login";
+                }}
+              >
+                Login
+              </Button>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

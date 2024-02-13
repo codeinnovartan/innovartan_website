@@ -82,7 +82,7 @@ const LandingPage = () => {
             data={citys}
           />
           <div className={classes.submiteButton}>
-            {data.state && data.city ? (
+            {data.state ? (
               <Button variant="warning">
                 <Link to={`/about?state=${data.state}&city=${data.city}`}>
                   Search

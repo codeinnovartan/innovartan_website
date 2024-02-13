@@ -33,6 +33,7 @@ export const getSchools = async (state, city) => {
       },
       body: JSON.stringify({
         city,
+        state
       }),
     }
   );

@@ -12,7 +12,7 @@ const SchoolCard = ({ data }) => {
       />
       <div className={classes.infoContainer}>
         <h3>{data.school_name}</h3>
-        <p>{data.description}</p>
+        <p>{data.description.substring(0,150)}...</p>
         <Button
           className={classes.readButton}
           onClick={() => {

@@ -24,7 +24,7 @@ const AboutSchoolsPage = (props) => {
   };
 
   const visibleData = schoolData[dataIndex];
-  console.log(visibleData, "visibleData");
+  console.log(visibleData?.is_certified, "visibleData");
 
   useEffect(() => {
     const getSchool = async () => {
@@ -62,10 +62,14 @@ const AboutSchoolsPage = (props) => {
             emptyStyle={{ color: "white" }}
             style={{ marginTop: "-20px" }}
           />
-          <p style={{ color: "white" }}>{visibleData?.description}</p>
-          <div className={classes.badgeContainer}>
-            <h3 style={{ color: "white" }}>A cs-l School</h3>
-          </div>
+          <p style={{ color: "white" }}>
+            {visibleData?.description}
+          </p>
+          {visibleData?.is_certified === "1" ? (
+            <div className={classes.badgeContainer}>
+              <h3 style={{ color: "white" }}>A cs-l School</h3>
+            </div>
+          ) : null}
         </div>
       </div>
       <div className={classes.sDiv}>
