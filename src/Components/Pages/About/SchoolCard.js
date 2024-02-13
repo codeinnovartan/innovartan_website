@@ -19,7 +19,7 @@ const SchoolCard = ({ data }) => {
             window.open(`${data.web_link}`, "_self");
           }}
         >
-          Read More{" "}
+          Read More..{" "}
           <i
             className="fa-regular fa-circle-right fa-lg"
             style={{ marginLeft: "6%" }}
