@@ -39,12 +39,43 @@ const AboutSchoolsPage = (props) => {
     <div className={classes.AContainer}>
       <div className={classes.fDiv}>
         <div className={classes.leftConatiner}>
-          <p style={{ color: "white", fontWeight: "bold" }}>
-            GIVE WINGS TO YOUR CHILD
-          </p>
+          <div className={classes.tagContainer}>
+            <i
+              className="fa-solid fa-plane fa-2xl fa-rotate-by"
+              style={{ transform: "rotate(-30deg)", color: "white" }}
+            ></i>
+            <p style={{ color: "white", fontWeight: "bold" }}>
+              GIVE WINGS TO YOUR CHILD
+            </p>
+          </div>
+          <div style={{ marginLeft: "20px", marginBottom: "40px" }}>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+          </div>
           <h1 style={{ color: "white", fontWeight: "bold", fontSize: 60 }}>
             EXPLORE
           </h1>
+          <div className={classes.sideLine} >
+
+          </div>
           <h3
             style={{
               color: "rgb(123, 189, 140)",
@@ -62,14 +93,34 @@ const AboutSchoolsPage = (props) => {
             emptyStyle={{ color: "white" }}
             style={{ marginTop: "-20px" }}
           />
-          <p style={{ color: "white" }}>
-            {visibleData?.description}
-          </p>
+          <p style={{ color: "white" }}>{visibleData?.description}</p>
           {visibleData?.is_certified === "1" ? (
             <div className={classes.badgeContainer}>
               <h3 style={{ color: "white" }}>A cs-l School</h3>
             </div>
           ) : null}
+          <div style={{ marginLeft: "70%", marginTop: "10px" }}>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+            <i
+              class="fa-solid fa-chevron-right fa-lg"
+              style={{ color: "white" }}
+            ></i>
+          </div>
         </div>
       </div>
       <div className={classes.sDiv}>
