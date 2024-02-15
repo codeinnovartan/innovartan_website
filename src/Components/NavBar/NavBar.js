@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const NavBar = ({ children }) => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand href="/">
             <img
@@ -41,7 +41,7 @@ const NavBar = ({ children }) => {
                 <Nav.Link href="https://innovartan.com/our-services/">
                   Our Services
                 </Nav.Link>
-                <Nav.Link as={Link} to={"/"} active>
+                <Nav.Link as={Link} to={"/"} href="/" active>
                   Clients
                 </Nav.Link>
                 <Nav.Link href="https://innovartan.com/contact-us/">

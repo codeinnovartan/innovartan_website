@@ -9,7 +9,6 @@ const InputDropdown = ({
   stateChangeFunction,
   stateChangeInfo,
 }) => {
-  
   const handleSelect = (item) => {
     settingData(heading, item);
     stateChangeFunction(heading, item);
@@ -25,7 +24,7 @@ const InputDropdown = ({
           return (
             <Dropdown.Item
               key={index}
-              style={{ width: "50px" }}
+              style={{ width: "160px" }}
               onClick={() => handleSelect(item)}
             >
               {item}

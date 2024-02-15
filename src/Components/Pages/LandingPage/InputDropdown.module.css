@@ -3,7 +3,7 @@
     background-color: rgb(181, 181, 181) !important;
     border-radius: 0;
     border-color: rgb(181, 181, 181);
-    width: "50px";
+    width: 100%;
 }
 
 .dropDown button {
