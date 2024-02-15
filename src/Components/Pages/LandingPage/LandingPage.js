@@ -8,6 +8,9 @@ import { getSchoolCity, getSchoolState } from "../../Store/ApiCall";
 const LandingPage = () => {
   const [states, setStates] = useState([]);
   const [citys, setCitys] = useState([]);
+  const [stateDropdown, setStateDropdown] = useState("Select State");
+  const [cityDropdown, setCityDropdown] = useState("Select City");
+
   const [data, setData] = useState({
     state: "",
     city: "",
@@ -17,8 +20,8 @@ const LandingPage = () => {
     if (type === "State") {
       setData((prev) => {
         return {
-          ...prev,
           state: value,
+          city: "",
         };
       });
       const fetchCity = async () => {
@@ -36,6 +39,18 @@ const LandingPage = () => {
       });
     }
   };
+
+  const dropDownState = (type, value) => {
+    // if (functionType === "setState") {
+    if (type === "State") {
+      setStateDropdown(value);
+      setCityDropdown("Select City");
+    }
+    if (type === "City") {
+      setCityDropdown(value);
+    }
+  };
+  // }
 
   useEffect(() => {
     const fetchState = async () => {
@@ -75,11 +90,15 @@ const LandingPage = () => {
             heading={"State"}
             settingData={handleChanges}
             data={states}
+            stateChangeFunction={dropDownState}
+            stateChangeInfo={stateDropdown}
           />
           <InputDropdown
             heading={"City"}
             settingData={handleChanges}
             data={citys}
+            stateChangeFunction={dropDownState}
+            stateChangeInfo={cityDropdown}
           />
           <div className={classes.submiteButton}>
             {data.state ? (

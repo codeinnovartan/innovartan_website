@@ -1,7 +1,9 @@
 .AContainer {
     display: flex;
     flex: row;
+    /* flex-direction: row-reverse; */
     width: 100%;
+    height: 665px;
 }
 
 .fDiv {
@@ -16,7 +18,7 @@
     flex: 5;
     width: 60%;
     flex-direction: column;
-    height: 100% + 100px;
+    height: 50%;
 }
 
 .leftConatiner {
@@ -55,4 +57,27 @@
     left: 30px;
     background-color: rgb(255, 255, 255);
     margin-right: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .AContainer {
+        height: 500px;
+        flex-direction: column;
+    }
+    .sDiv{
+        width: 100%;
+        height: 100%;
+    }
+    .leftConatiner{
+        margin: 50px 50px 50px 30px;
+    }
+    .sideLine{
+        display: none;
+    }
+    .badgeContainer{
+        margin-top: 20px;
+    }
+    .tagContainer{
+        margin-bottom: 20px;
+    }
 }

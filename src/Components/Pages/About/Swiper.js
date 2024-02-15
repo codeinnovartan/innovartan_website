@@ -13,9 +13,9 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const SwiperComponent = ({ data, changeIndexFunction }) => {
   return (
-    // style={{marginLeft: "-200px"}}
-    <div className="container">
+    <div className="containerr">
       <Swiper
+        style={{ height: "665px" }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}

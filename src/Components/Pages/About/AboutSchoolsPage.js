@@ -24,13 +24,11 @@ const AboutSchoolsPage = (props) => {
   };
 
   const visibleData = schoolData[dataIndex];
-  console.log(visibleData?.is_certified, "visibleData");
 
   useEffect(() => {
     const getSchool = async () => {
       const data = await getSchools(state, city);
       setSchoolData(data);
-      console.log(data);
     };
     getSchool();
   }, [state, city]);
@@ -50,32 +48,30 @@ const AboutSchoolsPage = (props) => {
           </div>
           <div style={{ marginLeft: "20px", marginBottom: "40px" }}>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
           </div>
           <h1 style={{ color: "white", fontWeight: "bold", fontSize: 60 }}>
             EXPLORE
           </h1>
-          <div className={classes.sideLine} >
-
-          </div>
+          <div className={classes.sideLine}></div>
           <h3
             style={{
               color: "rgb(123, 189, 140)",
@@ -88,12 +84,16 @@ const AboutSchoolsPage = (props) => {
           <Rating
             initialValue={visibleData?.ratings}
             readonly={true}
-            size={20}
-            fillColor={"black"}
-            emptyStyle={{ color: "white" }}
+            size={30}
+            transition={true}
+            allowFraction={true}
+            fillColor={"orange"}
+            emptyStyle={{ color: "rgb(225, 225, 225)" }}
             style={{ marginTop: "-20px" }}
           />
-          <p style={{ color: "white" }}>{visibleData?.description}</p>
+          <p style={{ color: "white" }}>
+            {visibleData?.description.substring(0, 300)}
+          </p>
           {visibleData?.is_certified === "1" ? (
             <div className={classes.badgeContainer}>
               <h3 style={{ color: "white" }}>A cs-l School</h3>
@@ -101,23 +101,23 @@ const AboutSchoolsPage = (props) => {
           ) : null}
           <div style={{ marginLeft: "70%", marginTop: "10px" }}>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
             <i
-              class="fa-solid fa-chevron-right fa-lg"
+              className="fa-solid fa-chevron-right fa-lg"
               style={{ color: "white" }}
             ></i>
           </div>
