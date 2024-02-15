@@ -4,6 +4,7 @@ import InputDropdown from "./InputDropdown";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { getSchoolCity, getSchoolState } from "../../Store/ApiCall";
+import Footer from "../../Footer/Footer";
 
 const LandingPage = () => {
   const [states, setStates] = useState([]);
@@ -61,6 +62,9 @@ const LandingPage = () => {
   }, []);
 
   return (
+    <div>
+
+    
     <div className={classes.lPOuterContainer}>
       <div className={classes.backGroundImage}>
         <div className={classes.textContainer}>
@@ -116,6 +120,10 @@ const LandingPage = () => {
             )}
           </div>
         </div>
+      </div>
+    </div>
+      <div className={classes.footerContainer}>
+      <Footer />
       </div>
     </div>
   );

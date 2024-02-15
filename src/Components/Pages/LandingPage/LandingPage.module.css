@@ -117,4 +117,47 @@
         justify-content: center;
     }
 
+    .footerContainer {
+        margin-top: 70%;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .textContainer {
+        width: 90%;
+    }
+
+    .headingText {
+        font-size: 40px;
+    }
+
+    .subheadingText {
+        font-size: 15px;
+    }
+
+    .paraText {
+        font-size: 15px;
+    }
+
+    .searchContainer {
+        position: absolute;
+        /* opacity: 0.8; */
+        background-color: white;
+        left: 10%;
+        transform: translateX(0%);
+        top: 85%;
+        margin-bottom: 10px;
+        width: 80%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 13px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerContainer {
+        margin-top: 70%;
+    }
+    
 }
