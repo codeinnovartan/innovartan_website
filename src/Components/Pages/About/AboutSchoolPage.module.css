@@ -36,3 +36,23 @@
     background-color: rgb(84, 17, 17);
     border-radius: 50px;
 }
+
+.tagContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.planeIcon {
+    transform: rotate(30deg);
+}
+
+.sideLine {
+    position: absolute;
+    width: 5px;
+    height: 120px;
+    top: 38%;
+    left: 30px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+}
