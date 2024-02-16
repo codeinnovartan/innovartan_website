@@ -1,6 +1,9 @@
+const callingDomain = "https://app.innovartan.com";
+
 export const getSchoolState = async () => {
   const response = await fetch(
-    "http://qa.edvanz.com/api/mobile/nep/get-school-state"
+    // "http://qa.edvanz.com/api/mobile/nep/get-school-state"
+    `${callingDomain}/api/mobile/nep/get-school-state`
   );
   const data = await response.json();
   return data.data.states;
@@ -8,7 +11,8 @@ export const getSchoolState = async () => {
 
 export const getSchoolCity = async (state) => {
   const response = await fetch(
-    "http://qa.edvanz.com/api/mobile/nep/get-cities-by-state",
+    // "http://qa.edvanz.com/api/mobile/nep/get-cities-by-state",
+    `${callingDomain}/api/mobile/nep/get-cities-by-state`,
     {
       method: "POST",
       headers: {
@@ -25,7 +29,8 @@ export const getSchoolCity = async (state) => {
 
 export const getSchools = async (state, city) => {
   const response = await fetch(
-    "http://qa.edvanz.com/api/mobile/nep/get-school-by-city",
+    // "http://qa.edvanz.com/api/mobile/nep/get-school-by-city",
+    `${callingDomain}/api/mobile/nep/get-school-by-city`,
     {
       method: "POST",
       headers: {
@@ -43,7 +48,8 @@ export const getSchools = async (state, city) => {
 
 export const sendContactUs = async (formData) => {
   const response = await fetch(
-    "http://qa.edvanz.com/api/mobile/affiliation/create-web-lead",
+    // "http://qa.edvanz.com/api/mobile/affiliation/create-web-lead",
+    `${callingDomain}/api/mobile/affiliation/create-web-lead`,
     {
       method: "POST",
       headers: {
@@ -54,7 +60,7 @@ export const sendContactUs = async (formData) => {
         owner_number: formData.number,
         enquiry_message: formData.message,
         email: formData.email,
-      })
+      }),
     }
   );
   const data = await response.json();
