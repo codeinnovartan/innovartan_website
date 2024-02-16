@@ -3,6 +3,7 @@ import LandingPage from "./Components/Pages/LandingPage/LandingPage";
 import AboutSchoolsPage from "./Components/Pages/About/AboutSchoolsPage";
 import NoPage from "./Components/Pages/NoPage/NoPage";
 import NavBar from "./Components/NavBar/NavBar";
+import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -24,6 +25,14 @@ function App() {
             </NavBar>
           }
         ></Route>
+        <Route
+          path="/contact"
+          element={
+            <NavBar>
+              <ContactUs />
+            </NavBar>
+          }
+        />
         <Route path="*" element={<NoPage />}></Route>
       </Routes>
     </BrowserRouter>

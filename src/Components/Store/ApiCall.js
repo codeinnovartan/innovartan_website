@@ -33,10 +33,30 @@ export const getSchools = async (state, city) => {
       },
       body: JSON.stringify({
         city,
-        state
+        state,
       }),
     }
   );
   const data = await response.json();
   return data.data.school_list;
+};
+
+export const sendContactUs = async (formData) => {
+  const response = await fetch(
+    "http://qa.edvanz.com/api/mobile/affiliation/create-web-lead",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        owner_name: formData.name,
+        owner_number: formData.number,
+        enquiry_message: formData.message,
+        email: formData.email,
+      })
+    }
+  );
+  const data = await response.json();
+  return data;
 };

@@ -1,0 +1,83 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.headingContainer {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.outerBox {
+    width: 90%;
+    height: 100%;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 15px;
+    height: fit-content;
+    display: flex;
+}
+
+
+.box1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    margin: 50px;
+    width: 50%;
+    height: 50%;
+
+}
+
+.formBox {
+    margin: 20px;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.infoText {
+    font-size: 20px;
+
+}
+
+@media screen and (max-width: 450px) {
+    .outerBox {
+        flex-direction: column;
+    }
+
+    .box1 {
+        flex: 1;
+    }
+
+    .box2 {
+        flex: 1;
+    }
+
+    .infoText {
+        font-size: 15px;
+    }
+
+}
