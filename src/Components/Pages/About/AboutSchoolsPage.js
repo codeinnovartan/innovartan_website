@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import classes from "./AboutSchoolPage.module.css";
 import Swiper from "./Swiper";
@@ -15,14 +15,14 @@ const AboutSchoolsPage = (props) => {
   const [schoolData, setSchoolData] = useState([]);
   const [dataIndex, setDataIndex] = useState(0);
 
-  const changeIndex = (type) => {
+  const changeIndex = useCallback((type) => {
     if (type === "next") {
       setDataIndex((prev) => prev + 1);
     }
     if (type === "prev") {
       setDataIndex((prev) => prev - 1);
     }
-  };
+  }, []);
 
   const visibleData = schoolData[dataIndex];
 
@@ -93,9 +93,22 @@ const AboutSchoolsPage = (props) => {
               emptyStyle={{ color: "rgb(225, 225, 225)" }}
               style={{ marginTop: "-20px" }}
             />
-            <p style={{ color: "white" }}>
-              {visibleData?.description.substring(0, 300)}
-            </p>
+
+            {console.log(visibleData?.description.length, "Lenght")}
+            {visibleData?.description.length > 300 ? (
+              <p style={{ color: "white" }}>
+                {/* <h1>Data Greater</h1> */}
+                {visibleData?.description.substring(0, 300)}...
+              </p>
+            ) : (
+              <p style={{ color: "white" }}>
+                {/* <h1>Data Smaller</h1> */}
+                {visibleData?.description.substring(0, 300)}
+              </p>
+            )}
+
+            {/* {visibleData?.description.substring(0, 300)} */}
+
             {visibleData?.is_certified === "1" ? (
               <div className={classes.badgeContainer}>
                 <h3 style={{ color: "white" }}>A cs-l School</h3>
