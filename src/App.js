@@ -4,6 +4,7 @@ import AboutSchoolsPage from "./Components/Pages/About/AboutSchoolsPage";
 import NoPage from "./Components/Pages/NoPage/NoPage";
 import NavBar from "./Components/NavBar/NavBar";
 import ContactUs from "./Components/Pages/ContactUs/ContactUs";
+import TermOfUse from "./Components/Pages/TermOfUse/TermOfUse";
 
 function App() {
   return (
@@ -30,6 +31,14 @@ function App() {
           element={
             <NavBar>
               <ContactUs />
+            </NavBar>
+          }
+        />
+        <Route
+          path="/term-of-use"
+          element={
+            <NavBar>
+              <TermOfUse />
             </NavBar>
           }
         />

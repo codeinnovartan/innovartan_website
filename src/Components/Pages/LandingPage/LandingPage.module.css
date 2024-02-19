@@ -41,6 +41,7 @@
     color: white;
     font-size: 60px;
     font-weight: bold;
+    animation: myAnim 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0s 1 normal none;
 }
 
 .subheadingText {
@@ -115,6 +116,7 @@
         border-radius: 13px;
         align-items: center;
         justify-content: center;
+        animation: DorpDownModal 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0s 1 normal none;
     }
 
     .footerContainer {
@@ -122,6 +124,7 @@
     }
 
 }
+
 @media screen and (max-width: 1024px) {
     .textContainer {
         width: 90%;
@@ -159,5 +162,17 @@
     .footerContainer {
         margin-top: 70%;
     }
-    
+
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

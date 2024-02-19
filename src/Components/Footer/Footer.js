@@ -56,12 +56,12 @@ const Footer = () => {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
               alt="Play Store Link"
-              style={{ width: "200px", height: "70px", marginBottom: "30px" }}
+              style={{ width: "220px", height: "60px", marginBottom: "30px" }}
             />
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
               alt="App Store Link"
-              style={{ width: "210px", height: "70px" }}
+              style={{ width: "220px", height: "60px" }}
             />
           </div>
           <div className={classes.col4}>
