@@ -5,6 +5,7 @@ import NoPage from "./Components/Pages/NoPage/NoPage";
 import NavBar from "./Components/NavBar/NavBar";
 import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 import TermOfUse from "./Components/Pages/TermOfUse/TermOfUse";
+import PrivacyPolicy from "./Components/Pages/Privacy Policy/PrivacyPolicy";
 
 function App() {
   return (
@@ -39,6 +40,14 @@ function App() {
           element={
             <NavBar>
               <TermOfUse />
+            </NavBar>
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+            <NavBar>
+              <PrivacyPolicy />
             </NavBar>
           }
         />
