@@ -76,8 +76,8 @@ const Footer = () => {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
               alt="Facebook Link"
               style={{
-                width: "70px",
-                height: "70px",
+                width: "50px",
+                height: "50px",
                 marginBottom: "10px",
                 cursor: "pointer",
               }}
@@ -92,8 +92,8 @@ const Footer = () => {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
               alt="Linked Link"
               style={{
-                width: "70px",
-                height: "70px",
+                width: "50px",
+                height: "50px",
                 marginBottom: "10px",
                 cursor: "pointer",
               }}
@@ -104,7 +104,7 @@ const Footer = () => {
               }
               src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png"
               alt="Instagram Link"
-              style={{ width: "70px", height: "70px", cursor: "pointer" }}
+              style={{ width: "50px", height: "50px", cursor: "pointer" }}
             />
           </div>
         </div>

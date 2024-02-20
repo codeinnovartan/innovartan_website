@@ -9,13 +9,15 @@
 .row1 {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px 50px 0px 50px;
+    /* flex-wrap: wrap; */
 }
 
 .row2 {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px 50px 0px 50px;
+    /* flex-wrap: wrap; */
 }
 
 .col1 {
@@ -24,7 +26,7 @@
 }
 
 .col2 {
-    margin: 30px
+    margin: 30px;
 }
 
 .col3 {
