@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./PrivacyPolicy.module.css";
 import PrivacyPolicyHeading from "./PrivacyPolicyComponents/PrivacyPolicyHeading";
 import PrivacyPolicyText from "./PrivacyPolicyComponents/PrivacyPolicyText";
+import Footer from "../../Footer/Footer";
 
 const PrivacyPolicy = () => {
   return (
@@ -84,8 +85,46 @@ const PrivacyPolicy = () => {
 
           <PrivacyPolicyHeading heading="5. Information We Share And Disclose" />
           <PrivacyPolicyText text="You hereby agree that innovartan can share the information gathered from you with its employees, and such other individuals and institutions within or outside India from time to time to make sure efficient management of Website traffic, to search out and stop identity theft and other illegal acts, and to respond to legal, judicial, quasi-judicial law enforcement agencies or in reference to an investigation on matters associated with public safety, as required and permitted by law and for such other purposes that innovartan may deem fit from time to time. We don’t sell your personal information." />
+
+          <br />
+
+          <PrivacyPolicyHeading heading="6. Cookies And Third Party Website Links" />
+          <PrivacyPolicyText text="Like every other Website, the innovartan website also sends cookies (small files containing a string of characters) to your computer and uniquely identify your browser. Cookies are useful in tracking your preferences, helping you log in faster, and determining user trends. This data helps curate and offer content in areas of greater interest to a majority of users." />
+          <PrivacyPolicyText text="Disclaimer:" />
+          <PrivacyPolicyText text="If your cookies are disabled, a number of Website features and services might not function properly." />
+          <PrivacyPolicyText text="Sometimes the Website may contain links that will redirect you to third-party websites that may have access to the private information of the User to which this Policy shall not be applicable. Thereby, every User agrees and acknowledges that accessing third-party websites through links provided on the Website will solely be at the Users discretion. Additionally, innovartan shall under no circumstance be held accountable for a breach of privacy by such third party website nor shall it be responsible for any objectionable content that may be displayed on such third party website. The Website may contain links to other websites, however, every User agrees and acknowledges that the Website shall not be answerable for the privacy practices of other third party websites which it does not own, manage or control." />
+
+          <br />
+
+          <PrivacyPolicyHeading heading="7. Protecting Your Information" />
+          <PrivacyPolicyText text="7.1 We understand the importance of security and protection of the Information that you provide. To do the same, innovartan shall certify that the Information is protected by the use of such security measures and programs that it should see fit for the purpose. We shall employ best efforts to guard the data against any unauthorized, illegal and fraudulent use of such Information by third parties." />
+          <PrivacyPolicyText text="7.2 Notwithstanding anything to the contrary, innovartan shall not be held accountable for any loss, damage or misuse of the Information caused to the User, if such loss, damage or misuse is due to an incident beyond the control of or attributable to innovartan or a force majeure event." />
+          <PrivacyPolicyText text="7.3 innovartan shall see to it that the Website adopts appropriate encryption and security measures to stop any hacking of the information of the Users and third parties and shall make sure that the User shall not be required or asked to disclose any Information, which can be prejudicial to the interests of the User. Currently, the content available on the Website is encrypted with AES 256 encryption where the info transfers are secured with HTTPS secured protocols and video content is delivered through HLS protocols." />
+          <PrivacyPolicyText text="7.4 innovartan shall use the data collected from the Users in accordance with applicable laws including but not limited to the IT Act and therefore the rules made thereunder and use the Information just for the aim it had been furnished for." />
+          <PrivacyPolicyText text="7.5 innovartan has appropriate physical, electronic and managerial procedures in reference to the Website. The servers of the Website are accessible only to the authorized personnel and any Information of the User shall be shared with the authorized personnel only on a desire to understand the basis to facilitate the services requested by the User. innovartan shall endeavor to safeguard the confidentiality of a User’s personally identifiable information, however, the transmissions made by means of the Internet can not be made absolutely secure by the Website. The User agrees and acknowledges that innovartan shall not be accountable for disclosure of any information because of errors in transmission or any unauthorized acts of third parties." />
+          <PrivacyPolicyText text="7.6 The User agrees and acknowledges that innovartan shall be entitled to share the data where such sharing is important for the lawful performance of the contractual obligations existing between  innovartan and the User and for such purposes as it may deem fit, however, the disclosure of data shall be in accordance with this Policy, the IT Act and also the rules made thereunder." />
+
+          <br />
+
+          <PrivacyPolicyHeading heading="8. You Can Opt-out And Withdraw Information" />
+          <PrivacyPolicyText text="The User has the choice of not sharing its Information to innovartan. Further, Information provided and/or collected by innovartan can also be withdrawn at any time during or pursuant to usage of the Website by a User. Users desirous of withdrawing the data shall send an email to the grievance officer and request for such withdrawal. innovartan may subsequent to such withdrawal of information, at its sole discretion continue or discontinue the availability of its services to such User." />
+
+          <br />
+
+          <PrivacyPolicyHeading heading="9.  Grievance Redressal" />
+          <PrivacyPolicyText text="The User may report violation of breach of privacy, Information or identify theft or grievances in relation to the Information shared, collected, stored or disseminated by innovartan in relation to the Website, to the grievance officer. The details of the grievance officer are as below:" />
+          <PrivacyPolicyText text="Grievance Redressal" />
+          <PrivacyPolicyText text="Address: Arun Vihar, Sector 37, Noida, Uttar Pradesh, India" />
+          <PrivacyPolicyText text="Phone Number: +91 120 326 5325" />
+          <PrivacyPolicyText text="E-mail Address: info@innovartan.com" />
+
+          <br />
+
+          <PrivacyPolicyHeading heading="10. Updation Of Policy" />
+          <PrivacyPolicyText text="innovartan reserves the right to change or update this Policy at any time. The User shall be notified of any change to the Policy having the effect of curtailing or limiting the prevailing User rights under the Policy. Any such changes or updation of the Policy shall be immediately effective upon posting to the Website and your continued use is deemed approval of all such changes." />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

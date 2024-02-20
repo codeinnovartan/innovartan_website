@@ -27,11 +27,7 @@ const Footer = () => {
               text={"Why to choose us"}
             />
             <FooterLink hrefLink={"/term-of-use"} text={"Terms & Use"} />
-            <FooterLink
-              type={"external"}
-              hrefLink={"https://innovartan.com/privacy-policy/"}
-              text={"Privacy Policy"}
-            />
+            <FooterLink hrefLink={"/privacy-policy"} text={"Privacy Policy"} />
           </div>
           <div className={classes.col2}>
             <FooterHeading heading={"Get In Touch"} />
