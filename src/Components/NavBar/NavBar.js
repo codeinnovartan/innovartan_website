@@ -41,11 +41,11 @@ const NavBar = ({ children }) => {
                 <Nav.Link href="https://innovartan.com/our-services/">
                   Our Services
                 </Nav.Link>
-                <Nav.Link as={Link} to={"/"} href="/" >
-                  Clients
+                <Nav.Link as={Link} to={"/"} href="/">
+                  Our Clients
                 </Nav.Link>
                 <Nav.Link as={Link} to={"/contact"} href="/contact">
-                  Contact
+                  Contact Us
                 </Nav.Link>
               </Nav>
               <Button

@@ -11,20 +11,24 @@ const Footer = () => {
         <div className={classes.row1}>
           <div className={classes.col1}>
             <FooterHeading heading={"Quick Links"} />
-            <FooterLink hrefLink={"https://innovartan.com/"} text={"Home"} />
             <FooterLink
+              type={"external"}
+              hrefLink={"https://innovartan.com/"}
+              text={"Home"}
+            />
+            <FooterLink
+              type={"external"}
               hrefLink={"https://innovartan.com/about-us/"}
               text={"About us"}
             />
             <FooterLink
+              type={"external"}
               hrefLink={"https://innovartan.com/our-services/"}
               text={"Why to choose us"}
             />
+            <FooterLink hrefLink={"/term-of-use"} text={"Terms & Use"} />
             <FooterLink
-              hrefLink={"https://innovartan.com/terms-of-use/"}
-              text={"Terms & Conditions"}
-            />
-            <FooterLink
+              type={"external"}
               hrefLink={"https://innovartan.com/privacy-policy/"}
               text={"Privacy Policy"}
             />

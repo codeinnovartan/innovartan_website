@@ -10,3 +10,15 @@
 .heading h1 {
     color: white;
 }
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 170px 80px 170px;
+}
+
+@media screen and (max-width: 450px) {
+    .subContainer {
+        margin: 50px 30px 50px 30px;
+    }
+}
