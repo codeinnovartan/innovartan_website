@@ -7,6 +7,7 @@ import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 import TermOfUse from "./Components/Pages/TermOfUse/TermOfUse";
 import PrivacyPolicy from "./Components/Pages/Privacy Policy/PrivacyPolicy";
 import Services from "./Components/Pages/Services/Services";
+import AboutUs from "./Components/Pages/Us-About/AboutUs";
 
 function App() {
   return (
@@ -57,6 +58,14 @@ function App() {
           element={
             <NavBar>
               <Services />
+            </NavBar>
+          }
+        />
+        <Route
+          path="/about-us"
+          element={
+            <NavBar>
+              <AboutUs />
             </NavBar>
           }
         />
