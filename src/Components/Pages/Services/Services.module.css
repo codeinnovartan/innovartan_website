@@ -1,0 +1,51 @@
+.headingContainer {
+    background-image: url("http://innovartan.com/wp-content/uploads/2023/09/bg-2.png")
+}
+
+.headingText {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.serviceCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* width: 100%; */
+    align-items: flex-start;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.helpContainer {
+    background-color: #0f4d9c;
+    padding: 30px;
+}
+
+.helpContainer ul {
+    margin: 20px 50px 20px 150px;
+}
+
+.listItem {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+@media screen and (max-width: 450px) {
+    .serviceCardContainer {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    .helpContainer ul {
+        margin: 20px 0px 20px 0px;
+        text-align: justify;
+    }
+
+}

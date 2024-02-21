@@ -6,8 +6,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import classes from "./NavBar.module.css";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const NavBar = ({ children }) => {
+  const location = useLocation();
   return (
     <>
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
@@ -38,13 +40,26 @@ const NavBar = ({ children }) => {
                 <Nav.Link href="https://innovartan.com/about-us/">
                   About Us
                 </Nav.Link>
-                <Nav.Link href="https://innovartan.com/our-services/">
+                <Nav.Link
+                  href="https://innovartan.com/our-services/"
+                  active={location.pathname === "/our-services"}
+                >
                   Our Services
                 </Nav.Link>
-                <Nav.Link as={Link} to={"/"} href="/">
+                <Nav.Link
+                  as={Link}
+                  to={"/"}
+                  href="/"
+                  active={location.pathname === "/"}
+                >
                   Our Clients
                 </Nav.Link>
-                <Nav.Link as={Link} to={"/contact"} href="/contact">
+                <Nav.Link
+                  as={Link}
+                  to={"/contact"}
+                  href="/contact"
+                  active={location.pathname === "/contact"}
+                >
                   Contact Us
                 </Nav.Link>
               </Nav>
