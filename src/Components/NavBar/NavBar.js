@@ -41,7 +41,9 @@ const NavBar = ({ children }) => {
                   About Us
                 </Nav.Link>
                 <Nav.Link
-                  href="https://innovartan.com/our-services/"
+                  as={Link}
+                  to={"/our-services"}
+                  href="/our-services"
                   active={location.pathname === "/our-services"}
                 >
                   Our Services
