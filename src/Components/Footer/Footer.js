@@ -17,14 +17,18 @@ const Footer = () => {
               text={"Home"}
             />
             <FooterLink
-              type={"external"}
-              hrefLink={"https://innovartan.com/about-us/"}
+              hrefLink={"/about-us"}
               text={"About us"}
             />
             <FooterLink
+              hrefLink={"/our-services"}
+              text={"Our Services"}
+            />
+            <FooterLink hrefLink={"/contact"} text={"Contact us"} />
+            <FooterLink
               type={"external"}
-              hrefLink={"https://innovartan.com/our-services/"}
-              text={"Why to choose us"}
+              hrefLink={"https://app.innovartan.com/login"}
+              text={"Login"}
             />
             <FooterLink hrefLink={"/term-of-use"} text={"Terms & Use"} />
             <FooterLink hrefLink={"/privacy-policy"} text={"Privacy Policy"} />

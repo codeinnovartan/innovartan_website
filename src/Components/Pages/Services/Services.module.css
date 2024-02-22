@@ -4,7 +4,7 @@
 
 .headingText {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     padding: 40px;
     text-align: center;
@@ -43,6 +43,7 @@
         width: 100%;
         margin: 0px;
     }
+
     .helpContainer ul {
         margin: 20px 0px 20px 0px;
         text-align: justify;
