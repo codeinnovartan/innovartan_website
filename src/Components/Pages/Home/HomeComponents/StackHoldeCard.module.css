@@ -1,0 +1,14 @@
+.outContainer {
+    width: 300px;
+    height: 310px;
+    align-items: center;
+    margin: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .outContainer {
+        margin-bottom: 70px;
+    }
+
+}

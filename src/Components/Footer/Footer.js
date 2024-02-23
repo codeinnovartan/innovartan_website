@@ -16,14 +16,8 @@ const Footer = () => {
               hrefLink={"https://innovartan.com/"}
               text={"Home"}
             />
-            <FooterLink
-              hrefLink={"/about-us"}
-              text={"About us"}
-            />
-            <FooterLink
-              hrefLink={"/our-services"}
-              text={"Our Services"}
-            />
+            <FooterLink hrefLink={"/about-us"} text={"About us"} />
+            <FooterLink hrefLink={"/our-services"} text={"Our Services"} />
             <FooterLink hrefLink={"/contact"} text={"Contact us"} />
             <FooterLink
               type={"external"}
