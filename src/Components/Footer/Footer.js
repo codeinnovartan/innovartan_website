@@ -12,8 +12,8 @@ const Footer = () => {
           <div className={classes.col1}>
             <FooterHeading heading={"Quick Links"} />
             <FooterLink
-              type={"external"}
-              hrefLink={"https://innovartan.com/"}
+              // type={"external"}
+              hrefLink={"/home"}
               text={"Home"}
             />
             <FooterLink hrefLink={"/about-us"} text={"About us"} />

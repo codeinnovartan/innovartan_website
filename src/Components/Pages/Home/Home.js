@@ -50,13 +50,20 @@ const Home = () => {
               subjects on a class by class basis and students are given app with
               content so they can learn and practice on tests.
             </p>
-            <Button
-              variant="outline-warning"
-              size="lg"
-              className={classes.LinkButton}
+            <Link
+              to={"/about-us"}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
-              Read More
-            </Button>
+              <Button
+                variant="outline-warning"
+                size="lg"
+                className={classes.LinkButton}
+              >
+                Read More
+              </Button>
+            </Link>
           </div>
           <img
             src="https://innovartan.com/wp-content/uploads/2023/09/Teacher-banner-300x261.png"
@@ -218,6 +225,18 @@ const Home = () => {
           <h1 style={{ color: "#FFF", marginRight: "10px" }}>Connect</h1>
           <h1 style={{ color: "#EF6521" }}>with us</h1>
         </div>
+        <Link to="/contact" className={classes.link}>
+          <Button
+            variant="outline-warning"
+            size="lg"
+            className={classes.LinkButton}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Contact Us
+          </Button>
+        </Link>
       </div>
       <Footer />
     </div>

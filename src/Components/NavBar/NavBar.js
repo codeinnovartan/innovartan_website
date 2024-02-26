@@ -36,12 +36,19 @@ const NavBar = ({ children }) => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="https://innovartan.com/">Home</Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to={"/home"}
+                  href="/home"
+                  active={location.pathname === "/home"}
+                >
+                  Home
+                </Nav.Link>
                 <Nav.Link
                   as={Link}
                   to={"/about-us"}
                   href="/about-us"
-                  active={location.pathname === "/about-us"}  
+                  active={location.pathname === "/about-us"}
                 >
                   About Us
                 </Nav.Link>
