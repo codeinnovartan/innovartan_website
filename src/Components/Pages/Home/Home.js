@@ -6,8 +6,15 @@ import { Link } from "react-router-dom";
 import ProblemsCard from "./HomeComponents/ProblemsCard";
 import StackHolderCard from "./HomeComponents/StackHolderCard";
 import HelpCard from "./HomeComponents/HelpCard";
+// import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  // const navigate = useNavigate();
+
+  // const handlePhoneButtonClicked = () => {
+  //   const phoneNumber = "+919319888781";
+  //   window.location.href = `tel:${phoneNumber}`;
+  // };
   return (
     <div>
       <div className={classes.section1}>
@@ -230,6 +237,7 @@ const Home = () => {
             variant="outline-warning"
             size="lg"
             className={classes.LinkButton}
+            style={{ marginLeft: "-40px" }}
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
@@ -237,6 +245,21 @@ const Home = () => {
             Contact Us
           </Button>
         </Link>
+      </div>
+      <div className={classes.section8}>
+        <div className={classes.headingContainer}>
+          <h1 style={{ color: "#0E4D9C", marginRight: "10px" }}>
+            Connect with
+          </h1>
+          <h1 style={{ color: "#EF6521" }}>our team</h1>
+        </div>
+        <Button
+          className={classes.LinkButton}
+          style={{ height: "50px", fontSize: "20px" }}
+          // onClick={handlePhoneButtonClicked}
+        >
+          Call:+91 9319888781
+        </Button>
       </div>
       <Footer />
     </div>
