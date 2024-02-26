@@ -30,7 +30,9 @@
 }
 
 .col3 {
-    margin: 30px
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .col4 {
