@@ -18,10 +18,7 @@ const Home = () => {
   return (
     <div>
       <div className={classes.section1}>
-        <Image
-          src="https://innovartan.com/wp-content/uploads/2023/09/Teacher.png"
-          className={classes.teacherImage}
-        />
+        <Image src="Images/homePage.png" className={classes.teacherImage} />
         <div className={classes.section1InnerContainer}>
           <h1>
             Empowering Schools, Enlightening <br />
@@ -72,10 +69,7 @@ const Home = () => {
               </Button>
             </Link>
           </div>
-          <img
-            src="https://innovartan.com/wp-content/uploads/2023/09/Teacher-banner-300x261.png"
-            alt="Teaching Png"
-          />
+          <img src="Images/techerTeaching.png" alt="Teaching Png" />
         </div>
       </div>
       <div className={classes.section3}>
@@ -84,10 +78,7 @@ const Home = () => {
           <span style={{ color: "#ef6520" }}>Moto</span>
         </h1>
         <div className={classes.motoContainer}>
-          <img
-            src="https://innovartan.com/wp-content/uploads/2023/09/Goal.png"
-            alt=""
-          />
+          <img src="Images/moto.png" alt="" />
           <p>
             Our mission is to fill the GAP between school education and
             competitive needs through our product and services by capacity
@@ -98,47 +89,37 @@ const Home = () => {
       <div className={classes.section4}>
         <h1 className={classes.headingContainer}>
           <span style={{ color: "#fff", marginRight: "10px" }}>
-            Problems faced by{" "}
+            Problems faced by
           </span>
           <span style={{ color: "#ef6520" }}>parents/students</span>
         </h1>
         <div className={classes.problemInner}>
           <ProblemsCard
-            image={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-5-300x300.png"
-            }
+            image={"Images/childThinking.png"}
             imageAlt={"Student"}
             text={
               "Forced to go to school and then to coaching after school hours"
             }
           />
           <ProblemsCard
-            image={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-12.png"
-            }
+            image={"Images/childTime.png"}
             imageAlt={"Student"}
             text={"No time for self study"}
           />
           <ProblemsCard
-            image={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-16.png"
-            }
+            image={"Images/ChildAbc.png"}
             imageAlt={"Student"}
             text={
               "Study two topics at the same time – one in school & another in coaching"
             }
           />
           <ProblemsCard
-            image={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-15.png"
-            }
+            image={"Images/pigyBank.png"}
             imageAlt={"Student"}
             text={"Spent time & money traveling to coaching after school hours"}
           />
           <ProblemsCard
-            image={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-14.png"
-            }
+            image={"Images/spendMoney.png"}
             imageAlt={"Student"}
             text={"Extra cost borne by parents"}
           />
@@ -152,30 +133,10 @@ const Home = () => {
           <h1 style={{ color: "#EF6521" }}>different stakeholders</h1>
         </div>
         <div className={classes.stackContainer}>
-          <StackHolderCard
-            img={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-13-300x300.png"
-            }
-            imgAlt={"School"}
-          />
-          <StackHolderCard
-            img={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-17-300x300.png"
-            }
-            imgAlt={"Teacher"}
-          />
-          <StackHolderCard
-            img={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-18-298x300.png"
-            }
-            imgAlt={"Students"}
-          />
-          <StackHolderCard
-            img={
-              "https://innovartan.com/wp-content/uploads/2023/09/education-online-teacher-teaching-students-vector-30847244-19-298x300.png"
-            }
-            imgAlt={"Parents"}
-          />
+          <StackHolderCard img={"Images/school.png"} imgAlt={"School"} />
+          <StackHolderCard img={"Images/teacher.png"} imgAlt={"Teacher"} />
+          <StackHolderCard img={"Images/student.png"} imgAlt={"Students"} />
+          <StackHolderCard img={"Images/parent.png"} imgAlt={"Parents"} />
         </div>
       </div>
       <div className={classes.section6}>

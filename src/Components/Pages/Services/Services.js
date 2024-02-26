@@ -13,46 +13,34 @@ const Services = () => {
         <div className={classes.serviceCardContainer}>
           <ServicesCard
             logoALT={"Teaching Logo"}
-            logoUrl={
-              "https://innovartan.com/wp-content/uploads/2023/06/rsw_365h_365cg_true.png"
-            }
+            logoUrl={"Images/teacherTeachingB.png"}
             text={"Teaching training & monitoring"}
           />
           <ServicesCard
             logoALT={"Building Logo"}
-            logoUrl={
-              "https://innovartan.com/wp-content/uploads/2023/06/rsw_365h_365cg_true-1.png"
-            }
+            logoUrl={"Images/buildingB.png"}
             text={"Building in-house program for each school"}
           />
           <ServicesCard
             logoALT={"24x7 Logo"}
-            logoUrl={
-              "https://innovartan.com/wp-content/uploads/2023/06/rsw_365h_365cg_true-2.png"
-            }
+            logoUrl={"Images/247B.png"}
             text={"24×7 doubt support for Teachers & Students"}
           />
           <ServicesCard
             logoALT={"Testing Logo"}
-            logoUrl={
-              "	https://innovartan.com/wp-content/uploads/2023/06/rsw_365h_365cg_true-3.png"
-            }
+            logoUrl={"Images/ai.png"}
             text={
               "Testing & analysis of every student through AI enabled platform"
             }
           />
           <ServicesCard
             logoALT={"Seprate Content Logo"}
-            logoUrl={
-              "https://innovartan.com/wp-content/uploads/2023/06/rsw_365h_365cg_true-4.png"
-            }
+            logoUrl={"Images/ott.png"}
             text={"Separate content for Teachers & Students"}
           />
           <ServicesCard
             logoALT={"Trained Teacher Logo"}
-            logoUrl={
-              "https://innovartan.com/wp-content/uploads/2023/06/rsw_365h_365cg_true-5.png"
-            }
+            logoUrl={"Images/search.png"}
             text={"Trained teacher placement in ill-equipped schools"}
           />
         </div>

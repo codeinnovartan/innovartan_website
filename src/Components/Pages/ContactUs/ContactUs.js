@@ -78,7 +78,7 @@ const ContactUs = () => {
         <div className={classes.outerBox}>
           <div className={classes.box1}>
             <img
-              src="https://edvanz.com/wp-content/uploads/2023/12/contact-us.webp"
+              src="Images/contactUs.png"
               alt="map"
               className={classes.image}
             ></img>

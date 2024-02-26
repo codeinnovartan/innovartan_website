@@ -24,7 +24,7 @@ const AboutUs = () => {
             </p>
             <img
               className={classes.studentTeacherimage}
-              src="https://innovartan.com/wp-content/uploads/2023/09/Teacher-banner-300x261.png"
+              src="Images/techerTeaching.png"
               alt="student-teact-phot"
             />
           </div>
@@ -37,7 +37,7 @@ const AboutUs = () => {
           <div className={classes.detailOuterContainer1}>
             <img
               className={classes.arrowImage}
-              src="https://innovartan.com/wp-content/uploads/2023/09/Goal.png"
+              src="Images/moto.png"
               alt="Arrow-imag"
             />
             <p className={classes.detailText1}>
