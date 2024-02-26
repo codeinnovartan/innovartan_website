@@ -18,7 +18,10 @@ const Home = () => {
   return (
     <div>
       <div className={classes.section1}>
-        <Image src="Images/homePage.png" className={classes.teacherImage} />
+        <Image
+          src="Images/homePage.png"
+          className={classes.teacherImage}
+        />
         <div className={classes.section1InnerContainer}>
           <h1>
             Empowering Schools, Enlightening <br />
