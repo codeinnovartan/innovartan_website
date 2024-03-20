@@ -1,0 +1,140 @@
+.outerNavbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.outer-container {
+  /* width: 100%; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  transition: background-image 1s ease-in-out;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 0px 0px 0px;
+  border-bottom: 1px solid #1011151a;
+  margin-bottom: 20px;
+}
+.infoInner {
+  border-left: 1px solid #1011151a;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ourServices {
+  background-color: #f46522 !important;
+  border-color: #f46522 !important;
+}
+.loginButton {
+  background-color: #f46522 !important;
+  border-color: #f46522 !important;
+  margin-left: 20px;
+  width: 120px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 20px 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: #17cf97;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #17cf97;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #fff;
+  align-items: center;
+}
+
+@media screen and (max-width: 908px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 50px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  .info {
+    display: none;
+  }
+
+  #navbar li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #000;
+    width: 90%;
+    text-align: left;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .outer-container {
+    background-size: cover;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .outer-container {
+    background-size: 100% 100%;
+    background-position: center;
+    height: 70vh;
+  }
+}
