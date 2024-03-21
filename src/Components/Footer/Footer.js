@@ -16,7 +16,7 @@ const Footer = () => {
   const handleChange = (event) => {
     setEmail(event.target.value);
   };
-  const hanldeSubmite = (event) => {
+  const hanldeSubmite = () => {
     console.log(email);
   };
   return (
@@ -52,7 +52,7 @@ const Footer = () => {
           <div className={classes.row1}>
             <div className={classes.col1}>
               <FooterHeading heading={"Quick Links"} />
-              <FooterLink hrefLink={"/"} text={"Contact us"} />
+              <FooterLink hrefLink={"/contact"} text={"Contact us"} />
               <FooterLink hrefLink={"/"} text={"Terms & Use"} />
               <FooterLink hrefLink={"/"} text={"Privacy Policy"} />
             </div>

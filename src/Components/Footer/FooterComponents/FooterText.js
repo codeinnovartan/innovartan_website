@@ -30,7 +30,6 @@ const FooterText = ({ imgURL, text }) => {
       }}
     >
       <i className={imgURL} style={{ marginRight: "20px", color: "white" }}></i>
-      {/* <h5 style={{ color: "white" }}>{text}</h5> */}
       <div
         dangerouslySetInnerHTML={{ __html: text }}
         style={{ color: "white", fontSize: fontSize }}

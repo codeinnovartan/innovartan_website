@@ -65,19 +65,19 @@ const CustomNavbar = ({ children }) => {
               <div style={{ display: "flex" }}>
                 <div style={{ marginRight: 10 }}>
                   <i
-                    class="fa-brands fa-facebook-f"
+                    className="fa-brands fa-facebook-f"
                     style={{ color: "#F16126" }}
                   ></i>
                 </div>
                 <div style={{ marginRight: 10 }}>
                   <i
-                    class="fa-brands fa-instagram"
+                    className="fa-brands fa-instagram"
                     style={{ color: "#F16126" }}
                   ></i>
                 </div>
                 <div>
                   <i
-                    class="fa-brands fa-twitter"
+                    className="fa-brands fa-twitter"
                     style={{ color: "#F16126" }}
                   ></i>
                 </div>
@@ -114,9 +114,9 @@ const CustomNavbar = ({ children }) => {
                   Our Services
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">For Schools</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">For Teachers</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
+                  <Dropdown.Item href="/">For Schools</Dropdown.Item>
+                  <Dropdown.Item href="/">For Teachers</Dropdown.Item>
+                  <Dropdown.Item href="/">
                     For Students/Parents
                   </Dropdown.Item>
                 </Dropdown.Menu>

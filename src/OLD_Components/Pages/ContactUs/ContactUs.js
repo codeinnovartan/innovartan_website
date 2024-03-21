@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import classes from "./ContactUs.module.css";
-import Footer from "../../Footer/Footer";
+import Footer from "../../../Components/Footer/Footer";
 import { Form, Button } from "react-bootstrap";
 import { sendContactUs } from "../../Store/ApiCall";
 import CustomAlert from "../../Alert/CustomAlert";

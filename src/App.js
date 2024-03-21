@@ -1,7 +1,7 @@
 // import LandingPage from "./OLD_Components/Pages/LandingPage/LandingPage";
 // import AboutSchoolsPage from "./OLD_Components/Pages/About/AboutSchoolsPage";
 // import NavBar from "./OLD_Components/NavBar/NavBar";
-// import ContactUs from "./OLD_Components/Pages/ContactUs/ContactUs";
+import ContactUs from "./OLD_Components/Pages/ContactUs/ContactUs";
 // import TermOfUse from "./OLD_Components/Pages/TermOfUse/TermOfUse";
 // import PrivacyPolicy from "./OLD_Components/Pages/Privacy Policy/PrivacyPolicy";
 // import Services from "./OLD_Components/Pages/Services/Services";
@@ -24,6 +24,7 @@ function App() {
             </Navbar>
           }
         ></Route>
+        <Route path="/contact" element={<ContactUs />} />
         {/* <Route
           index
           element={

@@ -69,7 +69,7 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
           }}
         >
           <i
-            class="fa-solid fa-film"
+            className="fa-solid fa-film"
             style={{ fontSize: "16px", marginTop: "5px", color: "#F16126" }}
           ></i>
           <p style={{ fontSize: "16px" }}>{lesson} x Lesson</p>
@@ -83,7 +83,7 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
           }}
         >
           <i
-            class="fa-solid fa-signal"
+            className="fa-solid fa-signal"
             style={{ fontSize: "16px", marginTop: "5px", color: "#F16126" }}
           ></i>
           <p style={{ fontSize: "16px" }}>Online Class</p>
@@ -137,7 +137,7 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
         >
           <p>Read More</p>
           <i
-            class="fa-solid fa-arrow-up-right-from-square"
+            className="fa-solid fa-arrow-up-right-from-square"
             style={{ marginTop: "5px", color: "#F16126" }}
           ></i>
         </div>

@@ -46,7 +46,7 @@ const EducatorSwiperCard = ({
             justifyContent: "space-around",
           }}
         >
-          <i class="fa-solid fa-book" style={{ color: "#555555" }}></i>
+          <i className="fa-solid fa-book" style={{ color: "#555555" }}></i>
           <p style={{ fontSize: "14px", fontWeight: 500, color: "#555555" }}>
             {courses} Courses
           </p>
@@ -60,7 +60,7 @@ const EducatorSwiperCard = ({
             cursor: "pointer",
           }}
         >
-          <i class="fa-solid fa-user-group" style={{ color: "#555555" }}></i>
+          <i className="fa-solid fa-user-group" style={{ color: "#555555" }}></i>
           <p style={{ fontSize: "14px", fontWeight: 500, color: "#555555" }}>
             {students} students
           </p>

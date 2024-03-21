@@ -12,12 +12,12 @@ const BlogSwiperCard = () => {
         </h3>
         <div style={{ display: "flex", flexDirection: "row" }}>
           <i
-            class="fa-solid fa-user"
+            className="fa-solid fa-user"
             style={{ color: "#F16126", marginTop: "5px", marginRight: "10px" }}
           ></i>
           <p style={{ color: " #555555" }}>Begrass Tyson</p>
           <i
-            class="fa-solid fa-calendar-days"
+            className="fa-solid fa-calendar-days"
             style={{
               color: "#F16126",
               marginTop: "5px",
@@ -57,12 +57,12 @@ const BlogSwiperCard = () => {
           >
             <p>Read More</p>
             <i
-              class="fa-solid fa-arrow-up-right-from-square"
+              className="fa-solid fa-arrow-up-right-from-square"
               style={{ marginTop: "5px", color: "#F16126" }}
             ></i>
           </div>
           <i
-            class="fa-solid fa-user-group"
+            className="fa-solid fa-user-group"
             style={{ color: "#555555", marginRight: "10px" }}
           ></i>
         </div>
