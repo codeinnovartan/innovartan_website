@@ -1,5 +1,14 @@
-.educatorImage {
-  padding: 40px;
+.educatorImage1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.educatorImage{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin-top: 30px ;
+  margin-bottom: 10px;
   border-radius: 50%;
   border: 1px solid #f2f2f2;
 }

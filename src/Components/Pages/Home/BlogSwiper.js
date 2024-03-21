@@ -18,6 +18,9 @@ const BlogSwiper = () => {
         slidesPerView={3}
         spaceBetween={20}
         breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
           375: {
             slidesPerView: 1,
           },

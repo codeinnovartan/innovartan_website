@@ -3,18 +3,18 @@ import styles from "./SwiperCard.module.css";
 import { Image } from "react-bootstrap";
 import { Rating } from "react-simple-star-rating";
 
-const SwiperCard = () => {
+const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) => {
   return (
     <div className={styles.outerContainer}>
       <div className="" style={{position: 'relative'}} >
         <Image
-          src="Images/Asserts/courses1.png"
+          src={image}
           className={styles.schoolLogo}
           height={30}
         />
-        <div className={styles.amountContainer}>
-          <h3>₹ 30,000</h3>
-        </div>
+        {/* <div className={styles.amountContainer}>
+          <h3>{cost}</h3>
+        </div> */}
       </div>
       <div
         style={{
@@ -26,10 +26,10 @@ const SwiperCard = () => {
         }}
       >
         <div className={styles.badge}>
-          <h5>For Instituions</h5>{" "}
+          <h5>For Instituions</h5>
         </div>
         <div style={{ display: "flex", flexDirection: "row" }}>
-          <Rating initialValue={"4"} size={15} fillColor="#F16126" />
+          <Rating initialValue={rating} size={15} fillColor="#F16126" allowFraction={true} />
           <h6
             style={{
               fontSize: "14px",
@@ -38,7 +38,7 @@ const SwiperCard = () => {
               marginLeft: "10px",
             }}
           >
-            03 reviews
+            {review} reviews
           </h6>
         </div>
       </div>
@@ -50,7 +50,7 @@ const SwiperCard = () => {
           fontSize: "24px",
         }}
       >
-        School Plus Program
+        {name}
       </h3>
       <div
         style={{
@@ -72,7 +72,7 @@ const SwiperCard = () => {
             class="fa-solid fa-film"
             style={{ fontSize: "16px", marginTop: "5px", color: "#F16126" }}
           ></i>
-          <p style={{ fontSize: "16px" }}>18 x Lesson</p>
+          <p style={{ fontSize: "16px" }}>{lesson} x Lesson</p>
         </div>
         <div
           style={{
@@ -124,7 +124,7 @@ const SwiperCard = () => {
               borderStyle: "solid",
             }}
           />
-          <p style={{ fontSize: "18px", fontWeight: 500 }}>Rohit Smith</p>
+          <p style={{ fontSize: "18px", fontWeight: 500 }}>{facultyname}</p>
         </div>
         <div
           style={{

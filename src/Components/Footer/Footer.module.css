@@ -1,0 +1,119 @@
+.outerComponent {
+  position: relative;
+  background-color: #1f1f33;
+}
+.leftMountain {
+  position: absolute;
+  width: 250px;
+  top: 0;
+}
+.rightMountain {
+  position: absolute;
+  width: 250px;
+  right: 0;
+  bottom: 0;
+}
+.innerContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.innerContainer h1 {
+  color: white;
+  font-size: 2rem;
+}
+.emailContainer {
+  margin-top: 50px;
+  max-width: 100%;
+  width: 70%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.emailContainer h1 {
+  color: white;
+  font-size: 30px;
+  width: 50%;
+}
+
+.emailInputContainer {
+  width: 40%;
+}
+.horizontalLine {
+  width: 80%;
+  height: 1px;
+  background-color: #363648;
+  margin: 50px 0;
+}
+
+.FooterContainer {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.row1 {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row2 {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1 {
+  margin: 30px;
+  width: 100%;
+}
+
+.col2 {
+  margin: 30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .FooterContainer {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .row1 {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .row2 {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .col1 {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .col2 {
+    margin: 10px;
+    width: 100%;
+  }
+  .emailContainer h1 {
+    width: 100%;
+  }
+  .emailInputContainer {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .emailContainer {
+    width: 90%;
+  }
+}

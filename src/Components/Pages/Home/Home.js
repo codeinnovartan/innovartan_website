@@ -5,8 +5,9 @@ import CategoryIcon from "./CategoryIcon";
 import CourseSwiper from "./CourseSwiper";
 import AboutCard from "./AboutCard";
 import EducatorSwiper from "./EducatorSwiper";
-import BlogSwiper from "./BlogSwiper";
+// import BlogSwiper from "./BlogSwiper";
 import StatsSection from "./StatsSection";
+import Footer from "../../Footer/Footer";
 
 const Home = () => {
   return (
@@ -177,7 +178,7 @@ const Home = () => {
           <EducatorSwiper />
         </div>
       </div>
-      <div className={styles.coursesContainer}>
+      {/* <div className={styles.coursesContainer}>
         <p
           style={{
             fontSize: 20,
@@ -191,9 +192,12 @@ const Home = () => {
         <div className={styles.swiperContainer}>
           <BlogSwiper />
         </div>
-      </div>
+      </div> */}
       <div className={styles.statsSection}>
         <StatsSection />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
       </div>
     </div>
   );

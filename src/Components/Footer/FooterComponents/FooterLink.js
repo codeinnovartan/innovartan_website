@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const FooterLink = ({ hrefLink, text, type }) => {
   if (type === "external") {
     return (
-      <div style={{ marginBottom: "5px" }}>
+      <div style={{ marginBottom: "25px" }}>
         <a
           href={hrefLink}
           style={{ textDecoration: "none", color: "white", margin: "5px" }}
@@ -17,7 +17,7 @@ const FooterLink = ({ hrefLink, text, type }) => {
     );
   } else {
     return (
-      <div style={{ marginBottom: "15px", marginLeft: "3px" }}>
+      <div style={{ marginBottom: "20px", marginLeft: "3px" }}>
         <Link
           style={{ textDecoration: "none", color: "white" }}
           to={hrefLink}

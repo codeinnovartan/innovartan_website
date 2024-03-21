@@ -122,7 +122,9 @@ const CustomNavbar = ({ children }) => {
                 </Dropdown.Menu>
               </Dropdown>
 
-              <Button className="loginButton">Log In</Button>
+              <Button className="loginButton" onClick={() => {
+                window.location.href = "https://app.innovartan.com";
+              }}>Log In</Button>
             </ul>
           </div>
           <div id="mobile" onClick={handleClick}>

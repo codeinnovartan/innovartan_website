@@ -3,18 +3,24 @@ import styles from "./EducatorSwiperCard.module.css";
 import { Image } from "react-bootstrap";
 import { Rating } from "react-simple-star-rating";
 
-const EducatorSwiperCard = () => {
+const EducatorSwiperCard = ({
+  image,
+  rating,
+  name,
+  subtitile,
+  courses,
+  students,
+}) => {
   return (
     <div className={styles.outerContainer}>
-      <Image
-        src="Images/Asserts/educator1.png"
-        className={styles.educatorImage}
-      />
+      <div className={styles.educatorImage}>
+        <Image src={image} className={styles.educatorImage1} />
+      </div>
 
-      <p className={styles.name}>Donald Logan</p>
-      <p className={styles.designation}>Master of Education Degree</p>
+      <p className={styles.name}>{name}</p>
+      <p className={styles.designation}>{subtitile}</p>
       <div style={{ marginTop: "-15px", marginBottom: "10px" }}>
-        <Rating initialValue={"4"} size={25} fillColor="#F16126" />
+        <Rating initialValue={rating} size={25} fillColor="#F16126" allowHover={false} allowFraction={true}/>
       </div>
       <div
         style={{
@@ -42,7 +48,7 @@ const EducatorSwiperCard = () => {
         >
           <i class="fa-solid fa-book" style={{ color: "#555555" }}></i>
           <p style={{ fontSize: "14px", fontWeight: 500, color: "#555555" }}>
-            08 Courses
+            {courses} Courses
           </p>
         </div>
         <div
@@ -56,7 +62,7 @@ const EducatorSwiperCard = () => {
         >
           <i class="fa-solid fa-user-group" style={{ color: "#555555" }}></i>
           <p style={{ fontSize: "14px", fontWeight: 500, color: "#555555" }}>
-            30 students
+            {students} students
           </p>
         </div>
       </div>

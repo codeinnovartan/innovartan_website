@@ -7,7 +7,7 @@ const schoolsData = [
     description: "Number of Affiliated Schools",
   },
   {
-    number: "250+",
+    number: "500+",
     description: "Number of Teachers Trained/Placed",
   },
   {
