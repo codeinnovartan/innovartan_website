@@ -30,7 +30,7 @@ const EducatorSwiperCard = ({
           margin: "20px 10px",
         }}
       ></div>
-      <div
+      {/* <div
         style={{
           display: "flex",
           flexDirection: "row",
@@ -65,7 +65,7 @@ const EducatorSwiperCard = ({
             {students} students
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

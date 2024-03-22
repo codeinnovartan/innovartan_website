@@ -79,7 +79,27 @@ const EducatorSwiper = () => {
             name={"Dr. Sachin Kapur"}
             rating={"4.4"}
             students={"143"}
-            subtitile={"20+ years of academic"} 
+            subtitile={"20+ years of academic"}
+          />
+        </SwiperSlide>
+        <SwiperSlide style={{ width: "200px" }}>
+          <EducatorSwiperCard
+            courses={"07"}
+            image={"Images/Asserts/educator5.png"}
+            name={"Purushottam"}
+            rating={"4"}
+            students={"113"}
+            subtitile={"25+ years of academic"}
+          />
+        </SwiperSlide>
+        <SwiperSlide style={{ width: "200px" }}>
+          <EducatorSwiperCard
+            courses={"07"}
+            image={"Images/Asserts/educator6.png"}
+            name={"Manu Upadhyay"}
+            rating={"4.4"}
+            students={"113"}
+            subtitile={"15+ years of academic"}
           />
         </SwiperSlide>
       </Swiper>

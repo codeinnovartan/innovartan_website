@@ -13,12 +13,56 @@ const Home = () => {
   return (
     <div className={styles.outerContainer}>
       <div className={styles.schoolContainer}>
-        <Image src="Images/Asserts/school2.png" className={styles.schoolLogo} />
-        <Image src="Images/Asserts/school4.png" className={styles.schoolLogo} />
-        <Image src="Images/Asserts/school5.png" className={styles.schoolLogo} />
-        <Image src="Images/Asserts/school6.png" className={styles.schoolLogo} />
-        <Image src="Images/Asserts/school1.png" className={styles.schoolLogo} />
-        <Image src="Images/Asserts/school3.png" className={styles.schoolLogo} />
+        <div className={styles.slideTrack}>
+          <Image
+            src="Images/Asserts/school1.png"
+            className={styles.schoolLogo}
+          />
+          <Image
+            src="Images/Asserts/school5.png"
+            className={styles.schoolLogo1}
+          />
+          <Image
+            src="Images/Asserts/school6.png"
+            className={styles.schoolLogo}
+          />
+          <Image
+            src="Images/Asserts/school3.png"
+            className={styles.schoolLogo}
+          />
+          <Image
+            src="Images/Asserts/school7.png"
+            className={styles.schoolLogo1}
+          />
+          <Image
+            src="Images/Asserts/school8.png"
+            className={styles.schoolLogo}
+          />
+          <Image
+            src="Images/Asserts/school9.png"
+            className={styles.schoolLogo1}
+          />
+          <Image
+            src="Images/Asserts/school10.png"
+            className={styles.schoolLogo}
+          />
+          <Image
+            src="Images/Asserts/school11.png"
+            className={styles.schoolLogo1}
+          />
+          <Image
+            src="Images/Asserts/school12.png"
+            className={styles.schoolLogo}
+          />
+          <Image
+            src="Images/Asserts/school13.png"
+            className={styles.schoolLogo1}
+          />
+          <Image
+            src="Images/Asserts/school1.png"
+            className={styles.schoolLogo}
+          />
+        </div>
       </div>
       <div className={styles.popularCategory}>
         <p
