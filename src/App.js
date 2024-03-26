@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NoPage from "./OLD_Components/Pages/NoPage/NoPage";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Pages/Home/Home";
+import About from "./Components/Pages/About/About";
 
 function App() {
   return (
@@ -21,6 +22,14 @@ function App() {
           element={
             <Navbar>
               <Home />
+            </Navbar>
+          }
+        ></Route>
+        <Route
+          path="/about"
+          element={
+            <Navbar location={"outside"} heading={"About Innovartan"} subHeading={" Home / About"}>
+              <About />
             </Navbar>
           }
         ></Route>
