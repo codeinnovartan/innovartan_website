@@ -1,13 +1,13 @@
-.backToSchool {
-  width: 100%;
+.about {
+  width: 95%;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 50px 0px;
-  background-color: #ecf0f3;
+  background-color: #fff;
 }
 
-.backToSchooldiv1 {
+.aboutdiv1 {
   width: 50%;
   position: relative;
   display: flex;
@@ -17,13 +17,13 @@
   padding: 0px 50px;
 }
 
-.backToSchooldiv1image1 {
+.aboutdiv1image1 {
   position: relative;
-  width: 80%;
+  width: 90%;
   object-fit: contain;
   margin-bottom: 20px;
 }
-.backToSchooldiv2 {
+.aboutdiv2 {
   align-self: flex-start;
   width: 50%;
   display: flex;
@@ -32,56 +32,148 @@
   padding: 0px 0px;
 }
 
-.backToSchooldiv2 h1 {
+.aboutdiv2 h1 {
   font-size: 60px;
   font-weight: 700;
 }
 
-.backToSchooldiv2text {
+.aboutdiv2text {
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
   color: #555555;
 }
 
-.backToSchoolButton {
+.aboutButton {
   width: 150px;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #26c976;
-  color: white;
+  color: #000;
+  background-color: #fff;
   border: none;
   border-radius: 5px;
+  border: 2px solid #000;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.aboutOurInnovartan {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  background-color: #fff9f1;
+}
+
+.aboutOurInnovartandiv1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+}
+
+.aboutOurInnovartandiv1image1 {
+  position: relative;
+  width: 90%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.aboutOurInnovartandiv1image2 {
+  position: absolute;
+  width: 60%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  right: -40px;
+  bottom: -30px;
+}
+.aboutOurInnovartandiv2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutOurInnovartandiv2 h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.aboutOurInnovartandiv2text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #555555;
+}
+.OurMission {
+  width: 100%;
+}
 
 @media screen and (max-width: 908px) {
-  .backToSchool {
+  .about {
     flex-direction: column;
-  }
-  .backToSchooldiv1image1 {
     width: 100%;
   }
-  .backToSchooldiv1 {
+  .aboutdiv1image1 {
+    width: 100%;
+  }
+  .aboutdiv1 {
     width: 100%;
     padding: 0px 20px;
   }
-  .backToSchooldiv2 {
+  .aboutdiv2 {
     align-items: center;
     width: 100%;
     margin-top: 50px;
     padding: 0px 20px;
   }
-  .backToSchooldiv2 h1 {
+  .aboutdiv2 h1 {
     font-size: 40px;
   }
-  .backToSchooldiv2 p {
+  .aboutdiv2 p {
     text-align: center;
   }
-  .backToSchooldiv2text {
+  .aboutdiv2text {
     font-size: 16px;
+  }
+  .aboutOurInnovartan {
+    flex-direction: column;
+  }
+  .aboutOurInnovartandiv1 {
+    padding: 0px 20px;
+  }
+  .aboutOurInnovartandiv2 {
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .aboutOurInnovartandiv2 h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .aboutOurInnovartandiv2text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutOurInnovartan {
+    flex-direction: column;
+  }
+  .aboutOurInnovartandiv1 {
+    padding: 0px 20px;
+  }
+  .aboutOurInnovartandiv1image1 {
+    width: 80%;
+  }
+  .aboutOurInnovartandiv1image2 {
+    width: 50%;
+    right: 0px;
+    bottom: -20px;
   }
 }

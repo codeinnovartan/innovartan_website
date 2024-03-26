@@ -4,6 +4,7 @@ import { Button, Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const CustomNavbar = ({ children, location, heading, subHeading }) => {
+  
   const [clicked, setClicked] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const backgroundImage = [
