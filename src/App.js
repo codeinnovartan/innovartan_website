@@ -28,7 +28,11 @@ function App() {
         <Route
           path="/about"
           element={
-            <Navbar location={"outside"} heading={"About Innovartan"} subHeading={" Home / About"}>
+            <Navbar
+              location={"outside"}
+              heading={"About Innovartan"}
+              subHeading={" Home / About"}
+            >
               <About />
             </Navbar>
           }
