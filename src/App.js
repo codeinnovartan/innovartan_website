@@ -1,6 +1,5 @@
 // import LandingPage from "./OLD_Components/Pages/LandingPage/LandingPage";
 // import AboutSchoolsPage from "./OLD_Components/Pages/About/AboutSchoolsPage";
-// import NavBar from "./OLD_Components/NavBar/NavBar";
 import ContactUs from "./OLD_Components/Pages/ContactUs/ContactUs";
 // import TermOfUse from "./OLD_Components/Pages/TermOfUse/TermOfUse";
 // import PrivacyPolicy from "./OLD_Components/Pages/Privacy Policy/PrivacyPolicy";
@@ -9,7 +8,7 @@ import ContactUs from "./OLD_Components/Pages/ContactUs/ContactUs";
 // import Home from "./OLD_Components/Pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NoPage from "./OLD_Components/Pages/NoPage/NoPage";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/NavBar/NavBar";
 import Home from "./Components/Pages/Home/Home";
 import About from "./Components/Pages/About/About";
 
