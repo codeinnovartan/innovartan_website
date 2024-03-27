@@ -4,7 +4,6 @@ import { Button, Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const CustomNavbar = ({ children, location, heading, subHeading }) => {
-  
   const [clicked, setClicked] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const backgroundImage = [
@@ -119,7 +118,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                   <li>
                     <Link to="/contact">Contact</Link>
                   </li>
-                  <Dropdown>
+                  <Dropdown className="navbarDropdown">
                     <Dropdown.Toggle className="ourServices">
                       Our Services
                     </Dropdown.Toggle>
@@ -131,7 +130,6 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-
                   <Button
                     className="loginButton"
                     onClick={() => {

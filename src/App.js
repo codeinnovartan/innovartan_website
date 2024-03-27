@@ -11,6 +11,7 @@ import NoPage from "./OLD_Components/Pages/NoPage/NoPage";
 import Navbar from "./Components/NavBar/NavBar";
 import Home from "./Components/Pages/Home/Home";
 import About from "./Components/Pages/About/About";
+import Teacher from "./Components/Pages/Teachers/Teacher";
 
 function App() {
   return (
@@ -33,6 +34,18 @@ function App() {
               subHeading={" Home / About"}
             >
               <About />
+            </Navbar>
+          }
+        ></Route>
+        <Route
+          path="/teacher"
+          element={
+            <Navbar
+              location={"outside"}
+              heading={"Teacher-Centric Solutions for Educational Excellence"}
+              subHeading={" Home / Educator"}
+            >
+              <Teacher />
             </Navbar>
           }
         ></Route>

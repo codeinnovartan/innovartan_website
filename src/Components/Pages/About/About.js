@@ -14,7 +14,7 @@ const About = () => {
       <div className={styles.about}>
         <div className={styles.aboutdiv1}>
           <Image
-            src="Images/Asserts/about-image.svg"
+            src="Images/Asserts/about-image.png"
             className={styles.aboutdiv1image1}
           />
         </div>

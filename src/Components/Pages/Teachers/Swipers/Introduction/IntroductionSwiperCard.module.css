@@ -1,0 +1,93 @@
+.about {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 0px;
+  background-color: #fff;
+}
+
+.aboutdiv1 {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+}
+
+.aboutdiv1image1 {
+  position: relative;
+  width: 90%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.aboutdiv2 {
+  text-align: left;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 0px;
+}
+
+.aboutdiv2 h1 {
+  width: 80%;
+  margin-top: -10px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.aboutdiv2text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #555555;
+}
+
+.aboutButton {
+  width: 150px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #000;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 908px) {
+  .about {
+    flex-direction: column;
+    width: 100%;
+  }
+  .aboutdiv1image1 {
+    width: 100%;
+  }
+  .aboutdiv1 {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .aboutdiv2 {
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0px 20px;
+  }
+  .aboutdiv2 h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+  }
+  .aboutdiv2 p {
+    text-align: justify;
+  }
+  .aboutdiv2text {
+    font-size: 16px;
+  }
+}

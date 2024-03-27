@@ -1,0 +1,158 @@
+.featureItem {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-style: dashed;
+  border-bottom-width: 1px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 15px;
+}
+@media (max-width: 991px) {
+  .featureItem {
+    flex-wrap: wrap;
+  }
+}
+.featureIcon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 80px;
+  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.featureText {
+  flex-grow: 1;
+  flex-basis: 0;
+  width: fit-content;
+}
+@media (max-width: 991px) {
+  .featureText {
+    max-width: 100%;
+  }
+}
+.featureTitle {
+  color: #fff;
+  text-transform: capitalize;
+  font: 600 18px/120% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .featureTitle {
+    max-width: 100%;
+  }
+}
+.featureDescription {
+  color: #ccc;
+  margin-top: 21px;
+  font: 400 14px/26px Open Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .featureDescription {
+    max-width: 100%;
+  }
+}
+
+.whyJoinInnovartan {
+  background-color: #002147;
+  justify-content: center;
+}
+.contentWrapper {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .contentWrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+.imageColumn {
+  width: 50%;
+  margin-left: 0;
+}
+@media (max-width: 1024px) {
+  .imageColumn {
+    width: 100%;
+  }
+}
+.featuredImage {
+  aspect-ratio: 1.2;
+  object-fit: auto;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+@media (max-width: 991px) {
+  .featuredImage {
+    max-width: 100%;
+  }
+}
+.textColumn {
+  width: 45%;
+  margin-left: 20px;
+}
+@media (max-width: 1024px) {
+  .textColumn {
+    width: 90%;
+  }
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  margin: auto 0;
+}
+@media (max-width: 991px) {
+  .textContent {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+.headingWrapper {
+  padding: 15px 45px 0 11px;
+}
+@media (max-width: 991px) {
+  .headingWrapper {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+}
+.sectionTitle {
+  color: #fff;
+  text-transform: uppercase;
+  font: 600 30px/120% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .sectionTitle {
+    max-width: 100%;
+  }
+}
+.titleUnderline {
+  align-self: start;
+  display: flex;
+  margin-top: 25px;
+  gap: 5px;
+}
+.underlineLong {
+  background-color: #ffb606;
+  width: 40px;
+  height: 2px;
+}
+.underlineShort {
+  background-color: #ffb606;
+  width: 20px;
+  height: 2px;
+}
+.sectionDescription {
+  color: #ccc;
+  margin-top: 37px;
+  font: 400 14px/26px Open Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .sectionDescription {
+    max-width: 100%;
+  }
+}
