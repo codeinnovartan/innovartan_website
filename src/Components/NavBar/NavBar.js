@@ -124,9 +124,29 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item href="/">For Schools</Dropdown.Item>
-                      <Dropdown.Item href="/">For Teachers</Dropdown.Item>
+
+                      <Dropdown.Item>
+                        <Link
+                          style={{ textDecoration: "none", color: "black" }}
+                          to={"/teacher"}
+                          onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
+                        >
+                          For Teachers
+                        </Link>
+                      </Dropdown.Item>
+
                       <Dropdown.Item href="/">
-                        For Students/Parents
+                        <Link
+                          style={{ textDecoration: "none", color: "black" }}
+                          to={"/student"}
+                          onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
+                        >
+                          For Students/Parents
+                        </Link>
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
@@ -246,9 +266,27 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item href="/">For Schools</Dropdown.Item>
-                      <Dropdown.Item href="/">For Teachers</Dropdown.Item>
-                      <Dropdown.Item href="/">
-                        For Students/Parents
+                      <Dropdown.Item>
+                        <Link
+                          style={{ textDecoration: "none", color: "black" }}
+                          to={"/teacher"}
+                          onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
+                        >
+                          For Teachers
+                        </Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item>
+                        <Link
+                          style={{ textDecoration: "none", color: "black" }}
+                          to={"/student"}
+                          onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
+                        >
+                          For Students/Parents
+                        </Link>
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>

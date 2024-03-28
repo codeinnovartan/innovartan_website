@@ -7,6 +7,8 @@ import TeachInnovartan from "./TeachInnovartan";
 import Benefits from "./Benefits";
 import StatsSection from "../Home/StatsSection";
 import Footer from "../../Footer/Footer";
+import Slogan from "./Slogan";
+import SupportSystem from "./SupportSystem";
 
 const Teacher = () => {
   return (
@@ -39,6 +41,12 @@ const Teacher = () => {
       </div>
       <div className={styles.benefits}>
         <Benefits />
+      </div>
+      <div className={styles.Slogan}>
+        <Slogan />
+      </div>
+      <div className={styles.SupportSystem}>
+        <SupportSystem />
       </div>
       <div className={styles.stats}>
         <StatsSection />

@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 1024px) {
   .threeCards {
-    align-items: center;
+    aliggn-items: center;
     width: 100%;
   }
 }

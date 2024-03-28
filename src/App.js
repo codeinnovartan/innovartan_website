@@ -12,6 +12,7 @@ import Navbar from "./Components/NavBar/NavBar";
 import Home from "./Components/Pages/Home/Home";
 import About from "./Components/Pages/About/About";
 import Teacher from "./Components/Pages/Teachers/Teacher";
+import Student from "./Components/Pages/Students/Student";
 
 function App() {
   return (
@@ -46,6 +47,18 @@ function App() {
               subHeading={" Home / Educator"}
             >
               <Teacher />
+            </Navbar>
+          }
+        ></Route>
+        <Route
+          path="/student"
+          element={
+            <Navbar
+              location={"outside"}
+              heading={"All Best Students"}
+              subHeading={" Home / Students"}
+            >
+              <Student />
             </Navbar>
           }
         ></Route>

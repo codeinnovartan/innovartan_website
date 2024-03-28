@@ -1,0 +1,174 @@
+.heroSection {
+  position: relative;
+  display: flex;
+  min-height: 737px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 60px;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .heroSection {
+    padding: 25px 20px;
+  }
+}
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.heroContent {
+  position: relative;
+  display: flex;
+  margin-top: 38px;
+  width: 1296px;
+  max-width: 100%;
+  flex-direction: column;
+}
+.sectionSubtitle {
+  color: #f16126;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  align-self: center;
+  font: 500 18px/150% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.sectionTitle {
+  color: #101115;
+  text-align: center;
+  align-self: center;
+  margin-top: 24px;
+  font: 700 40px/130% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .sectionTitle {
+    max-width: 100%;
+  }
+}
+.featuresRow {
+  margin-top: 48px;
+}
+@media (max-width: 991px) {
+  .featuresRow {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+.featuresGrid {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .featuresGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+.featureCard {
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 0px rgba(16, 17, 21, 0.1);
+  background-color: #fff;
+  display: flex;
+  width: 400px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #101115;
+  margin: 0 auto;
+  padding: 35px;
+}
+@media (max-width: 991px) {
+  .featureCard {
+    width: 100%;
+    margin-top: 24px;
+    padding: 20px 20px;
+  }
+}
+.featureHeader {
+  display: flex;
+  gap: 19px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.featureIcon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 58px;
+}
+.featureTitle {
+  font-family: Barlow, sans-serif;
+}
+.viewMoreLink {
+  text-transform: capitalize;
+  margin: 12px 0 0 77px;
+  font: 500 18px/150% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .viewMoreLink {
+    margin-left: 10px;
+  }
+}
+.featureCardAlt {
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 0px rgba(16, 17, 21, 0.1);
+  background-color: #fff;
+  flex-grow: 1;
+  width: 100%;
+  padding: 39px 80px 62px 20px;
+}
+@media (max-width: 991px) {
+  .featureCardAlt {
+    margin-top: 24px;
+    padding-right: 20px;
+  }
+}
+.featureHeaderAlt {
+  gap: 20px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .featureHeaderAlt {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+.featureIconAlt {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 70px;
+}
+@media (max-width: 991px) {
+  .featureIconAlt {
+    margin-top: 40px;
+  }
+}
+.featureContentAlt {
+  display: flex;
+  margin-top: 20px;
+  flex-grow: 1;
+  flex-direction: column;
+  color: #101115;
+}
+@media (max-width: 991px) {
+  .featureContentAlt {
+    margin-top: 40px;
+  }
+}
+.featureTitleAlt {
+  font: 700 20px/130% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.viewMoreLinkAlt {
+  text-transform: capitalize;
+  margin-top: 29px;
+  font: 500 18px/150% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}

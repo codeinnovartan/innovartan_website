@@ -8,6 +8,7 @@ import EducatorSwiper from "./EducatorSwiper";
 // import BlogSwiper from "./BlogSwiper";
 import StatsSection from "./StatsSection";
 import Footer from "../../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -86,14 +87,30 @@ const Home = () => {
         </p>
         <button className={styles.popularCategoryButton}>Know More</button>
         <div className={styles.categoryIconContainer}>
-          <CategoryIcon
-            image={"Images/Asserts/student.png"}
-            text={"For Students "}
-          />
-          <CategoryIcon
-            image={"Images/Asserts/teacher.png"}
-            text={"For Teachers"}
-          />
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            to={"/student"}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <CategoryIcon
+              image={"Images/Asserts/student.png"}
+              text={"For Students "}
+            />
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            to={"/teacher"}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <CategoryIcon
+              image={"Images/Asserts/teacher.png"}
+              text={"For Teachers"}
+            />
+          </Link>
           <CategoryIcon
             image={"Images/Asserts/school.png"}
             text={"For Schools"}
