@@ -31,7 +31,7 @@ function App() {
           element={
             <Navbar
               location={"outside"}
-              heading={"Aboutsssssssss Innovartan"}
+              heading={"About Innovartan"}
               subHeading={" Home / About"}
             >
               <About />

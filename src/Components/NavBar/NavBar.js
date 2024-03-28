@@ -106,16 +106,16 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                   id="navbar"
                   className={clicked ? "#navbar active" : "#navbar"}
                 >
-                  <li>
+                  <li onClick={handleClick}>
                     <Link to="/">Home</Link>
                   </li>
-                  <li>
+                  <li onClick={handleClick}>
                     <Link to="/about">About</Link>
                   </li>
-                  <li>
+                  <li onClick={handleClick}>
                     <a href="/">Blog</a>
                   </li>
-                  <li>
+                  <li onClick={handleClick}>
                     <Link to="/contact">Contact</Link>
                   </li>
                   <Dropdown className="navbarDropdown">
@@ -130,6 +130,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                           style={{ textDecoration: "none", color: "black" }}
                           to={"/teacher"}
                           onClick={() => {
+                            handleClick();
                             window.scrollTo({ top: 0, behavior: "smooth" });
                           }}
                         >
@@ -142,6 +143,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                           style={{ textDecoration: "none", color: "black" }}
                           to={"/student"}
                           onClick={() => {
+                            handleClick();
                             window.scrollTo({ top: 0, behavior: "smooth" });
                           }}
                         >
@@ -248,16 +250,16 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                   id="navbar"
                   className={clicked ? "#navbar active" : "#navbar"}
                 >
-                  <li>
+                  <li onClick={handleClick}>
                     <Link to="/">Home</Link>
                   </li>
-                  <li>
+                  <li onClick={handleClick}>
                     <Link to="/about">About</Link>
                   </li>
-                  <li>
+                  <li onClick={handleClick}>
                     <a href="/">Blog</a>
                   </li>
-                  <li>
+                  <li onClick={handleClick}>
                     <Link to="/contact">Contact</Link>
                   </li>
                   <Dropdown>
@@ -271,6 +273,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                           style={{ textDecoration: "none", color: "black" }}
                           to={"/teacher"}
                           onClick={() => {
+                            handleClick();
                             window.scrollTo({ top: 0, behavior: "smooth" });
                           }}
                         >
@@ -282,6 +285,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                           style={{ textDecoration: "none", color: "black" }}
                           to={"/student"}
                           onClick={() => {
+                            handleClick();
                             window.scrollTo({ top: 0, behavior: "smooth" });
                           }}
                         >
