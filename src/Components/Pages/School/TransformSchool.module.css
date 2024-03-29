@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
+.subtitle {
+  color: #555;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  align-self: center;
+  font: 500 18px/150% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.title {
+  color: #101115;
+  text-align: center;
+  align-self: center;
+  margin-top: 31px;
+  font: 700 40px/130% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .title {
+    max-width: 100%;
+  }
+}
+.cardGrid {
+  margin-top: 56px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .cardGrid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+.cardRow {
+  gap: 20px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .cardRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+.cardColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .cardColumn {
+    width: 100%;
+  }
+}
+.card {
+  position: relative;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  font-size: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #101115;
+  font-weight: 700;
+  line-height: 150%;
+  width: 100%;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .card {
+    margin-top: 24px;
+  }
+}
+.cardImage {
+  aspect-ratio: 1.54;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+}
+.cardTitle {
+  margin-top: 28px;
+  font: 24px/130% Barlow, sans-serif;
+}
+.cardSubtitle {
+  color: #555;
+  font-family: Barlow, sans-serif;
+  margin-top: 11px;
+}
+.cardDescription {
+  color: #555;
+  margin: 20px 30px 150px 30px;
+  text-align: justify;
+  align-item: justify;
+  font: 400 18px/24px Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.cardButton {
+  position: absolute;
+  font-family: Barlow, sans-serif;
+  justify-content: center;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 223, 64, 1);
+  align-self: start;
+  padding: 15px 32px;
+  align-self: center;
+  bottom: 20px;
+}
+@media (max-width: 991px) {
+  .cardButton {
+    margin-top: 40px;
+    padding: 15px 20px;
+  }
+}

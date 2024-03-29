@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "./TransformSchool.module.css";
 
 const CustomizedSupportCard = ({ imageSrc, title, subtitle, description }) => (
-  <div className="card">
-    <img src={imageSrc} alt={title} className="card-image" />
-    <div className="card-title">{title}</div>
-    <div className="card-subtitle">{subtitle}</div>
-    <div className="card-description">{description}</div>
-    <div className="card-button">Read More</div>
+  <div className={styles.card}>
+    <img src={imageSrc} alt={title} className={styles.cardImage} />
+    <div className={styles.cardTitle}>{title}</div>
+    <div className={styles.cardSubtitle}>{subtitle}</div>
+    <div className={styles.cardDescription}>{description}</div>
+    <div className={styles.cardButton}>Read More</div>
   </div>
 );
 
@@ -64,16 +65,17 @@ const cardData = [
 const TransformSchool = () => {
   return (
     <>
-      <div className="container">
-        <div className="subtitle">Don't Miss the Day</div>
-        <div className="title">
+      <div className={styles.container}>
+        <div className={styles.subtitle}>Don't Miss the Day</div>
+        <div className={styles.title}>
           Transform Your School: Join the Innovartan Revolution
         </div>
-        <div className="card-grid">
-          <div className="card-row">
+        <div className={styles.cardGrid}>
+          <div className={styles.cardRow}>
             {cardData.slice(0, 3).map((card, index) => (
               <div
-                className={`card-column ${index === 1 ? "middle-card" : ""}`}
+                className={styles.cardColumn}
+                // ${index === 1 ? "middle-card" : ""}
                 key={card.title}
               >
                 <CustomizedSupportCard {...card} />
@@ -81,142 +83,17 @@ const TransformSchool = () => {
             ))}
           </div>
         </div>
-        <div className="card-grid">
-          <div className="card-row">
+        <div className={styles.cardGrid}>
+          <div className={styles.cardRow}>
             {cardData.slice(3).map((card, index) => (
-              <div
-                className={`card-column ${index === 1 ? "middle-card" : ""}`}
-                key={card.title}
-              >
+              <div className={styles.cardColumn} key={card.title}>
                 <CustomizedSupportCard {...card} />
               </div>
             ))}
           </div>
         </div>
       </div>
-      <style jsx>{`
-        .container {
-          display: flex;
-          flex-direction: column;
-          padding: 0 20px;
-        }
-        .subtitle {
-          color: #555;
-          text-align: center;
-          letter-spacing: 5px;
-          text-transform: uppercase;
-          align-self: center;
-          font: 500 18px/150% Barlow, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-        .title {
-          color: #101115;
-          text-align: center;
-          align-self: center;
-          margin-top: 31px;
-          font: 700 40px/130% Barlow, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-        @media (max-width: 991px) {
-          .title {
-            max-width: 100%;
-          }
-        }
-        .card-grid {
-          margin-top: 56px;
-          width: 100%;
-        }
-        @media (max-width: 991px) {
-          .card-grid {
-            max-width: 100%;
-            margin-top: 40px;
-          }
-        }
-        .card-row {
-          gap: 20px;
-          display: flex;
-        }
-        @media (max-width: 991px) {
-          .card-row {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 0px;
-          }
-        }
-        .card-column {
-          display: flex;
-          flex-direction: column;
-          line-height: normal;
-          width: 33%;
-          margin-left: 0px;
-        }
-        @media (max-width: 991px) {
-          .card-column {
-            width: 100%;
-          }
-        }
-        .middle-card {
-          margin-left: 20px;
-        }
-        .card {
-          border-radius: 4px;
-          background-color: #fff;
-          display: flex;
-          flex-grow: 1;
-          flex-direction: column;
-          font-size: 16px;
-          color: #101115;
-          font-weight: 700;
-          line-height: 150%;
-          width: 100%;
-        }
-        @media (max-width: 991px) {
-          .card {
-            margin-top: 24px;
-          }
-        }
-        .card-image {
-          aspect-ratio: 1.54;
-          object-fit: auto;
-          object-position: center;
-          width: 100%;
-        }
-        .card-title {
-          margin-top: 28px;
-          font: 24px/130% Barlow, sans-serif;
-        }
-        .card-subtitle {
-          color: #555;
-          font-family: Barlow, sans-serif;
-          margin-top: 11px;
-        }
-        .card-description {
-          color: #555;
-          margin: 29px 37px 0 0;
-          font: 400 18px/24px Barlow, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-        @media (max-width: 991px) {
-          .card-description {
-            margin-right: 10px;
-          }
-        }
-        .card-button {
-          font-family: Barlow, sans-serif;
-          justify-content: center;
-          border-radius: 4px;
-          border: 2px solid rgba(255, 223, 64, 1);
-          align-self: start;
-          margin-top: 67px;
-          padding: 19px 32px;
-        }
-        @media (max-width: 991px) {
-          .card-button {
-            margin-top: 40px;
-            padding: 0 20px;
-          }
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </>
   );
 };

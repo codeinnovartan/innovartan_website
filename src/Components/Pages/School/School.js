@@ -1,6 +1,7 @@
 import React from "react";
 import HelpSchool from "./HelpSchool";
 import TransformSchool from "./TransformSchool";
+import WhyUs from "./WhyUs";
 
 const School = () => {
   return (
@@ -10,6 +11,9 @@ const School = () => {
       </div>
       <div className={"transformSchool"}>
         <TransformSchool />
+      </div>
+      <div className={"whyUs"}>
+        <WhyUs />
       </div>
     </div>
   );
