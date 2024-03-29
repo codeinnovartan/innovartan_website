@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  padding: 60px 20px;
+}
+
+.title {
+  color: #101115;
+  text-align: center;
+  font: 300 46px/109% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+
+.subtitle {
+  color: #000;
+  text-align: center;
+  margin-top: -17px;
+  font: 300 14px/357% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.searchText {
+  width: 50% !important;
+  height: 50px;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.searchText {
+  font-family: Barlow, sans-serif;
+}
+
+@media (max-width: 425px) {
+  .searchText {
+    width: 100% !important;
+  }
+}
+
+.description {
+  color: #555;
+  text-align: center;
+  margin-top: 70px;
+  font: 20px/120% Barlow, sans-serif;
+}
+
+.stats {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  align-items: center;
+  max-width: 652px;
+  gap: 10px;
+  font-size: 16px;
+  color: #101115;
+  line-height: 150%;
+}
+
+@media (max-width: 991px) {
+  .stats {
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+
+.statCard {
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: #fff;
+  display: flex;
+  gap: 16px;
+  text-align: center;
+  padding: 12px 15px;
+}
+
+@media (max-width: 425px) {
+  .statCard {
+    flex: 1 1 100%;
+  }
+}
+
+.statIcon {
+  width: 22px;
+  align-self: start;
+}
+
+.statText {
+  font-family: Barlow, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+}

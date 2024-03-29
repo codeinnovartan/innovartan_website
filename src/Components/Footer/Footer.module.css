@@ -116,4 +116,10 @@
   .emailContainer {
     width: 90%;
   }
+  .leftMountain {
+    width: 150px;
+  }
+  .rightMountain {
+    width: 150px;
+  }
 }

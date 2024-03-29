@@ -11,6 +11,13 @@
   height: 90vh;
   transition: background-image 1s ease-in-out;
 }
+.outer-container2 {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  transition: background-image 1s ease-in-out;
+}
 
 .outer-container1 {
   display: flex;
@@ -113,6 +120,10 @@
     height: 30vh;
     transition: background-image 1s ease-in-out;
   }
+
+  .outer-container2 {
+    height: 65vh;
+  }
   #navbar {
     display: flex;
     flex-direction: column;
@@ -183,5 +194,8 @@
     font-size: 30px;
     color: #000;
     margin-top: 13%;
+  }
+  .outer-container2 {
+    height: 85vh;
   }
 }
