@@ -111,10 +111,18 @@ const Home = () => {
               text={"For Teachers"}
             />
           </Link>
-          <CategoryIcon
-            image={"Images/Asserts/school.png"}
-            text={"For Schools"}
-          />
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            to={"/school"}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <CategoryIcon
+              image={"Images/Asserts/school.png"}
+              text={"For School"}
+            />
+          </Link>
         </div>
       </div>
       <div className={styles.backToSchool}>

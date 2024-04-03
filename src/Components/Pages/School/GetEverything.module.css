@@ -1,0 +1,107 @@
+.learningPrograms {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin: 0 auto;
+  width: 80%;
+  padding: 30px 20px;
+}
+
+@media (max-width: 991px) {
+  .learningPrograms {
+    width: 80%;
+    padding: 0 0px;
+  }
+}
+@media (max-width: 375px) {
+  .learningPrograms {
+    width: 90%;
+    padding: 0 0px;
+  }
+}
+
+.sectionTitle {
+  color: #101115;
+  text-align: center;
+  align-self: center;
+  font: 40px/130% Barlow, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .sectionTitle {
+    max-width: 100%;
+  }
+}
+
+.programsContainer {
+  display: flex;
+  margin-top: 51px;
+  align-self: center;
+  width: 90%;
+  gap: 100px;
+}
+
+@media (max-width: 991px) {
+  .programsContainer {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+  }
+}
+
+.programCard {
+  height: 420px;
+  position: relative;
+  border-radius: 15px;
+  background-color: rgba(120, 94, 255, 0.48);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 30px 30px 20px;
+}
+
+@media (max-width: 991px) {
+  .programCard {
+    max-width: 100%;
+    padding: 20px 20px;
+  }
+}
+
+.programTitle {
+  text-align: center;
+  font: 24px/217% Barlow, sans-serif;
+}
+
+.programDescription {
+  text-align: center;
+  font-family: Barlow, sans-serif;
+  font-weight: 400;
+}
+
+.programFeatures {
+  font-family: Barlow, sans-serif;
+  font-weight: 400;
+  align-self: center;
+}
+
+.programButton {
+  bottom: 20px;
+  position: absolute;
+  font-family: Barlow, sans-serif;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  margin-top: 28px;
+  align-self: center;
+  color: #101115;
+  line-height: 150%;
+  width: 80%;
+  justify-content: center;
+  padding: 15px 12px;
+}
+
+@media (max-width: 991px) {
+  .programButton {
+    padding-right: 20px;
+  }
+}

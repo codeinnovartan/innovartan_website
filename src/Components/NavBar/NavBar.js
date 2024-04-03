@@ -122,7 +122,18 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                     Our Services
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="/">For Schools</Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        to={"/school"}
+                        onClick={() => {
+                          handleClick();
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                      >
+                        For School
+                      </Link>
+                    </Dropdown.Item>
 
                     <Dropdown.Item>
                       <Link
@@ -137,7 +148,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                       </Link>
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="/">
+                    <Dropdown.Item>
                       <Link
                         style={{ textDecoration: "none", color: "black" }}
                         to={"/student"}
