@@ -53,8 +53,8 @@ const Footer = () => {
             <div className={classes.col1}>
               <FooterHeading heading={"Quick Links"} />
               <FooterLink hrefLink={"/contact"} text={"Contact us"} />
-              <FooterLink hrefLink={"/"} text={"Terms & Use"} />
-              <FooterLink hrefLink={"/"} text={"Privacy Policy"} />
+              <FooterLink hrefLink={"/term-of-use"} text={"Terms & Use"} />
+              <FooterLink hrefLink={"/privacy-policy"} text={"Privacy Policy"} />
             </div>
             <div className={classes.col2}>
               <FooterHeading heading={"Get In Touch"} />

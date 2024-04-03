@@ -2,14 +2,14 @@ import React from "react";
 import classes from "./PrivacyPolicy.module.css";
 import PrivacyPolicyHeading from "./PrivacyPolicyComponents/PrivacyPolicyHeading";
 import PrivacyPolicyText from "./PrivacyPolicyComponents/PrivacyPolicyText";
-import Footer from "../../Footer/Footer";
+import Footer from "../../../Components/Footer/Footer";
 
 const PrivacyPolicy = () => {
   return (
     <div>
-      <div className={classes.heading}>
+      {/* <div className={classes.heading}>
         <h1>Privacy Policy</h1>
-      </div>
+      </div> */}
       <div className={classes.subContainer}>
         <div className={classes.subHeading}>
           <PrivacyPolicyHeading heading="1. Privacy Policy" />

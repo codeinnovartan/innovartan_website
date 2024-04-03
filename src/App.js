@@ -1,8 +1,8 @@
 // import LandingPage from "./OLD_Components/Pages/LandingPage/LandingPage";
 // import AboutSchoolsPage from "./OLD_Components/Pages/About/AboutSchoolsPage";
 import ContactUs from "./OLD_Components/Pages/ContactUs/ContactUs";
-// import TermOfUse from "./OLD_Components/Pages/TermOfUse/TermOfUse";
-// import PrivacyPolicy from "./OLD_Components/Pages/Privacy Policy/PrivacyPolicy";
+import TermOfUse from "./OLD_Components/Pages/TermOfUse/TermOfUse";
+import PrivacyPolicy from "./OLD_Components/Pages/Privacy Policy/PrivacyPolicy";
 // import Services from "./OLD_Components/Pages/Services/Services";
 // import AboutUs from "./OLD_Components/Pages/Us-About/AboutUs";
 // import Home from "./OLD_Components/Pages/Home/Home";
@@ -62,12 +62,27 @@ function App() {
         <Route
           path="/school"
           element={
-            <NavBar2
-            >
+            <NavBar2>
               <School />
             </NavBar2>
           }
         ></Route>
+        <Route
+          path="/term-of-use"
+          element={
+            <NavBar1 heading={"Terms of Use"}>
+              <TermOfUse />
+            </NavBar1>
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+            <NavBar1 heading={"Privacy Policy"}>
+              <PrivacyPolicy />
+            </NavBar1>
+          }
+        />
         <Route path="/contact" element={<ContactUs />} />
         {/* <Route
           index

@@ -1,15 +1,15 @@
 import React from "react";
 import classes from "./TermOfUse.module.css";
-import Footer from "../../Footer/Footer";
+import Footer from "../../../Components/Footer/Footer";
 import TOUHeading from "./TermOfUseComponents/TOUHeading";
 import TOUText from "./TermOfUseComponents/TOUText";
 
 const TermOfUse = () => {
   return (
     <div>
-      <div className={classes.heading}>
+      {/* <div className={classes.heading}>
         <h1>Terms of Use</h1>
-      </div>
+      </div> */}
       <div className={classes.subContainer}>
         <TOUHeading heading="1. Introduction" />
 
