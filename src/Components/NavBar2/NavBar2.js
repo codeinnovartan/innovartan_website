@@ -86,9 +86,9 @@ const NavBar2 = ({ children }) => {
               <li onClick={handleClick}>
                 <Link to="/about">About</Link>
               </li>
-              <li onClick={handleClick}>
+              {/* <li onClick={handleClick}>
                 <a href="/">Blog</a>
-              </li>
+              </li> */}
               <li onClick={handleClick}>
                 <Link to="/contact">Contact</Link>
               </li>
