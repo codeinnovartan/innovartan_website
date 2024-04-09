@@ -13,7 +13,9 @@ function FounderImage() {
       <h3 className={styles.founderName}>Prashant Sharma</h3>
       <p className={styles.founderTitle}>
         Founder <br />
-        <span className={styles.companyName}>Innovartan</span>
+        <span className={styles.companyName}>
+          I<span>nn</span>ovartan
+        </span>
       </p>
     </div>
   );
@@ -29,14 +31,14 @@ function FounderBio() {
         className={styles.decorativeQuoteIcon}
       />
       <div className={styles.founderBio}>
-        <span className={styles.founderName}>Prashant Sharma</span>, the founder of{" "}
-        <span className={styles.companyName}>INNOVARTAN</span> has been a dedicated
-        teacher for over fifteen years, guiding thousands of students for
-        competitive exams like IIT JEE and NEET. The idea of Innovartan was born
-        from a dream where he realized that he was limiting his impact by only
-        teaching a select few top batches. This realization led him to establish
-        the brand with the mission to bridge the educational gap and explore the
-        potential of students nationwide.
+        <span className={styles.founderName}>Prashant Sharma</span>, the founder
+        of <span className={styles.companyName}>INNOVARTAN</span> has been a
+        dedicated teacher for over fifteen years, guiding thousands of students
+        for competitive exams like IIT JEE and NEET. The idea of Innovartan was
+        born from a dream where he realized that he was limiting his impact by
+        only teaching a select few top batches. This realization led him to
+        establish the brand with the mission to bridge the educational gap and
+        explore the potential of students nationwide.
         <br />
         <br />
         At Innovartan, the focus is on simplifying students' lives by providing

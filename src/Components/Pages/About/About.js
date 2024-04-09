@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import { Image } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 import AboutCard from "../Home/AboutCard";
 import OurMission from "./OurMission";
 import Founder from "./Founder";
@@ -21,7 +21,7 @@ const About = () => {
         <div className={styles.aboutdiv2}>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 18,
             }}
           >
             INTRODUCTION
@@ -53,7 +53,7 @@ const About = () => {
             evolve together while staying competitive with the changing
             educational landscape.
           </p>
-          <button className={styles.aboutButton}>Read More</button>
+          <Button variant="outline-secondary" className={styles.aboutButton}>Read More</Button>
         </div>
       </div>
       <div className={styles.aboutOurInnovartan}>
@@ -70,7 +70,7 @@ const About = () => {
         <div className={styles.aboutOurInnovartandiv2}>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 18,
               letterSpacing: 5,
               color: "#F16126",
             }}

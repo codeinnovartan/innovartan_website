@@ -3,7 +3,7 @@
   align-items: center;
   background-color: #fff9f1;
   display: flex;
-  padding: 80px 60px;
+  padding: 50px 100px;
 }
 @media (max-width: 991px) {
   .aboutFounderSection {
@@ -12,7 +12,6 @@
 }
 .aboutFounderContainer {
   display: flex;
-  margin-top: 44px;
   width: 100%;
   max-width: 1308px;
   flex-direction: column;
@@ -30,7 +29,7 @@
   font: 700 40px/130% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
 }
 .aboutFounderContent {
-  margin-top: 47px;
+  margin-top: 20px;
   gap: 20px;
   display: flex;
 }
