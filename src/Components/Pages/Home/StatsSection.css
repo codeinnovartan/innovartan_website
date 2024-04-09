@@ -6,12 +6,12 @@
   overflow: hidden;
   position: relative;
   min-height: 761px;
-  padding: 80px 60px;
+  padding: 50px 100px;
 }
 
 @media (max-width: 991px) {
   .hero {
-    padding: 0 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -27,7 +27,6 @@
 .hero-content {
   position: relative;
   display: flex;
-  margin-top: 30px;
   width: 1296px;
   max-width: 100%;
   flex-direction: column;
@@ -175,13 +174,11 @@
 
 .feature-cta {
   justify-content: center;
-  border-radius: 4px;
-  background-color: #f9e8b0;
-  border-color: #f9e8b0;
-  color: #101115;
+  border-width: 2px !important;
+  font-weight: 700 !important;
   margin-top: 26px;
-  padding: 15px 30px;
-  font: 16px/150% Barlow, sans-serif;
+  padding: 10px 20px !important;
+  font: 16pxBarlow, sans-serif !important;
   width: fit-content;
 }
 
@@ -207,9 +204,9 @@
 
 .feature-img {
   aspect-ratio: 0.75;
-  object-fit: auto;
+  object-fit: cover;
   object-position: center;
-  width: 179px;
+  width: 170px;
   max-width: 100%;
   flex-grow: 1;
 }

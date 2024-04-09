@@ -4,19 +4,19 @@
   font-weight: 700;
   margin: 0 auto;
   width: 80%;
-  padding: 30px 20px;
+  padding: 50px 20px;
 }
 
 @media (max-width: 991px) {
   .learningPrograms {
     width: 80%;
-    padding: 0 0px;
+    padding: 30px 0px;
   }
 }
 @media (max-width: 375px) {
   .learningPrograms {
     width: 90%;
-    padding: 0 0px;
+    padding: 30px 0px;
   }
 }
 
@@ -67,37 +67,44 @@
     padding: 20px 20px;
   }
 }
+@media (max-width: 1024px) {
+  .programCard {
+    max-width: 100%;
+    padding: 20px 20px;
+    height: 470px;
+  }
+}
 
 .programTitle {
   text-align: center;
   font: 24px/217% Barlow, sans-serif;
+  font-weight: 700;
 }
 
 .programDescription {
-  text-align: center;
+  /* text-align: center; */
   font-family: Barlow, sans-serif;
   font-weight: 400;
+  margin-left: 14px;
 }
 
-.programFeatures {
+.programFeatures li {
   font-family: Barlow, sans-serif;
   font-weight: 400;
-  align-self: center;
+  font-size: 16px;
+  /* align-self: center; */
 }
 
 .programButton {
   bottom: 20px;
   position: absolute;
-  font-family: Barlow, sans-serif;
-  border-radius: 4px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  margin-top: 28px;
-  align-self: center;
-  color: #101115;
-  line-height: 150%;
+  font-family: Barlow, sans-serif !important;
+  border-width: 2px !important;
+  align-self: center !important;
+  font-weight: 700 !important;
   width: 80%;
   justify-content: center;
-  padding: 15px 12px;
+  padding: 10px 20px !important;
 }
 
 @media (max-width: 991px) {

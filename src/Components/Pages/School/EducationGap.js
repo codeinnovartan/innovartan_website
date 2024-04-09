@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./EducationGap.module.css";
+import { Button } from "react-bootstrap";
 
 const EducationGap = () => {
   return (
@@ -8,7 +9,7 @@ const EducationGap = () => {
         <div className={styles.benefitsContent}>
           <div className={styles.imageColumn}>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e6e2cea671d54f2fa432d7efe0bc3ec3cac7cd1f50da157326ec330a284cd1f9?apiKey=65c3b0a390fd4311b72fcd91fc18e875&"
+              src="Images/Asserts/manShadow.png"
               alt="Benefits for Teachers"
               className={styles.benefitsImage}
             />
@@ -46,7 +47,9 @@ const EducationGap = () => {
                 benefiting from the supportive and nurturing environment of
                 their school community.
               </p>
-              <button className={styles.applyButton}>Get In Touch</button>
+              <Button variant="outline-light" className={styles.applyButton}>
+                Get In Touch
+              </Button>
             </div>
           </div>
         </div>

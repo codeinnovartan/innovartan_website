@@ -1,28 +1,23 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./StatsSection.css";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 const schoolsData = [
   {
-    number: "40+",
+    number: "40",
     description: "Number of Affiliated Schools",
   },
   {
-    number: "500+",
+    number: "500",
     description: "Number of Teachers Trained/Placed",
   },
   {
-    number: "10,000+",
+    number: "10000",
     description: "Number of Students",
   },
 ];
-
-const StatItem = ({ number, description }) => (
-  <div className="stat-item">
-    <div className="stat-number">{number}</div>
-    <div className="stat-description">{description}</div>
-  </div>
-);
 
 const FeatureCard = ({ title, description, ctaText, imageSrc, altText }) => (
   <div className="feature-card">
@@ -30,7 +25,7 @@ const FeatureCard = ({ title, description, ctaText, imageSrc, altText }) => (
       <div className="feature-text">
         <h3 className="feature-title">{title}</h3>
         <p className="feature-description">{description}</p>
-        <Button className="feature-cta">{ctaText}</Button>
+        <Button variant="outline-primary" className="feature-cta">{ctaText}</Button>
       </div>
       <div className="feature-image">
         <img src={imageSrc} alt={altText} className="feature-img" />
@@ -39,6 +34,26 @@ const FeatureCard = ({ title, description, ctaText, imageSrc, altText }) => (
   </div>
 );
 const StatsSection = () => {
+  const [counterState, setCounterState] = useState(false);
+
+  const StatItem = ({ number, description }) => (
+    <div className="stat-item">
+      <div className="stat-number">
+        <ScrollTrigger
+          onEnter={() => {
+            setCounterState(true);
+          }}
+          onExit={() => {
+            setCounterState(false);
+          }}
+        >
+          {counterState && <CountUp end={number} duration={5} />}+
+        </ScrollTrigger>
+      </div>
+
+      <div className="stat-description">{description}</div>
+    </div>
+  );
   return (
     <>
       <section className="hero">
@@ -62,14 +77,14 @@ const StatsSection = () => {
                 title="Begin Your Teaching Career"
                 description="Completed B.Ed. but still struggling to get job opportunities? Update your CV with a course built to shape you into a top-notch educator!"
                 ctaText="Sign Up Today"
-                imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/5a5ab840a02f43f395062c136a3646c4976ff7dd0d0d978392e9e415a53d8544?apiKey=65c3b0a390fd4311b72fcd91fc18e875&"
+                imageSrc="Images/Asserts/stats2.png"
                 altText="Begin teaching career"
               />
               <FeatureCard
                 title="One-Stop Education Solution"
                 description="Level up your teaching techniques so that students need not rely on coaching centres. Become an all-round dependable educator!"
                 ctaText="Register Now"
-                imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/623c618f22af0cce949c75c05ae3edbea53ad6b94e2c712b23d65a7346d1ae49?apiKey=65c3b0a390fd4311b72fcd91fc18e875&"
+                imageSrc="Images/Asserts/stats1.png"
                 altText="One-stop education solution"
               />
             </div>

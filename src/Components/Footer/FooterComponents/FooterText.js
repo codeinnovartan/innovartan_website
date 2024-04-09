@@ -7,9 +7,9 @@ const FooterText = ({ imgURL, text }) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 450) {
-        setFontSize("0.8rem");
+        setFontSize("0.9rem");
       } else {
-        setFontSize("1.2rem");
+        setFontSize("1.0rem");
       }
     };
 
@@ -25,11 +25,13 @@ const FooterText = ({ imgURL, text }) => {
     <div
       style={{
         display: "flex",
-        alignItems: "center",
-        margin: "5px",
+        marginBottom: "10px",
       }}
     >
-      <i className={imgURL} style={{ marginRight: "20px", color: "white" }}></i>
+      <i
+        className={imgURL}
+        style={{ marginRight: "20px", color: "white", marginTop: "13px" }}
+      ></i>
       <div
         dangerouslySetInnerHTML={{ __html: text }}
         style={{ color: "white", fontSize: fontSize }}

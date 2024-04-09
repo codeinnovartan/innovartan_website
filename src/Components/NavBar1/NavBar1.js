@@ -34,7 +34,7 @@ function NavBar1({ heading, subHeading, children }) {
                 ></i>
               </div>
               <p style={{ color: "#555555" }}>
-                8th Floor, Riana Perito, Sector 136, Noida, 201304, UP
+              H-151, Basement, GIPL Tower, Sector 63, Noida, Uttar Pradesh, 201301.
               </p>
             </div>
             <div

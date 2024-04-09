@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./HelpSchool.module.css";
+import { Button } from "react-bootstrap";
 
 const HelpSchool = () => {
   return (
@@ -11,8 +12,8 @@ const HelpSchool = () => {
           <div className={styles.row}>
             <div className={styles.imageColumn}>
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/7df073d116f409302bde100428fffa48ab6793d2ad8132b1297d8b89d78d65b4?apiKey=65c3b0a390fd4311b72fcd91fc18e875&"
-                alt="Innovartan helping schools"
+                src="Images/Asserts/school1.jpg"
+                alt="School"
                 className={styles.featuredImage}
               />
             </div>
@@ -48,7 +49,9 @@ const HelpSchool = () => {
                   the world.
                   <br />
                 </p>
-                <button className={styles.ctaButton}>Get Started Now</button>
+                <Button variant="outline-warning" className={styles.ctaButton}>
+                  Get Started Now
+                </Button>
               </div>
             </div>
           </div>

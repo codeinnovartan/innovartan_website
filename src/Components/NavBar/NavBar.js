@@ -23,6 +23,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
     }, 5000);
     return () => clearInterval(interval);
   });
+  
   return (
     <div>
       <div>
@@ -55,7 +56,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                   ></i>
                 </div>
                 <p style={{ color: "#555555" }}>
-                  8th Floor, Riana Perito, Sector 136, Noida, 201304, UP
+                H-151, Basement, GIPL Tower, Sector 63, Noida, Uttar Pradesh, 201301.
                 </p>
               </div>
               <div
@@ -124,7 +125,10 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                   <Dropdown.Menu>
                     <Dropdown.Item>
                       <Link
-                        style={{ textDecoration: "none", color: "black" }}
+                        style={{
+                          textDecoration: "none",
+                          color: "black",
+                        }}
                         to={"/school"}
                         onClick={() => {
                           handleClick();
@@ -150,7 +154,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
 
                     <Dropdown.Item>
                       <Link
-                        style={{ textDecoration: "none", color: "black" }}
+                        style={{ textDecoration: "none", color: "black",  display: "block", }}
                         to={"/student"}
                         onClick={() => {
                           handleClick();

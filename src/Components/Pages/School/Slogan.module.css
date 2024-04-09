@@ -3,22 +3,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 60px;
+  padding: 50px 100px;
   background-color: #002147;
 }
 
 @media (max-width: 991px) {
   .quoteSection {
-    padding: 0px 20px 30px 20px;
+    padding: 30px 20px;
   }
 }
 
 .sectionTitle {
-  margin-top: 47px;
-  max-width: 562px;
   color: #fff;
   text-align: center;
-  font: 700 30px/120% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 700 40px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 @media (max-width: 991px) {

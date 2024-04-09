@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Image } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 import CategoryIcon from "./CategoryIcon";
 import CourseSwiper from "./CourseSwiper";
 import AboutCard from "./AboutCard";
@@ -68,7 +68,7 @@ const Home = () => {
       <div className={styles.popularCategory}>
         <p
           style={{
-            fontSize: "20px",
+            fontSize: "18px",
             letterSpacing: 5,
             fontWeight: 500,
             color: "#F16126",
@@ -85,7 +85,12 @@ const Home = () => {
           with cutting-edge learning solutions that inspire, engage, and
           transform.
         </p>
-        <button className={styles.popularCategoryButton}>Know More</button>
+        <Button
+          variant="outline-warning"
+          className={styles.popularCategoryButton}
+        >
+          Know More
+        </Button>
         <div className={styles.categoryIconContainer}>
           <Link
             style={{ textDecoration: "none", color: "black" }}
@@ -139,7 +144,7 @@ const Home = () => {
         <div className={styles.backToSchooldiv2}>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 18,
               letterSpacing: 5,
               color: "#F16126",
             }}
@@ -168,13 +173,15 @@ const Home = () => {
             education that equips students for success in the rapidly evolving
             world..
           </p>
-          <button className={styles.backToSchoolButton}>Know More</button>
+          <Button variant="outline-success" className={styles.backToSchoolButton}>
+            Know More
+          </Button>
         </div>
       </div>
       <div className={styles.coursesContainer}>
         <p
           style={{
-            fontSize: 20,
+            fontSize: 18,
             letterSpacing: 5,
             color: "#F16126",
           }}
@@ -196,7 +203,7 @@ const Home = () => {
         <div className={styles.aboutContainerDiv2}>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 18,
               letterSpacing: 5,
               color: "#F16126",
             }}
@@ -235,7 +242,7 @@ const Home = () => {
       <div className={styles.coursesContainer}>
         <p
           style={{
-            fontSize: 20,
+            fontSize: 18,
             letterSpacing: 5,
             color: "#F16126",
           }}

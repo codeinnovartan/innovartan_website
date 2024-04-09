@@ -23,6 +23,7 @@
 .content h2 {
   font-size: 40px;
   letter-spacing: 5px;
+  font-weight: 700 !important;
   color: #333333;
 }
 .row {
@@ -72,7 +73,7 @@ cardInner p {
 }
 
 .linkContainer i {
-  color: #ffdf40;
+  color: #00000;
   margin-right: 10px;
 }
 
@@ -174,7 +175,7 @@ cardInner p {
 }
 
 .instructorTitle {
-  margin-top: 16px;
+  margin-top: 0px;
   color: #555;
   font: 400 16px/150% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
 }

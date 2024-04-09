@@ -47,7 +47,7 @@
 }
 .popularCategory {
   display: flex;
-  padding: 50px 0px;
+  padding: 50px 100px;
   flex-direction: column;
   align-items: center;
 }
@@ -59,7 +59,7 @@
 
 .popularCategorytext {
   width: 70%;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
   text-align: center;
@@ -68,15 +68,10 @@
 
 .popularCategoryButton {
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #f16126;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  padding: 10px 20px !important;
+  border-width: 2px !important;
+  font-weight: 700 !important;
+  /* transition: all 0.3s ease; */
 }
 .categoryIconContainer {
   margin-top: 50px;
@@ -102,7 +97,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 50px;
+  padding: 0px 50px 0px 0px;
 }
 
 .backToSchooldiv1image1 {
@@ -129,7 +124,7 @@
 }
 
 .backToSchooldiv2 h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -138,20 +133,14 @@
   font-weight: 400;
   margin-top: 20px;
   color: #555555;
+  text-align: justify;
 }
 
 .backToSchoolButton {
-  width: 150px;
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #26c976;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  padding: 10px 20px !important;
+  border-width: 2px !important;
+  font-weight: 700 !important;
 }
 
 .coursesContainer {
@@ -159,7 +148,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 0px;
+  padding: 50px 100px;
   background-color: #fff9f1;
 }
 
@@ -169,12 +158,13 @@
 }
 
 .swiperContainer {
-  width: 80%;
+  width: 100%;
   margin-top: 40px;
 }
 
 .aboutContainer {
   display: flex;
+  /* padding: 50px 100px; */
 }
 .aboutContainerDiv1 {
   background-image: url("../../../../public/Images/Asserts/blueBackground.png");
@@ -184,7 +174,7 @@
   position: relative;
 }
 .aboutContainerDiv2 {
-  width: 55%;
+  width: 47%;
   margin-top: 50px;
 }
 .aboutContainerDiv1Image {
@@ -199,11 +189,11 @@
 .aboutContainerDiv2 h2 {
   font-size: 40px;
   font-weight: 700;
-  width: 75%;
+  width: 80%;
 }
 
 .aboutContainerDiv2text {
-  width: 90%;
+  width: 97%;
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
@@ -225,6 +215,9 @@
     width: 50%;
     height: 150px;
   }
+  .popularCategory {
+    padding: 30px 20px;
+  }
   .popularCategory h2 {
     font-size: 24px;
     text-align: center;
@@ -238,6 +231,7 @@
   }
   .backToSchool {
     flex-direction: column;
+    padding: 30px 20px;
   }
   .backToSchooldiv1 {
     padding: 0px 20px;
@@ -246,16 +240,20 @@
     align-items: center;
     width: 100%;
     margin-top: 50px;
-    padding: 0px 20px;
   }
   .backToSchooldiv2 h1 {
     font-size: 40px;
+    text-align: center;
   }
   .backToSchooldiv2 p {
     text-align: center;
   }
   .backToSchooldiv2text {
     font-size: 16px;
+    text-align: justify !important;
+  }
+  .coursesContainer {
+    padding: 30px 00px;
   }
   .coursesContainer h1 {
     font-size: 40px;

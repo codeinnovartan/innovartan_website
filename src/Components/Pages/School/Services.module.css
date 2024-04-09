@@ -3,11 +3,18 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 20px;
+  padding: 50px 100px;
+}
+
+@media (max-width: 991px) {
+  .servicesSection {
+    padding: 30px 20px;
+  }
 }
 
 .sectionTitle {
-  font: 500 20px/260% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 500 18px/260% Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: 0px;
 }
 
 .sectionSubtitle {
@@ -38,14 +45,11 @@
 
 .registerButton {
   justify-content: center;
-  border-radius: 4px;
-  border: 2px solid rgba(255, 223, 64, 1);
+  border-width: 2px !important;
   margin-top: 29px;
-  color: #101115;
-  padding: 17px 41px;
+  font-weight: 700 !important;
+  padding: 10px 20px !important;
   font: 16px/150% Barlow, sans-serif;
-  background: none;
-  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -59,6 +63,18 @@
   justify-content: center;
   background-color: #ffdf40d9;
   border-radius: 10px;
-  padding: 0px 20px;
+  padding: 10px 20px;
   margin-top: 10px;
+  transition: 0.3s;
+}
+
+.serviceCard:hover {
+  transform: scale(1.4);
+}
+
+.serviceCard p {
+  font: 18px Barlow, sans-serif;
+  color: #101115;
+  margin: 0px;
+  /* margin: 0px; */
 }

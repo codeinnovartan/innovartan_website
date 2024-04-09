@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./GetEverything.module.css"
+import styles from "./GetEverything.module.css";
+import { Button } from "react-bootstrap";
 
 const ProgramCard = ({ title, description, features, buttonText }) => (
   <div className={styles.programCard}>
@@ -10,7 +11,9 @@ const ProgramCard = ({ title, description, features, buttonText }) => (
         <li key={index}>{feature}</li>
       ))}
     </ul>
-    <button className={styles.programButton}>{buttonText}</button>
+    <Button variant="outline-light" className={styles.programButton}>
+      {buttonText}
+    </Button>
   </div>
 );
 

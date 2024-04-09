@@ -1,0 +1,15 @@
+.customButton {
+  display: flex;
+  width: 85px;
+  height: 85px;
+  background-color: #785eff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.customButton:hover {
+  transform: scale(1.2);
+}

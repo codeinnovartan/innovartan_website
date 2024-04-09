@@ -54,7 +54,10 @@ const Footer = () => {
               <FooterHeading heading={"Quick Links"} />
               <FooterLink hrefLink={"/contact"} text={"Contact us"} />
               <FooterLink hrefLink={"/term-of-use"} text={"Terms & Use"} />
-              <FooterLink hrefLink={"/privacy-policy"} text={"Privacy Policy"} />
+              <FooterLink
+                hrefLink={"/privacy-policy"}
+                text={"Privacy Policy"}
+              />
             </div>
             <div className={classes.col2}>
               <FooterHeading heading={"Get In Touch"} />
@@ -72,8 +75,7 @@ const Footer = () => {
               />
               <FooterText
                 imgURL={"fa-solid fa-location-dot fa-xl"}
-                text={`8th Floor, Riana Perito <br>
-               Sector 136, Noida, 201304, UP`}
+                text={`H-151, Basement, GIPL Tower, Sector 63, Noida, Uttar Pradesh, 201301.`}
               />
             </div>
           </div>

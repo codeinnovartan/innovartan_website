@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 60px;
+  padding: 50px 100px;
 }
 
 @media (max-width: 991px) {
@@ -14,7 +14,7 @@
     margin-top: 40px;
     background-image: none;
     background-color: #ffdf40;
-    padding: 10px;
+    padding: 30px 20px;
     align-items: center;
   }
 }
@@ -22,12 +22,12 @@
 .benefitsContainer {
   width: 1557px;
   max-width: 100%;
-  padding: 39px 80px 39px 0;
+  /* padding: 39px 80px 39px 0; */
 }
 
 @media (max-width: 991px) {
   .benefitsContainer {
-    padding-right: 20px;
+    padding: 0px 5px;
   }
 }
 
@@ -45,6 +45,8 @@
 
 .imageColumn {
   width: 42%;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 991px) {
@@ -74,6 +76,7 @@
 @media (max-width: 991px) {
   .textColumn {
     width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -90,11 +93,11 @@
   .benefitsText {
     max-width: 100%;
     margin-top: 40px;
+    font-weight: 700;
   }
 }
 
 .benefitsTitle {
-  margin-left: 13px;
   font-weight: 700 !important;
   font: 40px Barlow, sans-serif;
 }
@@ -102,6 +105,7 @@
 @media (max-width: 991px) {
   .benefitsTitle {
     margin-left: 10px;
+    text-align: center;
   }
 }
 
@@ -123,18 +127,17 @@
 
 .applyButton {
   justify-content: center;
-  border-radius: 4px;
-  background-color: #fff;
-  margin: 82px 0 0 13px;
-  padding: 15px 30px;
-  font: 16px/150% Barlow, sans-serif;
-  cursor: pointer;
+  border-width: 2px !important;
+  font-weight: 700 !important;
+  margin: 20px 0 0 0px !important;
+  padding: 10px 20px !important;
+  font: 16px !important;
 }
 
 @media (max-width: 991px) {
   .applyButton {
     margin: 40px 10px;
-    padding: 10px 20px;
+    /* padding: 10px 20px !important; */
     width: 80%;
     align-self: center;
   }
@@ -143,6 +146,7 @@
 .description {
   margin-top: 33px;
   font: 400 18px/24px Barlow, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 @media (max-width: 991px) {
