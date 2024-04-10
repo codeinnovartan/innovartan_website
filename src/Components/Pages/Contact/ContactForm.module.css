@@ -101,3 +101,12 @@
     padding: 10px 20px;
   }
 }
+.error {
+  border-color: #dc3545 !important; /* Red border color */
+}
+
+.errorMessage {
+  color: #dc3545; /* Red color for error message */
+  font-size: 0.875rem; /* Adjust font size as needed */
+  margin-top: 0.25rem; /* Adjust margin as needed */
+}

@@ -11,9 +11,16 @@ import Slogan from "./Slogan";
 import SupportSystem from "./SupportSystem";
 import CommonNavbar from "../../CommonNavbar/CommonNavbar";
 import ScrollTrigger from "react-scroll-trigger";
+import LeadModal from "../../LeadModal/LeadModal";
 
 const Teacher = () => {
   const [viewState, setViewState] = React.useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
+
+  const handleModal = () => {
+    setModalShow(true);
+  }
+
   return (
     <>
       {viewState && <CommonNavbar />}
@@ -48,7 +55,7 @@ const Teacher = () => {
           <TeachInnovartan />
         </div>
         <div className={styles.benefits}>
-          <Benefits />
+          <Benefits handleModal={handleModal} />
         </div>
         <div className={styles.Slogan}>
           <Slogan />
@@ -61,6 +68,9 @@ const Teacher = () => {
         </div>
         <div className={styles.footer}>
           <Footer />
+        </div>
+        <div className={styles.LeadModal}>
+          <LeadModal show={modalShow} onHide={() => setModalShow(false)} />
         </div>
       </ScrollTrigger>
     </>

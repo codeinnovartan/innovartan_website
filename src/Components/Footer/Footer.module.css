@@ -82,6 +82,12 @@
   width: 100%;
 }
 
+.errorMessage {
+  color: red; /* Adjust color as needed */
+  font-size: 0.875rem; /* Adjust font size as needed */
+  margin-top: 0.25rem; /* Adjust margin as needed */
+}
+
 @media screen and (max-width: 1024px) {
   .FooterContainer {
     flex-direction: column;

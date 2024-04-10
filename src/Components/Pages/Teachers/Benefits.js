@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Benefits.module.css";
 import { Button } from "react-bootstrap";
 
-const Benefits = () => {
+const Benefits = ({handleModal}) => {
   const benefits = [
     "Upskilling opportunities for new teachers transitioning from B.Ed. programs.",
     "Specialised training for experienced teachers seeking PGT promotions.",
@@ -37,7 +37,7 @@ const Benefits = () => {
                   </li>
                 ))}
               </ul>
-              <Button variant="outline-light" className={styles.applyButton}>Apply Now</Button>
+              <Button variant="outline-light" className={styles.applyButton} onClick={handleModal}>Apply Now</Button>
             </div>
           </div>
         </div>

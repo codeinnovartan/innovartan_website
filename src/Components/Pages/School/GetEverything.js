@@ -2,21 +2,6 @@ import React from "react";
 import styles from "./GetEverything.module.css";
 import { Button } from "react-bootstrap";
 
-const ProgramCard = ({ title, description, features, buttonText }) => (
-  <div className={styles.programCard}>
-    <h3 className={styles.programTitle}>{title}</h3>
-    <p className={styles.programDescription}>{description}</p>
-    <ul className={styles.programFeatures}>
-      {features.map((feature, index) => (
-        <li key={index}>{feature}</li>
-      ))}
-    </ul>
-    <Button variant="outline-light" className={styles.programButton}>
-      {buttonText}
-    </Button>
-  </div>
-);
-
 const schoolPlusFeatures = [
   "Teacher training",
   "Monitoring & Support",
@@ -36,7 +21,25 @@ const schoolProFeatures = [
   "Extra-curriculars",
   "Funding & Governance",
 ];
-const GetEverything = () => {
+const GetEverything = ({ handleModal }) => {
+  const ProgramCard = ({ title, description, features, buttonText }) => (
+    <div className={styles.programCard}>
+      <h3 className={styles.programTitle}>{title}</h3>
+      <p className={styles.programDescription}>{description}</p>
+      <ul className={styles.programFeatures}>
+        {features.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+      <Button
+        variant="outline-light"
+        className={styles.programButton}
+        onClick={handleModal}
+      >
+        {buttonText}
+      </Button>
+    </div>
+  );
   return (
     <>
       <section className={styles.learningPrograms}>

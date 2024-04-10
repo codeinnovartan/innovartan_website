@@ -67,3 +67,20 @@ export const sendContactUs = async (formData) => {
   const data = await response.json();
   return data;
 };
+
+export const subscribeNewsletter = async (email) => {
+  const response = await fetch(
+    `${callingDomain}/api/mobile/affiliation/add-subscriber`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email_id: email,
+      }),
+    }
+  );
+  const data = await response.json();
+  return data;
+};

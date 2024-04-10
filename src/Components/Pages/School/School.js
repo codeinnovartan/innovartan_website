@@ -11,14 +11,20 @@ import Services from "./Services";
 import Slogan from "./Slogan";
 import CommonNavbar from "../../CommonNavbar/CommonNavbar";
 import ScrollTrigger from "react-scroll-trigger";
+import LeadModal from "../../LeadModal/LeadModal";
 
 const School = () => {
   const [viewState, setViewState] = React.useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
+
+  const handleModal = () => {
+    setModalShow(true);
+  }
   return (
     <div>
       {viewState && <CommonNavbar />}
       <div className={"helpsSchool"}>
-        <HelpSchool />
+        <HelpSchool handleModal={handleModal} />
       </div>
       <div className={"transformSchool"}>
         <TransformSchool />
@@ -27,30 +33,33 @@ const School = () => {
         onEnter={() => setViewState(true)}
         onExit={() => setViewState(false)}
       >
-      <div className={"whyUs"}>
-        <WhyUs />
-      </div>
-      <div className={"getEverything"}>
-        <GetEverything />
-      </div>
-      <div className={"MoreThanSchool"}>
-        <MoreThanSchool />
-      </div>
-      <div className={"EducationGap"}>
-        <EducationGap />
-      </div>
-      <div className={"Services"}>
-        <Services />
-      </div>
-      <div className={"Slogan"}>
-        <Slogan />
-      </div>
-      <div className={"Stats"}>
-        <Stats />
-      </div>
-      <div className={"Footer"}>
-        <Footer />
-      </div>
+        <div className={"whyUs"}>
+          <WhyUs />
+        </div>
+        <div className={"getEverything"}>
+          <GetEverything handleModal={handleModal} />
+        </div>
+        <div className={"MoreThanSchool"}>
+          <MoreThanSchool />
+        </div>
+        <div className={"EducationGap"}>
+          <EducationGap />
+        </div>
+        <div className={"Services"}>
+          <Services />
+        </div>
+        <div className={"Slogan"}>
+          <Slogan />
+        </div>
+        <div className={"Stats"}>
+          <Stats />
+        </div>
+        <div className={"Footer"}>
+          <Footer />
+        </div>
+        <div className={"LeadModal"}>
+          <LeadModal show={modalShow} onHide={() => setModalShow(false)} />
+        </div>
       </ScrollTrigger>
     </div>
   );

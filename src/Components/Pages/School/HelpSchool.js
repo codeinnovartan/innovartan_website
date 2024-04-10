@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./HelpSchool.module.css";
 import { Button } from "react-bootstrap";
 
-const HelpSchool = () => {
+const HelpSchool = ({handleModal}) => {
   return (
     <>
       <section className={styles.howInnovartanHelpsSchools}>
@@ -49,7 +49,7 @@ const HelpSchool = () => {
                   the world.
                   <br />
                 </p>
-                <Button variant="outline-warning" className={styles.ctaButton}>
+                <Button variant="outline-warning" className={styles.ctaButton} onClick={handleModal}>
                   Get Started Now
                 </Button>
               </div>

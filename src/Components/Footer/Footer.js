@@ -10,14 +10,43 @@ import FooterHeading from "./FooterComponents/FooterHeading";
 import FooterLink from "./FooterComponents/FooterLink";
 import FooterText from "./FooterComponents/FooterText";
 import classes from "./Footer.module.css";
+import { subscribeNewsletter } from "../Store/ApiCall";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+
   const handleChange = (event) => {
     setEmail(event.target.value);
+    setEmailError("");
   };
-  const hanldeSubmite = () => {
-    console.log(email);
+
+  const validateEmail = () => {
+    // Email validation regex
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.trim()) {
+      setEmailError("Email is required");
+    } else if (!regex.test(email)) {
+      setEmailError("Invalid email address");
+    } else {
+      return true;
+    }
+    return false;
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const isValid = validateEmail();
+    if (isValid) {
+      console.log(email);
+      const data = await subscribeNewsletter(email);
+      console.log(data);
+      if(data.statuscode === "200") {
+        setEmail("");
+        setEmailError("Subscribed Successfully");
+      }
+      // You can perform further actions like submitting the email to a server here
+    }
   };
   return (
     <div className={styles.outerComponent}>
@@ -36,15 +65,19 @@ const Footer = () => {
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
                 onChange={handleChange}
+                value={email}
               />
               <Button
                 variant="success"
                 id="button-addon2"
-                onClick={hanldeSubmite}
+                onClick={handleSubmit}
               >
                 Subscribe Now
               </Button>
             </InputGroup>
+            {emailError && (
+              <div className={styles.errorMessage}>{emailError}</div>
+            )}
           </div>
           <div className={styles.horizontalLine}></div>
         </div>

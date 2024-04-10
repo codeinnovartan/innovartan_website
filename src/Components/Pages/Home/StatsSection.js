@@ -25,7 +25,9 @@ const FeatureCard = ({ title, description, ctaText, imageSrc, altText }) => (
       <div className="feature-text">
         <h3 className="feature-title">{title}</h3>
         <p className="feature-description">{description}</p>
-        <Button variant="outline-primary" className="feature-cta">{ctaText}</Button>
+        <Button variant="outline-primary" className="feature-cta" onClick={() => {
+          window.location.href = "https://app.innovartan.com/signups";
+        }}>{ctaText}</Button>
       </div>
       <div className="feature-image">
         <img src={imageSrc} alt={altText} className="feature-img" />
