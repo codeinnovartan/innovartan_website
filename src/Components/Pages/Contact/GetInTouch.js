@@ -17,7 +17,7 @@ const contactData = [
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/8d362fb2e191304b7dee1786f653c20f2be10e9d758851c38b1cf82dc356a0df?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
     title: "Office Address",
-    description: "8th Floor, Riana Perito, Sector 136, Noida, 201304, UP",
+    description: "H-151, Basement, GIPL Tower, Sector 63, Noida, Uttar Pradesh, 201301.",
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/451d78e92779cc9fcc673e967866919aebdfdb2abbab0b58b92115c0fa8f49d4?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
@@ -27,7 +27,7 @@ const contactData = [
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/ab979ad0603d95949b0902f90c01d1db52f877b50858e920532ad69c63444f8b?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
     title: "Send email",
-    description: "help@innovartan.com",
+    description: "info@innovartan.com",
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/3169d0e0d4b8867e1969797de7fe6a464b888e0f892f5ae486917d0eede419c9?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",

@@ -106,7 +106,7 @@
 }
 #navbar li a:hover,
 #navbar li a.active {
-  color: #0D4BA5;
+  color: #0d4ba5;
 }
 
 #navbar li a:hover::after,
@@ -114,7 +114,7 @@
   content: "";
   width: 30%;
   height: 2px;
-  background: #0D4BA5;
+  background: #0d4ba5;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -127,6 +127,13 @@
 #mobile i {
   color: #fff;
   align-items: center;
+}
+
+.ourServices {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
 }
 
 @media screen and (max-width: 908px) {

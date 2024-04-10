@@ -24,16 +24,40 @@ const CommonNavbar = () => {
       <div>
         <ul id="navbar" className={clicked ? "#navbar active" : "#navbar"}>
           <li onClick={handleClick}>
-            <Link to="/">Home</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                handleClick();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Home
+            </Link>
           </li>
           <li onClick={handleClick}>
-            <Link to="/about">About</Link>
+            <Link
+              to="/about"
+              onClick={() => {
+                handleClick();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              About
+            </Link>
           </li>
           {/* <li onClick={handleClick}>
                   <a href="/">Blog</a>
                 </li> */}
           <li onClick={handleClick}>
-            <Link to="/contact">Contact</Link>
+            <Link
+              to="/contact"
+              onClick={() => {
+                handleClick();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Contact
+            </Link>
           </li>
           <Dropdown className="navbarDropdown">
             <Dropdown.Toggle className="ourServices">
