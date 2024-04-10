@@ -1,23 +1,13 @@
 import React from "react";
 import { Image } from "react-bootstrap";
+import styles from "./IntroductionCard.module.css";
 
 const IntroductionCard = ({ image, heading, para }) => {
   return (
-    <div
-      style={{
-        boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-        display: "flex",
-        padding: "20px",
-        width: "320px",
-        height: "150px",
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: "50px",
-      }}
-    >
+    <div className={styles.box}>
       <Image
         src={image}
-        style={{ width: "70px", height: "70px", marginRight: "20px" }}
+        style={{ objectFit: "contain", width: "50%", height: "70%" }}
       />
       <div>
         <h1 style={{ fontSize: "16px", fontWeight: 600 }}>{heading}</h1>

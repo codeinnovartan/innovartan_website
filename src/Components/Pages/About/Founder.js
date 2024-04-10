@@ -14,7 +14,7 @@ function FounderImage() {
       <p className={styles.founderTitle}>
         Founder <br />
         <span className={styles.companyName}>
-          I<span>nn</span>ovartan
+          I<span style={{color: '#F56520'}}>nn</span>ovartan
         </span>
       </p>
     </div>
@@ -32,7 +32,7 @@ function FounderBio() {
       />
       <div className={styles.founderBio}>
         <span className={styles.founderName}>Prashant Sharma</span>, the founder
-        of <span className={styles.companyName}>INNOVARTAN</span> has been a
+        of <span style={{fontWeight: 700}}>INNOVARTAN</span> has been a
         dedicated teacher for over fifteen years, guiding thousands of students
         for competitive exams like IIT JEE and NEET. The idea of Innovartan was
         born from a dream where he realized that he was limiting his impact by

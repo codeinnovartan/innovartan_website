@@ -21,7 +21,7 @@ const contactData = [
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/451d78e92779cc9fcc673e967866919aebdfdb2abbab0b58b92115c0fa8f49d4?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
-    title: "Phone number",
+    title: "Phone Number",
     description: "+91 9319888781",
   },
   {
@@ -31,7 +31,7 @@ const contactData = [
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/3169d0e0d4b8867e1969797de7fe6a464b888e0f892f5ae486917d0eede419c9?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
-    title: "Our website",
+    title: "Our Website",
     description: "www.innovartan.com",
   },
 ];
@@ -45,11 +45,20 @@ const GetInTouch = () => {
             We're Always Eager To Hear From You!
           </h1>
           <div className={styles.contactContent}>
-            <div className={styles.contactImageContainer}>
+            <div
+              className={styles.contactImageContainer}
+              onClick={() => {
+                window.open("https://maps.app.goo.gl/HxRyxRnNo4GGUyAdA", "_blank");
+              }}
+            >
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/4567acbd929c299660501fd2c20ca68277bb818afdc04dbea6140821cf865ea4?apiKey=65c3b0a390fd4311b72fcd91fc18e875&"
+                src="Images/Asserts/map1.png"
                 alt="Contact us"
                 className={styles.contactImage}
+                // onClick={() => {
+                //   window.location.href =
+                //     "https://maps.app.goo.gl/HxRyxRnNo4GGUyAdA";
+                // }}
               />
             </div>
             <div className={styles.contactInfoContainer}>

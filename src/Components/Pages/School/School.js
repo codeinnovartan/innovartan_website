@@ -9,16 +9,24 @@ import Stats from "../Home/StatsSection";
 import Footer from "../../Footer/Footer";
 import Services from "./Services";
 import Slogan from "./Slogan";
+import CommonNavbar from "../../CommonNavbar/CommonNavbar";
+import ScrollTrigger from "react-scroll-trigger";
 
 const School = () => {
+  const [viewState, setViewState] = React.useState(false);
   return (
     <div>
+      {viewState && <CommonNavbar />}
       <div className={"helpsSchool"}>
         <HelpSchool />
       </div>
       <div className={"transformSchool"}>
         <TransformSchool />
       </div>
+      <ScrollTrigger
+        onEnter={() => setViewState(true)}
+        onExit={() => setViewState(false)}
+      >
       <div className={"whyUs"}>
         <WhyUs />
       </div>
@@ -43,6 +51,7 @@ const School = () => {
       <div className={"Footer"}>
         <Footer />
       </div>
+      </ScrollTrigger>
     </div>
   );
 };

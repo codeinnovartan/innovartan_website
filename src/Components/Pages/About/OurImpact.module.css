@@ -1,10 +1,11 @@
 .impactSection {
   background-color: #002147;
+  /* padding: 50px 100px; */
 }
 
 .impactContainer {
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 @media (max-width: 1024px) {
@@ -38,7 +39,7 @@
   font-weight: 700;
   justify-content: center;
   width: 100%;
-  padding: 80px 60px;
+  padding: 45px 60px;
 }
 
 @media (max-width: 1024px) {
@@ -64,6 +65,7 @@
 
 .impactHighlightTitle {
   font: 40px/130% Barlow, sans-serif;
+  font-weight: 700;
 }
 
 .impactHighlightCta {
@@ -88,10 +90,10 @@
   font-family: Barlow, sans-serif;
   justify-content: center;
   align-items: start;
-  border-radius: 4px;
-  background-color: #fff;
   margin-top: 26px;
-  padding: 16px 30px;
+  padding: 10px 20px !important;
+  border-width: 2px !important;
+  font-weight: 700 !important;
 }
 
 @media (max-width: 1024px) {
@@ -118,7 +120,7 @@
   background-color: #fff;
   display: flex;
   width: 90%;
-  height: 65%;
+  height: 60%;
   flex-direction: column;
   margin: auto;
   padding: 25px 21px 74px;

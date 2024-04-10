@@ -9,10 +9,14 @@ import StatsSection from "../Home/StatsSection";
 import Footer from "../../Footer/Footer";
 import Slogan from "./Slogan";
 import SupportSystem from "./SupportSystem";
+import CommonNavbar from "../../CommonNavbar/CommonNavbar";
+import ScrollTrigger from "react-scroll-trigger";
 
 const Teacher = () => {
+  const [viewState, setViewState] = React.useState(false);
   return (
     <>
+      {viewState && <CommonNavbar />}
       <div className={styles.introduction}>
         <IntroductionSwiper />
       </div>
@@ -36,24 +40,29 @@ const Teacher = () => {
       <div className={styles.whyInnovartan}>
         <WhyInnovartan />
       </div>
-      <div className={styles.techInnovartan}>
-        <TeachInnovartan />
-      </div>
-      <div className={styles.benefits}>
-        <Benefits />
-      </div>
-      <div className={styles.Slogan}>
-        <Slogan />
-      </div>
-      <div className={styles.SupportSystem}>
-        <SupportSystem />
-      </div>
-      <div className={styles.stats}>
-        <StatsSection />
-      </div>
-      <div className={styles.footer}>
-        <Footer />
-      </div>
+      <ScrollTrigger
+        onEnter={() => setViewState(true)}
+        onExit={() => setViewState(false)}
+      >
+        <div className={styles.techInnovartan}>
+          <TeachInnovartan />
+        </div>
+        <div className={styles.benefits}>
+          <Benefits />
+        </div>
+        <div className={styles.Slogan}>
+          <Slogan />
+        </div>
+        <div className={styles.SupportSystem}>
+          <SupportSystem />
+        </div>
+        <div className={styles.stats}>
+          <StatsSection />
+        </div>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
+      </ScrollTrigger>
     </>
   );
 };

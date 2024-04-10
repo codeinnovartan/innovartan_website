@@ -9,10 +9,14 @@ import EducatorSwiper from "./EducatorSwiper";
 import StatsSection from "./StatsSection";
 import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
+import ScrollTrigger from "react-scroll-trigger";
+import CommonNavbar from "../../CommonNavbar/CommonNavbar";
 
 const Home = () => {
+  const [viewState, setViewState] = React.useState(false);
   return (
     <div className={styles.outerContainer}>
+      {viewState && <CommonNavbar />}
       <div className={styles.schoolContainer}>
         <div className={styles.slideTrack}>
           <Image
@@ -173,34 +177,19 @@ const Home = () => {
             education that equips students for success in the rapidly evolving
             world..
           </p>
-          <Button variant="outline-success" className={styles.backToSchoolButton}>
+          <Button
+            variant="outline-success"
+            className={styles.backToSchoolButton}
+          >
             Know More
           </Button>
         </div>
       </div>
-      <div className={styles.coursesContainer}>
-        <p
-          style={{
-            fontSize: 18,
-            letterSpacing: 5,
-            color: "#F16126",
-          }}
-        >
-          FEATURED COURSES
-        </p>
-        <h1>Programs You Can Pursue</h1>
-        <div className={styles.swiperContainer}>
-          <CourseSwiper />
-        </div>
-      </div>
-      <div className={styles.aboutContainer}>
-        <div className={styles.aboutContainerDiv1}>
-          <Image
-            src="Images/Asserts/about_girl.png"
-            className={styles.aboutContainerDiv1Image}
-          />
-        </div>
-        <div className={styles.aboutContainerDiv2}>
+      <ScrollTrigger
+        onEnter={() => setViewState(true)}
+        onExit={() => setViewState(false)}
+      >
+        <div className={styles.coursesContainer}>
           <p
             style={{
               fontSize: 18,
@@ -208,53 +197,75 @@ const Home = () => {
               color: "#F16126",
             }}
           >
-            About Innovartan
+            FEATURED COURSES
           </p>
-          <h2>Empowering Educators, Enriching Education</h2>
-          <p className={styles.aboutContainerDiv2text}>
-            Enriching education begins with empowered educators. Our platform
-            provides invaluable support and resources designed to enhance
-            teaching practices and improve the classroom experience.{" "}
+          <h1>Programs You Can Pursue</h1>
+          <div className={styles.swiperContainer}>
+            <CourseSwiper />
+          </div>
+        </div>
+        <div className={styles.aboutContainer}>
+          <div className={styles.aboutContainerDiv1}>
+            <Image
+              src="Images/Asserts/about_girl.png"
+              className={styles.aboutContainerDiv1Image}
+            />
+          </div>
+          <div className={styles.aboutContainerDiv2}>
+            <p
+              style={{
+                fontSize: 18,
+                letterSpacing: 5,
+                color: "#F16126",
+              }}
+            >
+              About Innovartan
+            </p>
+            <h2>Empowering Educators, Enriching Education</h2>
+            <p className={styles.aboutContainerDiv2text}>
+              Enriching education begins with empowered educators. Our platform
+              provides invaluable support and resources designed to enhance
+              teaching practices and improve the classroom experience.{" "}
+            </p>
+            <AboutCard
+              url={"Images/Asserts/about_teacher.png"}
+              heading={"For Teachers"}
+              text={
+                "At Innovartan Learning Solutions, we’re dedicated to transforming education. Our platform offers a multitude of benefits for teachers– empowering both newcomers and experienced educators to excel in their roles."
+              }
+            />
+            <AboutCard
+              url={"Images/Asserts/about_school.png"}
+              heading={"For Schools"}
+              text={
+                "Innovartan is revolutionising the educational landscape by offering comprehensive support to schools, ensuring that they are equipped with the tools and resources needed to excel."
+              }
+            />
+            <AboutCard
+              url={"Images/Asserts/about_student.png"}
+              heading={"For Students & Parents"}
+              text={
+                "At Innovartan, we are dedicated to enhancing the educational journey of students and parents alike by providing comprehensive resources and support."
+              }
+            />
+          </div>
+        </div>
+        <div className={styles.coursesContainer}>
+          <p
+            style={{
+              fontSize: 18,
+              letterSpacing: 5,
+              color: "#F16126",
+            }}
+          >
+            WORLD-CLASS EDUCATORS
           </p>
-          <AboutCard
-            url={"Images/Asserts/about_teacher.png"}
-            heading={"For Teachers"}
-            text={
-              "At Innovartan Learning Solutions, we’re dedicated to transforming education. Our platform offers a multitude of benefits for teachers– empowering both newcomers and experienced educators to excel in their roles."
-            }
-          />
-          <AboutCard
-            url={"Images/Asserts/about_school.png"}
-            heading={"For Schools"}
-            text={
-              "Innovartan is revolutionising the educational landscape by offering comprehensive support to schools, ensuring that they are equipped with the tools and resources needed to excel."
-            }
-          />
-          <AboutCard
-            url={"Images/Asserts/about_student.png"}
-            heading={"For Students & Parents"}
-            text={
-              "At Innovartan, we are dedicated to enhancing the educational journey of students and parents alike by providing comprehensive resources and support."
-            }
-          />
+          <h1>Classes Taught By Experienced Professionals</h1>
+          <div className={styles.swiperContainer}>
+            <EducatorSwiper />
+          </div>
         </div>
-      </div>
-      <div className={styles.coursesContainer}>
-        <p
-          style={{
-            fontSize: 18,
-            letterSpacing: 5,
-            color: "#F16126",
-          }}
-        >
-          WORLD-CLASS EDUCATORS
-        </p>
-        <h1>Classes Taught By Experienced Professionals</h1>
-        <div className={styles.swiperContainer}>
-          <EducatorSwiper />
-        </div>
-      </div>
-      {/* <div className={styles.coursesContainer}>
+        {/* <div className={styles.coursesContainer}>
         <p
           style={{
             fontSize: 20,
@@ -269,12 +280,13 @@ const Home = () => {
           <BlogSwiper />
         </div>
       </div> */}
-      <div className={styles.statsSection}>
-        <StatsSection />
-      </div>
-      <div className={styles.footer}>
-        <Footer />
-      </div>
+        <div className={styles.statsSection}>
+          <StatsSection />
+        </div>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
+      </ScrollTrigger>
     </div>
   );
 };

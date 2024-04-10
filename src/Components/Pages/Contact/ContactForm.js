@@ -91,7 +91,7 @@ const ContactForm = () => {
               onChange={handleChange}
             />
           </Form.Group>
-          <Button onClick={handleSubmite} className={styles.submitButton}>
+          <Button onClick={handleSubmite} variant='outline-warning' className={styles.submitButton}>
             Send Your Message
           </Button>
         </Form>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./EducationSolution.module.css";
+import { Button } from "react-bootstrap";
 
 const EducationSolution = () => {
   const academicIntegrationData = {
@@ -77,10 +78,17 @@ function FeatureCard({ imageSrc, title, viewMoreText }) {
   return (
     <div className={styles.featureCard}>
       <div className={styles.featureHeader}>
-        <img src={imageSrc} alt="" className={styles.featureIcon} loading="lazy" />
+        <img
+          src={imageSrc}
+          alt=""
+          className={styles.featureIcon}
+          loading="lazy"
+        />
         <div className={styles.featureTitle}>{title}</div>
       </div>
-      <div className={styles.viewMoreLink}>{viewMoreText}</div>
+      <Button variant="outline-secondary" className={styles.viewMoreLink}>
+        {viewMoreText}
+      </Button>
     </div>
   );
 }

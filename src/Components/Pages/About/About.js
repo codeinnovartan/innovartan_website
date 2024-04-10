@@ -7,10 +7,14 @@ import Founder from "./Founder";
 import OurImpact from "./OurImpact";
 import StatsSection from "../Home/StatsSection";
 import Footer from "../../Footer/Footer";
+import CommonNavbar from "../../CommonNavbar/CommonNavbar";
+import ScrollTrigger from "react-scroll-trigger";
 
 const About = () => {
+  const [viewState, setViewState] = React.useState(false);
   return (
     <div>
+      {viewState && <CommonNavbar />}
       <div className={styles.about}>
         <div className={styles.aboutdiv1}>
           <Image
@@ -53,9 +57,12 @@ const About = () => {
             evolve together while staying competitive with the changing
             educational landscape.
           </p>
-          <Button variant="outline-secondary" className={styles.aboutButton}>Read More</Button>
+          <Button variant="outline-secondary" className={styles.aboutButton}>
+            Read More
+          </Button>
         </div>
       </div>
+
       <div className={styles.aboutOurInnovartan}>
         <div className={styles.aboutOurInnovartandiv1}>
           <Image
@@ -101,21 +108,26 @@ const About = () => {
           />
         </div>
       </div>
-      <div className={styles.OurMission}>
-        <OurMission />
-      </div>
-      <div className={styles.founderContainer}>
-        <Founder />
-      </div>
-      <div className={styles.ourImpact}>
-        <OurImpact />
-      </div>
-      <div className={styles.statsSection}>
-        <StatsSection />
-      </div>
-      <div className={styles.footerSection}>
-        <Footer />
-      </div>
+      <ScrollTrigger
+        onEnter={() => setViewState(true)}
+        onExit={() => setViewState(false)}
+      >
+        <div className={styles.OurMission}>
+          <OurMission />
+        </div>
+        <div className={styles.founderContainer}>
+          <Founder />
+        </div>
+        <div className={styles.ourImpact}>
+          <OurImpact />
+        </div>
+        <div className={styles.statsSection}>
+          <StatsSection />
+        </div>
+        <div className={styles.footerSection}>
+          <Footer />
+        </div>
+      </ScrollTrigger>
     </div>
   );
 };

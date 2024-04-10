@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./SupportSystem.module.css";
+import { Button } from "react-bootstrap";
 
 const guidanceData = [
   {
@@ -42,7 +43,7 @@ const SupportSystem = () => {
             />
           ))}
         </div>
-        <button className={styles.applyButton}>Apply Now</button>
+        <Button variant="outline-secondary" className={styles.applyButton}>Apply Now</Button>
       </div>
     </section>
   );

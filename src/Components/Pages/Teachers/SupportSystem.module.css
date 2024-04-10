@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 65px 60px;
+    padding: 50px 100px;
   }
 
   @media (max-width: 991px) {
@@ -91,15 +91,10 @@
 
   .applyButton {
     justify-content: center;
-    border-radius: 4px;
-    background-color: #fff;
     margin-top: 46px;
-    color: #101115;
-    padding: 15px 31px;
-    font: 700 16px/150% Barlow, -apple-system, Roboto, Helvetica,
-      sans-serif;
-    border: none;
-    cursor: pointer;
+    padding: 10px 20px !important;
+    border-width: 2px !important;
+    font-weight: 700 !important;
   }
 
   @media (max-width: 991px) {

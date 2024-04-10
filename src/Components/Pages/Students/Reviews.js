@@ -48,7 +48,7 @@ const Reviews = () => {
     <>
       <section className={styles.reviewsSection}>
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/80a4449cb4645d16648a5fa58d507d7f582df14d74778349604cd63f1b208f19?apiKey=65c3b0a390fd4311b72fcd91fc18e875&"
+          src="Images/Asserts/student2.jpg"
           alt=""
           className={styles.backgroundImage}
         />
