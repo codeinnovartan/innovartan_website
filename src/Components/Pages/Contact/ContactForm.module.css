@@ -77,6 +77,13 @@
   font-weight: 400;
 }
 
+.successMessage{
+  color: #28a745; /* Green color for success message */
+  font-size: 0.875rem; /* Adjust font size as needed */
+  margin-top: 0.25rem; /* Adjust margin as needed */
+
+}
+
 @media (max-width: 991px) {
   .formTitle {
     max-width: 100%;

@@ -117,6 +117,7 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -144,9 +145,6 @@ const ContactForm = () => {
     if (!formData.subject.trim()) {
       newErrors.subject = "Subject is required";
     }
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
 
     setErrors(newErrors);
     // Return true if there are no errors
@@ -160,6 +158,9 @@ const ContactForm = () => {
       console.log(formData);
       const response = await sendContactUs(formData);
       console.log(response);
+      if (response.statuscode === "200") {
+        setFormSubmitted(true);
+      }
       // You can perform further actions like submitting the form data to a server here
     }
   };
@@ -262,6 +263,11 @@ const ContactForm = () => {
         >
           Send Your Message
         </Button>
+        {formSubmitted && (
+          <div className={styles.successMessage}>
+            Your message has been sent successfully
+          </div>
+        )}
       </Form>
     </div>
   );
