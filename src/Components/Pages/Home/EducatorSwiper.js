@@ -64,16 +64,6 @@ const EducatorSwiper = () => {
         </SwiperSlide>
         <SwiperSlide style={{ width: "200px" }}>
           <EducatorSwiperCard
-            courses={"13"}
-            image={"Images/Asserts/educator3.png"}
-            name={"Sweety Nahata"}
-            rating={"4.8"}
-            students={"161"}
-            subtitile={"13+ years of academic"}
-          />
-        </SwiperSlide>
-        <SwiperSlide style={{ width: "200px" }}>
-          <EducatorSwiperCard
             courses={"09"}
             image={"Images/Asserts/educator4.png"}
             name={"Dr. Sachin Kapur"}
