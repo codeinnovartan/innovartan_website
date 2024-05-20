@@ -28,9 +28,9 @@ const FeatureCard = ({ title, description, ctaText, imageSrc, altText }) => (
         <Button
           variant="outline-primary"
           className="feature-cta"
-          onClick={() => {
-            window.location.href = "https://app.innovartan.com/signups";
-          }}
+          onClick={() =>
+            window.open("https://app.innovartan.com/signups", "_blank")
+          }
         >
           {ctaText}
         </Button>
