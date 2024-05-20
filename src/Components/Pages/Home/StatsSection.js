@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import "./StatsSection.css";
 import CountUp from "react-countup";
@@ -44,6 +44,10 @@ const FeatureCard = ({ title, description, ctaText, imageSrc, altText }) => (
 const StatsSection = () => {
   const [counterState, setCounterState] = useState(false);
 
+  useEffect(() => {
+    setCounterState(false); // Reset the state on mount
+  }, []);
+
   const StatItem = ({ number, description }) => (
     <div className="stat-item">
       <div className="stat-number">
@@ -54,6 +58,7 @@ const StatsSection = () => {
           onExit={() => {
             setCounterState(false);
           }}
+          resetOnUnmount={true}
         >
           {counterState && <CountUp end={number} duration={5} />}+
         </ScrollTrigger>
