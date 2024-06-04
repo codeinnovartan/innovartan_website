@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./EducationSolution.module.css";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 const EducationSolution = () => {
   const academicIntegrationData = {
@@ -86,9 +86,9 @@ function FeatureCard({ imageSrc, title, viewMoreText }) {
         />
         <div className={styles.featureTitle}>{title}</div>
       </div>
-      <Button variant="outline-secondary" className={styles.viewMoreLink}>
+      {/* <Button variant="outline-secondary" className={styles.viewMoreLink}>
         {viewMoreText}
-      </Button>
+      </Button> */}
     </div>
   );
 }

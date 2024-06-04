@@ -33,7 +33,8 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 50vh;
+  /* height: 50vh; */
+  height: 7vh;
   transition: background-image 1s ease-in-out;
 }
 
@@ -141,7 +142,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 30vh;
+    height: 7vh;
     transition: background-image 1s ease-in-out;
   }
 
@@ -211,7 +212,7 @@
   .outer-container {
     background-size: 100% 100%;
     background-position: center;
-    height: 70vh;
+    height: 60vh;
   }
   .outer-container1 h2 {
     text-align: center;

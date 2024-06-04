@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Services.module.css";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 const services = [
   "Teacher Training",
@@ -31,7 +31,7 @@ const Services = () => {
           <ServiceItem key={index} service={service} />
         ))}
       </ul>
-      <Button variant="outline-warning" className={styles.registerButton}>Register Now</Button>
+      {/* <Button variant="outline-warning" className={styles.registerButton}>Register Now</Button> */}
     </section>
   );
 };

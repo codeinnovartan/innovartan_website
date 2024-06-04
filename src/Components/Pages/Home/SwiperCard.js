@@ -126,7 +126,7 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
           />
           <p style={{ fontSize: "18px", fontWeight: 500 }}>{facultyname}</p>
         </div>
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "row",
@@ -140,7 +140,7 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
             className="fa-solid fa-arrow-up-right-from-square"
             style={{ marginTop: "5px", color: "#F16126" }}
           ></i>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -28,11 +28,11 @@ const MoreThanSchool = () => {
           Take courses on your any device with our app & learn all time what you{" "}
           <br /> want. Just download & install & start to learn
         </p>
-        <img
+        {/* <img
           src="Images/Asserts/forSchoolMap.png"
           alt=""
           className={styles.backgroundImage}
-        />
+        /> */}
       </section>
     </>
   );

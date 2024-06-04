@@ -18,7 +18,7 @@ function NavBar1({ heading, subHeading, children }) {
           backgroundImage: "url(Images/Asserts/navbar-student3.png)",
         }}
       >
-        <div className="info">
+        {/* <div className="info">
           <div style={{ display: "flex", paddingTop: 10 }}>
             <div style={{ marginRight: 10 }}>
               <i className="fa-solid fa-phone" style={{ color: "#555555" }}></i>
@@ -68,7 +68,7 @@ function NavBar1({ heading, subHeading, children }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="outerNavbar">
           <a href="/">
             <img
@@ -155,8 +155,8 @@ function NavBar1({ heading, subHeading, children }) {
             ></i>
           </div>
         </div>
-        <h2>{heading}</h2>
-        <p>{subHeading}</p>
+        {/* <h2>{heading}</h2>
+        <p>{subHeading}</p> */}
       </div>
       <div>{children}</div>
     </div>

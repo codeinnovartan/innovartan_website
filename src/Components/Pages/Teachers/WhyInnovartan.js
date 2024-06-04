@@ -65,12 +65,12 @@ const WhyInnovartan = () => {
                   <div className={styles.underlineLong} />
                   <div className={styles.underlineShort} />
                 </div>
-                <p className={styles.sectionDescription}>
+                {/* <p className={styles.sectionDescription}>
                   Discourse assurance estimable applauded to so. Him everything
                   melancholy uncommonly but solicitude inhabiting
                   <br /> projection off. Connection stimulated estimating
                   excellence an to impression.
-                </p>
+                </p> */}
               </div>
               {features.map((feature, index) => (
                 <FeatureItem key={index} {...feature} />

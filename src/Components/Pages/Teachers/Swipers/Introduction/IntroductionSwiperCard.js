@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IntroductionSwiperCard.module.css";
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 const IntroductionSwiperCard = ({ image, heading, para1, para2 }) => {
   return (
@@ -9,19 +9,19 @@ const IntroductionSwiperCard = ({ image, heading, para1, para2 }) => {
         <Image src={image} className={styles.aboutdiv1image1} />
       </div>
       <div className={styles.aboutdiv2}>
-        <p
+        {/* <p
           style={{
             fontSize: 18,
           }}
         >
           INTRODUCTION
-        </p>
+        </p> */}
         <h1>{heading}</h1>
         <p className={styles.aboutdiv2text}>{para1}</p>
         <p className={styles.aboutdiv2text}>{para2}</p>
-        <Button variant="outline-secondary" className={styles.aboutButton}>
+        {/* <Button variant="outline-secondary" className={styles.aboutButton}>
           Read More
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

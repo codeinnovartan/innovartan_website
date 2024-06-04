@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./OurImpact.module.css";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 const ImpactCard = ({ imageSrc, title, description }) => (
   <div className={styles.impactCard}>
@@ -51,7 +51,7 @@ const OurImpact = () => {
                     alt="Know More"
                     className={styles.impactHighlightImage}
                   />
-                  <Button variant="outline-light" className={styles.impactHighlightButton}>Know More</Button>
+                  {/* <Button variant="outline-light" className={styles.impactHighlightButton}>Know More</Button> */}
                 </div>
               </div>
             </div>

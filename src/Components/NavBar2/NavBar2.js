@@ -17,7 +17,7 @@ const NavBar2 = ({ children }) => {
           backgroundImage: "url(Images/Asserts/schoolBg.png)",
         }}
       >
-        <div className="info">
+        {/* <div className="info">
           <div style={{ display: "flex", paddingTop: 10 }}>
             <div style={{ marginRight: 10 }}>
               <i className="fa-solid fa-phone" style={{ color: "#555555" }}></i>
@@ -67,7 +67,7 @@ const NavBar2 = ({ children }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="outerNavbar">
           <a href="/">
             <img

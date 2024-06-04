@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./EducationGap.module.css";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 const EducationGap = () => {
   return (
@@ -47,9 +47,9 @@ const EducationGap = () => {
                 benefiting from the supportive and nurturing environment of
                 their school community.
               </p>
-              <Button variant="outline-light" className={styles.applyButton}>
+              {/* <Button variant="outline-light" className={styles.applyButton}>
                 Get In Touch
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

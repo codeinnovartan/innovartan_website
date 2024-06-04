@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TransformSchool.module.css";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 const CustomizedSupportCard = ({ imageSrc, title, subtitle, description }) => (
   <div className={styles.card}>
@@ -8,7 +8,7 @@ const CustomizedSupportCard = ({ imageSrc, title, subtitle, description }) => (
     <div className={styles.cardTitle}>{title}</div>
     <div className={styles.cardSubtitle}>{subtitle}</div>
     <div className={styles.cardDescription}>{description}</div>
-    <Button variant="outline-warning" className={styles.cardButton}>Read More</Button>
+    {/* <Button variant="outline-warning" className={styles.cardButton}>Read More</Button> */}
   </div>
 );
 

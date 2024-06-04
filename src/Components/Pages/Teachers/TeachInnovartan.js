@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TeachInnovartan.module.css";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 const insightsData = [
   {
@@ -64,9 +64,9 @@ const TeachInnovartan = () => {
               ))}
             </div>
           </div>
-          <Button variant="outline-warning" className={styles.ctaButton}>
+          {/* <Button variant="outline-warning" className={styles.ctaButton}>
             Know More
-          </Button>
+          </Button> */}
         </div>
       </section>
     </>

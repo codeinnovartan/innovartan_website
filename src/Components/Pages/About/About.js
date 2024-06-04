@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import AboutCard from "../Home/AboutCard";
 import OurMission from "./OurMission";
 import Founder from "./Founder";
@@ -23,13 +23,13 @@ const About = () => {
           />
         </div>
         <div className={styles.aboutdiv2}>
-          <p
+          {/* <p
             style={{
               fontSize: 18,
             }}
           >
             INTRODUCTION
-          </p>
+          </p> */}
           <h1>About Innovartan</h1>
           <p className={styles.aboutdiv2text}>
             Innovartan Learning Solutions Pvt. Ltd. was founded in 2023 by a
@@ -57,9 +57,9 @@ const About = () => {
             evolve together while staying competitive with the changing
             educational landscape.
           </p>
-          <Button variant="outline-secondary" className={styles.aboutButton}>
+          {/* <Button variant="outline-secondary" className={styles.aboutButton}>
             Read More
-          </Button>
+          </Button> */}
         </div>
       </div>
 
@@ -75,7 +75,7 @@ const About = () => {
           />
         </div>
         <div className={styles.aboutOurInnovartandiv2}>
-          <p
+          {/* <p
             style={{
               fontSize: 18,
               letterSpacing: 5,
@@ -83,7 +83,7 @@ const About = () => {
             }}
           >
             ABOUT OUR INNOVARTAN
-          </p>
+          </p> */}
           <h1>Transforming Education with Modern Teaching Strategies</h1>
           <AboutCard
             url={"Images/Asserts/about-image3.svg"}

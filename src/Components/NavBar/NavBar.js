@@ -37,7 +37,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
             }`,
           }}
         >
-          <div className="info">
+          {/* <div className="info">
             <div style={{ display: "flex", paddingTop: 10 }}>
               <div style={{ marginRight: 10 }}>
                 <i
@@ -90,7 +90,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="outerNavbar">
             <a href="/">
               <img

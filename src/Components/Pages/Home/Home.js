@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import CategoryIcon from "./CategoryIcon";
 import CourseSwiper from "./CourseSwiper";
 import AboutCard from "./AboutCard";
@@ -89,12 +89,12 @@ const Home = () => {
           with cutting-edge learning solutions that inspire, engage, and
           transform.
         </p>
-        <Button
+        {/* <Button
           variant="outline-warning"
           className={styles.popularCategoryButton}
         >
           Know More
-        </Button>
+        </Button> */}
         <div className={styles.categoryIconContainer}>
           <Link
             style={{ textDecoration: "none", color: "black" }}
@@ -177,12 +177,12 @@ const Home = () => {
             education that equips students for success in the rapidly evolving
             world..
           </p>
-          <Button
+          {/* <Button
             variant="outline-success"
             className={styles.backToSchoolButton}
           >
             Know More
-          </Button>
+          </Button> */}
         </div>
       </div>
       <ScrollTrigger

@@ -19,7 +19,7 @@ const Teacher = () => {
 
   const handleModal = () => {
     setModalShow(true);
-  }
+  };
 
   return (
     <>
@@ -31,17 +31,17 @@ const Teacher = () => {
         <IntroductionCard
           heading={"SKILL ENHANCEMENT"}
           image={"Images/Asserts/introduction1.png"}
-          para={"Read More"}
+          // para={"Read More"}
         />
         <IntroductionCard
           heading={"SPECIALISED TRAINING"}
           image={"Images/Asserts/introduction2.png"}
-          para={"Read More"}
+          // para={"Read More"}
         />
         <IntroductionCard
           heading={"STAY UPDATED"}
           image={"Images/Asserts/introduction3.png"}
-          para={"Read More"}
+          // para={"Read More"}
         />
       </div>
       <div className={styles.whyInnovartan}>
