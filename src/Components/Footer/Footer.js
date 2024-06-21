@@ -41,7 +41,7 @@ const Footer = () => {
       console.log(email);
       const data = await subscribeNewsletter(email);
       console.log(data);
-      if(data.statuscode === "200") {
+      if (data.statuscode === "200") {
         setEmail("");
         setEmailError("Subscribed Successfully");
       }
@@ -115,7 +115,12 @@ const Footer = () => {
           <div className={classes.row2}>
             <div className={classes.col1}>
               <FooterHeading heading={"Download App"} />
-              <FooterLink hrefLink={"/"} text={"Play Store"} />
+              <FooterLink
+                hrefLink={
+                  "https://drive.google.com/file/d/1DynDfy-ujF8YocLhGnifWvJsHMQNGXyK/view?usp=drive_link"
+                }
+                text={"Play Store"}
+              />
               <FooterLink hrefLink={"/"} text={"App Store"} />
             </div>
             <div className={classes.col2}>
