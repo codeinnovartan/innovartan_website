@@ -20,27 +20,24 @@ const Reviews = () => {
   const reviews = [
     {
       review:
-        "Dynamically impact tactical methods of empowerment through ubiquitous methodologies. Global utilize robust services without integrated process improvements. Completely leverage existing niche markets via exceptional leadership skills.",
-      name: "Rajib Raj",
-      title: "Assistant principal",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/10890c0954b0853a4519a09eb8e69784c59214b9051f2a7a4f999c384c2dffb2?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
+        "Thank you for a great course. This program was really helpful to me. It helped me understand the concepts well. Their experienced teachers and doubt-clearing classes enhanced my learning ability. I loved the interactive sessions. I would recommend this program to all my friends.",
+      name: "Ipshita Gupta",
+      title: "Class 10",
+      image: "Images/Asserts/studentReview2.jpeg",
     },
     {
       review:
-        "Dynamically impact tactical methods of empowerment through ubiquitous methodologies. Global utilize robust services without integrated process improvements. Completely leverage existing niche markets via exceptional leadership skills.",
-      name: "Ritika Bhat",
-      title: "Assistant principal",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/8532a3d9e42b7d2a967a338ce050098615a5d3c76e5aa9a92f583882de4a11c2?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
+        "The Gantavya program has been an immaculate initiative taken up by the DPSG Society. What I think is the best thing about the program is that there is one-on-one communication and doubt solving, which really helps us students to advance and maximize our capabilities.",
+      name: "Parin Gupta",
+      title: "Class 10",
+      image: "Images/Asserts/studentReview1.jpeg",
     },
     {
       review:
-        "Dynamically impact tactical methods of empowerment through ubiquitous methodologies. Global utilize robust services without integrated process improvements. Completely leverage existing niche markets via exceptional leadership skills.",
-      name: "Umme Nishat",
-      title: "Assistant principal",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/458cce40eaf7fbcda79484c374134e561eb1f0458175e65973e85485e7dba188?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
+        "I am Yashvi Kaushik of class 9th D, part of the Gantavya program. This program has been very beneficial, providing specialized courses, individual assistance, and a lot of new knowledge. The classes were personalized, highly interactive, and emphasized practice.",
+      name: "Yashvi Kaushik",
+      title: "Class 9",
+      image: "Images/Asserts/studentReview3.jpeg",
     },
   ];
 

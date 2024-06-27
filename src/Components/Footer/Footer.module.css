@@ -88,6 +88,10 @@
   margin-top: 0.25rem; /* Adjust margin as needed */
 }
 
+.dropEmailText {
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 1024px) {
   .FooterContainer {
     flex-direction: column;

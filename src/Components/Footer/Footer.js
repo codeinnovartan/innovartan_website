@@ -57,7 +57,12 @@ const Footer = () => {
       />
       <div className={styles.innerContainer}>
         <div className={styles.emailContainer}>
-          <h1>Want Us To Email You About Special Offers And Updates?</h1>
+          <h1>
+            Want to know more about innovartan offers & upcoming events ?
+            <br />
+            <h3 className={styles.dropEmailText}>DROP YOUR EMAIL</h3>
+          </h1>
+
           <div className={styles.emailInputContainer}>
             <InputGroup className="mb-3" size="lg">
               <Form.Control
@@ -119,9 +124,18 @@ const Footer = () => {
                 hrefLink={
                   "https://drive.google.com/file/d/1DynDfy-ujF8YocLhGnifWvJsHMQNGXyK/view?usp=drive_link"
                 }
+                imgURL={"fa-brands fa-google-play fa-lg"}
                 text={"Play Store"}
+                type={"external"}
               />
-              <FooterLink hrefLink={"/"} text={"App Store"} />
+              <FooterLink
+                hrefLink={
+                  "https://apps.apple.com/in/app/eduvartan/id6504485252"
+                }
+                text={"App Store"}
+                type={"external"}
+                imgURL={"fa-brands fa-app-store fa-lg"}
+              />
             </div>
             <div className={classes.col2}>
               <FooterHeading heading={"Social Links"} />
@@ -129,16 +143,19 @@ const Footer = () => {
                 hrefLink={"https://www.facebook.com/innovartanlearning/"}
                 text={"Facebook"}
                 type={"external"}
+                imgURL={"fa-brands fa-facebook fa-lg"}
               />
               <FooterLink
                 hrefLink={"https://in.linkedin.com/company/innovartan"}
                 type={"external"}
                 text={"LinkedIn"}
+                imgURL={"fa-brands fa-linkedin fa-lg"}
               />
               <FooterLink
                 hrefLink={"https://www.instagram.com/innovartan/"}
                 type={"external"}
                 text={"Instagram"}
+                imgURL={"fa-brands fa-instagram fa-lg"}
               />
             </div>
           </div>

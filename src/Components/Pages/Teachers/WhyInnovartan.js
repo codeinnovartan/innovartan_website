@@ -52,7 +52,7 @@ const WhyInnovartan = () => {
           <div className={styles.imageColumn}>
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5b10567b854290f440ba3a5395c9edcd4bba812a543ac22eec8529d0605878a?apiKey=65c3b0a390fd4311b72fcd91fc18e875&"
+              src="Images/Asserts/Teacher1.png"
               className={styles.featuredImage}
               alt="Why Join Innovartan"
             />

@@ -6,15 +6,15 @@ import ScrollTrigger from "react-scroll-trigger";
 
 const schoolsData = [
   {
-    number: "40",
+    number: "43",
     description: "Number of Affiliated Schools",
   },
   {
-    number: "500",
+    number: "527",
     description: "Number of Teachers Trained/Placed",
   },
   {
-    number: "10000",
+    number: "11471",
     description: "Number of Students",
   },
 ];

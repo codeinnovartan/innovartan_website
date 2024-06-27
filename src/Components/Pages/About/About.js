@@ -46,10 +46,10 @@ const About = () => {
             educational landscape.
           </p>
           <p className={styles.aboutdiv2text}>
-            The program is meticulously crafted to bridge the gap between
-            traditional school education and the skills required for students to
-            excel in competitive exams like JEE, NEET, Olympiads, and board
-            examinations.
+            We understand the growing pressure on students today, with the focus
+            predominantly shifting towards competitive examinations like
+            IIT/JEE, NEET & CUET, CLAT, IPMAT. We are all too familiar with the
+            repercussions of this pressure.
           </p>
           <p className={styles.aboutdiv2text}>
             Innovartan is bridging the gap between school education and
@@ -66,7 +66,7 @@ const About = () => {
       <div className={styles.aboutOurInnovartan}>
         <div className={styles.aboutOurInnovartandiv1}>
           <Image
-            src="Images/Asserts/about-image1.svg"
+            src="Images/Asserts/about-image1.png"
             className={styles.aboutOurInnovartandiv1image1}
           />
           <Image

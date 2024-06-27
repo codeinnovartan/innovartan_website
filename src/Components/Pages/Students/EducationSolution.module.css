@@ -59,7 +59,7 @@
 .featuresGrid {
   gap: 20px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 @media (max-width: 991px) {
   .featuresGrid {

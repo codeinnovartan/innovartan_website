@@ -4,53 +4,53 @@ import { Image } from "react-bootstrap";
 
 const instructorData = [
   {
-    imge: "Images/Asserts/whyus1.jpg",
-    name: "Emilee Logan",
+    imge: "Images/Asserts/educator5.png",
+    name: "Purushottam Singh",
     title: "Lead Instructor",
     email: "info@innovartan.com",
     youtube: "youtube/Edvanz.Innovartan",
-    youtubeLink: "https://www.youtube.com/@Edvanz.Innovartan"
+    youtubeLink: "https://www.youtube.com/@Edvanz.Innovartan",
   },
   {
-    imge: "Images/Asserts/whyus2.jpg",
-    name: "Angel Milli",
+    imge: "Images/Asserts/educator1.png",
+    name: "Arka Sen",
     title: "Lead Instructor",
     email: "info@innovartan.com",
     youtube: "youtube/Edvanz.Innovartan",
-    youtubeLink: "https://www.youtube.com/@Edvanz.Innovartan"
+    youtubeLink: "https://www.youtube.com/@Edvanz.Innovartan",
   },
 ];
 
 const instructor = [
   {
-    name: "Mim Jaqno",
+    name: "Harish kharbanda",
     title: "Lead Instructor",
-    image: "Images/Asserts/whyus4.jpg",
+    image: "Images/Asserts/educator2.png",
+  },
+  // {
+  //   name: "Henri",
+  //   title: "Lead Instructor",
+  //   image: "Images/Asserts/educator10.png",
+  // },
+  {
+    name: "Abhishek Tripathi",
+    title: "Lead Instructor",
+    image: "Images/Asserts/educator7.png",
   },
   {
-    name: "Henri",
+    name: "Sachin Kapoor",
     title: "Lead Instructor",
-    image: "Images/Asserts/whyus5.jpg",
+    image: "Images/Asserts/educator4.png",
   },
   {
-    name: "Bin Tonso",
+    name: "Anand Pandey",
     title: "Lead Instructor",
-    image: "Images/Asserts/whyus6.jpg",
+    image: "Images/Asserts/educator8.png",
   },
   {
-    name: "Selina Gomez",
+    name: "Rahul Jain",
     title: "Lead Instructor",
-    image: "Images/Asserts/whyus7.jpg",
-  },
-  {
-    name: "Baluni Chobo",
-    title: "Lead Instructor",
-    image: "Images/Asserts/whyus8.jpg",
-  },
-  {
-    name: "Angel Mili",
-    title: "Lead Instructor",
-    image: "Images/Asserts/whyus3.jpg",
+    image: "Images/Asserts/educator9.JPG",
   },
 ];
 

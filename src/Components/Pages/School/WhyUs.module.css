@@ -147,8 +147,8 @@ cardInner p {
 .instructorImage {
   width: 100%;
   aspect-ratio: 1;
-  object-fit: auto;
-  object-position: center;
+  object-fit: contain;
+  /* object-position: center; */
 }
 
 .badgeImage {
