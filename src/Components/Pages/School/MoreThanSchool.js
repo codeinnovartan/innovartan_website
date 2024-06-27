@@ -19,7 +19,7 @@ const MoreThanSchool = () => {
           <h2 className={styles.heading}>
             More Than{" "}
             <span className={styles.highlight}>
-              {contentVisible && <CountUp end={40} duration={3} />}
+              {contentVisible && <CountUp end={43} duration={3} />}
             </span>{" "}
             Schools
           </h2>
