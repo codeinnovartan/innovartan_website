@@ -1,0 +1,28 @@
+.storeBackground{
+    background-color: #020D45;
+    width: 100%;
+    height: 180vh;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    color: white;
+}
+
+.storeCards{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+.storeNav{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+

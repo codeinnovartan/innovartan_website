@@ -16,6 +16,7 @@ import Student from "./Components/Pages/Students/Student";
 import NavBar1 from "./Components/NavBar1/NavBar1";
 import NavBar2 from "./Components/NavBar2/NavBar2";
 import School from "./Components/Pages/School/School";
+import InnoStore from "./Components/Pages/InnoStore/InnoStore";
 
 function App() {
   return (
@@ -92,6 +93,12 @@ function App() {
             >
               <ContactUs />
             </NavBar1>
+          }
+        />
+        <Route
+          path="/store"
+          element={
+              <InnoStore />
           }
         />
         {/* <Route

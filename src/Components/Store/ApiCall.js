@@ -84,3 +84,14 @@ export const subscribeNewsletter = async (email) => {
   const data = await response.json();
   return data;
 };
+
+
+const qaUrl = "http://qa.edvanz.com"
+
+export const getAppStore = async () => {
+  const response = await fetch(`${qaUrl}/api/mobile/dashboard/get-app-store`)
+  const data = await response.json();
+
+  return data.data;
+};
+

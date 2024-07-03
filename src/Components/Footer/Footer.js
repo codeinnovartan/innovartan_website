@@ -122,10 +122,10 @@ const Footer = () => {
               <FooterHeading heading={"Download App"} />
               <FooterLink
                 hrefLink={
-                  "https://drive.google.com/file/d/1DynDfy-ujF8YocLhGnifWvJsHMQNGXyK/view?usp=drive_link"
+                  "/store"
                 }
                 imgURL={"fa-brands fa-google-play fa-lg"}
-                text={"Play Store"}
+                text={"Inno Store"}
                 type={"external"}
               />
               <FooterLink

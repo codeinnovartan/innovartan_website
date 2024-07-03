@@ -1,0 +1,36 @@
+.cardStyle {
+    width: 20%;
+    height: 280.56px;
+    border-radius: 50px;
+    border: 2px solid #ffffff70;
+    transform: rotate(-0.3deg);
+    box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgb(2,13,69);
+    background: linear-gradient(337deg, rgba(2,13,69,0.7511379551820728) 34%, rgba(223,232,233,0.5214460784313726) 80%);
+}
+
+.cardStyle img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cardStyle h5{
+    margin-bottom: 1.5rem;
+}
+
+.cardStyle a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 0.6rem 1.6rem;
+    margin-top: 0.3rem !important;
+    border-radius: 3rem;
+}
