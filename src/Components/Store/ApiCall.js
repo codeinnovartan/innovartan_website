@@ -1,4 +1,5 @@
 const callingDomain = "https://app.innovartan.com";
+// const qaUrl = "http://qa.edvanz.com"
 
 export const getSchoolState = async () => {
   const response = await fetch(
@@ -85,11 +86,8 @@ export const subscribeNewsletter = async (email) => {
   return data;
 };
 
-
-const qaUrl = "http://qa.edvanz.com"
-
 export const getAppStore = async () => {
-  const response = await fetch(`${qaUrl}/api/mobile/dashboard/get-app-store`)
+  const response = await fetch(`${callingDomain}/api/mobile/dashboard/get-app-store`)
   const data = await response.json();
 
   return data.data;

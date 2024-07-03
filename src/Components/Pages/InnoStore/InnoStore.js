@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { getAppStore } from '../../Store/ApiCall'; // Assuming this is your API call function
+import React, { useEffect, useState } from "react";
+import { getAppStore } from "../../Store/ApiCall"; // Assuming this is your API call function
 
 import styles from "./InnoStore.module.css";
-import StoreCard from '../../StoreCard/StoreCard';
-
+import StoreCard from "../../StoreCard/StoreCard";
+import SearchBar from "../../SearchBar/SearchBar";
 
 const InnoStore = () => {
   const [data, setData] = useState([]);
@@ -14,23 +14,21 @@ const InnoStore = () => {
         const response = await getAppStore();
         setData(response);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     }
 
     fetchData();
   }, []);
 
-
-  // console.log(data)
+  console.log(data);
 
   return (
     <>
-     <div className={styles.storeNav}>
-
-     </div>
+      <SearchBar />
+      <div className={styles.storeNav}></div>
       <div className={styles.storeBackground}>
-        <h1 style={{paddingBottom: "2rem"}}>INNOVARTAN STORE</h1>
+        <h1 className={styles.heading}>INNOVARTAN STORE</h1>
         <div className={styles.storeCards}>
           {data?.map((item, index) => (
             <StoreCard

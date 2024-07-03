@@ -1,36 +1,67 @@
-.cardStyle {
-    width: 20%;
-    height: 280.56px;
-    border-radius: 50px;
-    border: 2px solid #ffffff70;
-    transform: rotate(-0.3deg);
-    box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background: rgb(2,13,69);
-    background: linear-gradient(337deg, rgba(2,13,69,0.7511379551820728) 34%, rgba(223,232,233,0.5214460784313726) 80%);
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020d45;
 }
-
-.cardStyle img {
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.card {
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: radial-gradient(
+    107.32% 141.42% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02) inset;
+  display: flex;
+  width: 270px;
+  height: 330px;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 20px 10px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
 }
-
-.cardStyle h5{
-    margin-bottom: 1.5rem;
+.cardImage {
+  object-fit: contain;
+  width: 200px;
+  border-radius: 20px;
 }
-
-.cardStyle a {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    padding: 0.6rem 1.6rem;
-    margin-top: 0.3rem !important;
-    border-radius: 3rem;
+.cardTitle {
+  margin-top: 10px;
+  font: 20px Inter, sans-serif;
+}
+.cardDescription {
+  margin-top: 9px;
+  font: 400 12px/17px Rubik, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.cardButton {
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 10px;
+  color: #020d45;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 9px 24px;
+  font: 10px Inter, sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+}
+.cardButton:hover {
+  background-color: #f0f0f0;
+}
+.cardButton:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.cardLink {
+  text-decoration: none;
+  color: inherit;
 }
