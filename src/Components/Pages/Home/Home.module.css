@@ -179,11 +179,10 @@
 }
 .aboutContainerDiv1Image {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -5px;
   max-height: 100%; /* Limit the height to the container's height */
   max-width: 100%; /* Limit the width to the container's width */
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .aboutContainerDiv2 h2 {
