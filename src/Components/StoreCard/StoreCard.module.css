@@ -14,8 +14,8 @@
   );
   box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02) inset;
   display: flex;
-  width: 270px;
-  height: 330px;
+  width: 250px;
+  height: 340px;
   flex-direction: column;
   color: #fff;
   font-weight: 700;
@@ -64,4 +64,66 @@
 .cardLink {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 770px) {
+  .card {
+    width: 220px;
+    height: 280px;
+  }
+  .cardImage {
+    width: 150px;
+  }
+  .cardTitle {
+    font-size: 16px;
+  }
+  .cardDescription {
+    font-size: 10px;
+  }
+  .cardButton {
+    font-size: 8px;
+    padding: 7px 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 180px;
+    height: 230px;
+    border-radius: 40px;
+  }
+  .cardImage {
+    width: 120px;
+  }
+  .cardTitle {
+    font-size: 14px;
+  }
+  .cardDescription {
+    font-size: 8px;
+  }
+  .cardButton {
+    font-size: 6px;
+    padding: 5px 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 150px;
+    height: 210px;
+    border-radius: 30px;
+  }
+  .cardImage {
+    width: 100px;
+  }
+  .cardTitle {
+    font-size: 12px;
+  }
+  .cardDescription {
+    font-size: 6px;
+  }
+  .cardButton {
+    font-size: 5px;
+    padding: 4px 12px;
+  }
 }

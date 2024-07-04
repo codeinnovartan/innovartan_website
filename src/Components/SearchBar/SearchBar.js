@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SearchBar.module.css";
 
-const SearchBarr = () => (
+const SearchBarr = ({ searchQuery, handleSearchChange }) => (
   <form className={styles.searchBar}>
     <label htmlFor="searchInput" className={styles.visuallyHidden}>
       Search
@@ -12,14 +12,16 @@ const SearchBarr = () => (
       className={styles.searchInput}
       placeholder="Search"
       aria-label="Search"
+      value={searchQuery}
+      onChange={handleSearchChange}
     />
-    <button type="submit" className={styles.searchButton}>
+    <button type="submit" className={styles.searchButton} disabled >
       Search
     </button>
   </form>
 );
 
-function Header() {
+function Header({ searchQuery, handleSearchChange }) {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
@@ -29,16 +31,22 @@ function Header() {
           alt="Company Logo"
           className={styles.logo}
         />
-        <SearchBarr />
+        <SearchBarr
+          searchQuery={searchQuery}
+          handleSearchChange={handleSearchChange}
+        />
       </div>
     </header>
   );
 }
 
-const SearchBar = () => {
+const SearchBar = ({ searchQuery, handleSearchChange }) => {
   return (
     <>
-      <Header />
+      <Header
+        handleSearchChange={handleSearchChange}
+        searchQuery={searchQuery}
+      />
     </>
   );
 };

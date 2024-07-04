@@ -7,6 +7,7 @@ import SearchBar from "../../SearchBar/SearchBar";
 
 const InnoStore = () => {
   const [data, setData] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     async function fetchData() {
@@ -21,16 +22,34 @@ const InnoStore = () => {
     fetchData();
   }, []);
 
-  console.log(data);
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredData = data.filter((item) =>
+    item.school_name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <>
-      <SearchBar />
+      <SearchBar
+        searchQuery={searchQuery}
+        handleSearchChange={handleSearchChange}
+      />
       <div className={styles.storeNav}></div>
       <div className={styles.storeBackground}>
         <h1 className={styles.heading}>INNOVARTAN STORE</h1>
         <div className={styles.storeCards}>
-          {data?.map((item, index) => (
+          {filteredData.map((item, index) => (
+            <StoreCard
+              key={index}
+              schoolName={item.school_name}
+              schoolImage={item.school_image}
+              schoolCode={item.school_code}
+              appLink={item.app_link}
+            />
+          ))}
+          {filteredData.map((item, index) => (
             <StoreCard
               key={index}
               schoolName={item.school_name}
