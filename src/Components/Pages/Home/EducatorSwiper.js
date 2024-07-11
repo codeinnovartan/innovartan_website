@@ -82,7 +82,7 @@ const EducatorSwiper = () => {
             subtitile={"25+ years of academic"}
           />
         </SwiperSlide>
-        <SwiperSlide style={{ width: "200px" }}>
+        {/* <SwiperSlide style={{ width: "200px" }}>
           <EducatorSwiperCard
             courses={"07"}
             image={"Images/Asserts/educator6.png"}
@@ -91,7 +91,7 @@ const EducatorSwiper = () => {
             students={"113"}
             subtitile={"15+ years of academic"}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

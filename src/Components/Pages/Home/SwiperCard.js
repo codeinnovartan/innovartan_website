@@ -91,21 +91,21 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
       </div>
       <div
         style={{
-          width: "90%",
+          width: "95%",
           height: "1px",
           backgroundColor: "#ECF0F3",
-          margin: "20px 10px",
+          margin: "10px 10px",
         }}
       ></div>
-      <div
+      {/* <div
         style={{
           display: "flex",
           flexDirection: "row",
           width: "100%",
           justifyContent: "space-around",
         }}
-      >
-        <div
+      > */}
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "row",
@@ -125,7 +125,7 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
             }}
           />
           <p style={{ fontSize: "18px", fontWeight: 500 }}>{facultyname}</p>
-        </div>
+        </div> */}
         {/* <div
           style={{
             display: "flex",
@@ -141,7 +141,7 @@ const SwiperCard = ({image, name, lesson, facultyname, rating, review, cost}) =>
             style={{ marginTop: "5px", color: "#F16126" }}
           ></i>
         </div> */}
-      </div>
+      {/* </div> */}
     </div>
   );
 };

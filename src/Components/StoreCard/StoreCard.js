@@ -13,7 +13,7 @@ function StoreCard({ schoolName, schoolImage, schoolCode, appLink }) {
         />
         <h2 className={styles.cardTitle}>{schoolName}</h2>
         <p className={styles.cardDescription}>{schoolCode}</p>
-        {/* <button className={styles.cardButton}>{"Download"}</button> */}
+        <button className={styles.cardButton}>{"Download"}</button>
       </div>
     </a>
   );

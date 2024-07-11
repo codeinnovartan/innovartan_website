@@ -14,8 +14,8 @@
   );
   box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02) inset;
   display: flex;
-  width: 250px;
-  height: 340px;
+  width: 230px;
+  height: 330px;
   flex-direction: column;
   color: #fff;
   font-weight: 700;
@@ -28,15 +28,15 @@
 }
 .cardImage {
   object-fit: contain;
-  width: 200px;
+  width: 150px;
   border-radius: 20px;
 }
 .cardTitle {
   margin-top: 10px;
-  font: 20px Inter, sans-serif;
+  font: 16px Inter, sans-serif;
 }
 .cardDescription {
-  margin-top: 9px;
+  margin-top: 6px;
   font: 400 12px/17px Rubik, -apple-system, Roboto, Helvetica, sans-serif;
 }
 .cardButton {
