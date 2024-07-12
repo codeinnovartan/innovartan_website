@@ -49,24 +49,7 @@ const InnoStore = () => {
               appLink={item.app_link}
             />
           ))}
-          {filteredData.map((item, index) => (
-            <StoreCard
-              key={index}
-              schoolName={item.school_name}
-              schoolImage={item.school_image}
-              schoolCode={item.school_code}
-              appLink={item.app_link}
-            />
-          ))}
-          {filteredData.map((item, index) => (
-            <StoreCard
-              key={index}
-              schoolName={item.school_name}
-              schoolImage={item.school_image}
-              schoolCode={item.school_code}
-              appLink={item.app_link}
-            />
-          ))}
+      
         </div>
       </div>
     </>
