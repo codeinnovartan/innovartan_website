@@ -12,6 +12,7 @@ import Slogan from "./Slogan";
 import CommonNavbar from "../../CommonNavbar/CommonNavbar";
 import ScrollTrigger from "react-scroll-trigger";
 import LeadModal from "../../LeadModal/LeadModal";
+import EducationSolution from "../Students/EducationSolution";
 
 const School = () => {
   const [viewState, setViewState] = React.useState(false);
@@ -19,20 +20,23 @@ const School = () => {
 
   const handleModal = () => {
     setModalShow(true);
-  }
+  };
   return (
     <div>
       {viewState && <CommonNavbar />}
       <div className={"helpsSchool"}>
         <HelpSchool handleModal={handleModal} />
       </div>
-      <div className={"transformSchool"}>
-        <TransformSchool />
+      <div className="educationSolutions">
+        <EducationSolution />
       </div>
       <ScrollTrigger
         onEnter={() => setViewState(true)}
         onExit={() => setViewState(false)}
       >
+        <div className={"transformSchool"}>
+          <TransformSchool />
+        </div>
         <div className={"whyUs"}>
           <WhyUs />
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import EducationSolution from "./EducationSolution";
+// import EducationSolution from "./EducationSolution";
 import WhyInnovartan from "./WhyInnovartan";
 import Reviews from "./Reviews";
 import StatsSection from "../Home/StatsSection";
@@ -11,26 +11,23 @@ const Student = () => {
   const [viewState, setViewState] = React.useState(false);
   return (
     <>
-    { viewState && <CommonNavbar />}
-      <div className="educationSolutions">
-        <EducationSolution />
-      </div>
+      {viewState && <CommonNavbar />}
       <div className="whyInnovartan">
         <WhyInnovartan />
+      </div>
+      <div className="Reviews">
+        <Reviews />
       </div>
       <ScrollTrigger
         onEnter={() => setViewState(true)}
         onExit={() => setViewState(false)}
       >
-      <div className="Reviews">
-        <Reviews />
-      </div>
-      <div className="Stats">
-        <StatsSection />
-      </div>
-      <div className="Footer">
-        <Footer />
-      </div>
+        <div className="Stats">
+          <StatsSection />
+        </div>
+        <div className="Footer">
+          <Footer />
+        </div>
       </ScrollTrigger>
     </>
   );
