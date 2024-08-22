@@ -17,6 +17,7 @@ import NavBar1 from "./Components/NavBar1/NavBar1";
 import NavBar2 from "./Components/NavBar2/NavBar2";
 import School from "./Components/Pages/School/School";
 import InnoStore from "./Components/Pages/InnoStore/InnoStore";
+import PartnerProgram from "./Components/Pages/Partner_Program/PartnerProgram";
 
 function App() {
   return (
@@ -35,6 +36,14 @@ function App() {
           element={
             <NavBar1 heading={"About Innovartan"} subHeading={" Home / About"}>
               <About />
+            </NavBar1>
+          }
+        ></Route>
+        <Route
+          path="/partner-program"
+          element={
+            <NavBar1 heading={"About Innovartan"} subHeading={" Home / About"}>
+              <PartnerProgram />
             </NavBar1>
           }
         ></Route>
@@ -95,12 +104,7 @@ function App() {
             </NavBar1>
           }
         />
-        <Route
-          path="/store"
-          element={
-              <InnoStore />
-          }
-        />
+        <Route path="/store" element={<InnoStore />} />
         {/* <Route
           index
           element={

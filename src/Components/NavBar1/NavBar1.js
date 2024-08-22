@@ -3,8 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Dropdown } from "react-bootstrap";
 
-
-
 function NavBar1({ heading, subHeading, children }) {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
@@ -98,18 +96,18 @@ function NavBar1({ heading, subHeading, children }) {
                   Our Services
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                <Dropdown.Item>
-                      <Link
-                        style={{ textDecoration: "none", color: "black" }}
-                        to={"/school"}
-                        onClick={() => {
-                          handleClick();
-                          window.scrollTo({ top: 0, behavior: "smooth" });
-                        }}
-                      >
-                        For School
-                      </Link>
-                    </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to={"/school"}
+                      onClick={() => {
+                        handleClick();
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
+                      For School
+                    </Link>
+                  </Dropdown.Item>
                   <Dropdown.Item>
                     <Link
                       style={{ textDecoration: "none", color: "black" }}
@@ -136,6 +134,9 @@ function NavBar1({ heading, subHeading, children }) {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
+              <li onClick={handleClick}>
+                <Link to="/partner-program">Partner Program</Link>
+              </li>
 
               <Button
                 className="loginButton"

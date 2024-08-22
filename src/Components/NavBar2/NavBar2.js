@@ -135,6 +135,9 @@ const NavBar2 = ({ children }) => {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
+              <li onClick={handleClick}>
+                <Link to="/partner-program">Partner Program</Link>
+              </li>
 
               <Button
                 className="loginButton"

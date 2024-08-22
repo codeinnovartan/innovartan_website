@@ -1,0 +1,75 @@
+.benefitsSection {
+  text-align: center;
+  padding: 50px 20px;
+  /* background-color: #f8f9fd; */
+}
+
+.sectionTitle {
+  font-family: "Circular Std";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 51px;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 3rem;
+}
+
+.benefitsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .benefitsContainer {
+    flex-direction: column;
+  }
+}
+
+.benefitCard {
+  display: flex;
+  background: #fff;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  width: 43%;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 1rem 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .benefitCard {
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+.benefitIcon {
+  width: 15rem;
+  align-self: center;
+}
+
+.benefitTitle {
+  font-family: "Circular Std Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.benefitDescription {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 0.5rem 2rem 2rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}

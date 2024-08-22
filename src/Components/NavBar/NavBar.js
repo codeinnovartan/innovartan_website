@@ -23,7 +23,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
     }, 5000);
     return () => clearInterval(interval);
   });
-  
+
   return (
     <div>
       <div>
@@ -154,7 +154,11 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
 
                     <Dropdown.Item>
                       <Link
-                        style={{ textDecoration: "none", color: "black",  display: "block", }}
+                        style={{
+                          textDecoration: "none",
+                          color: "black",
+                          display: "block",
+                        }}
                         to={"/student"}
                         onClick={() => {
                           handleClick();
@@ -166,6 +170,9 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
+                <li onClick={handleClick}>
+                  <Link to="/partner-program">Partner Program</Link>
+                </li>
                 <Button
                   className="loginButton"
                   onClick={() => {
