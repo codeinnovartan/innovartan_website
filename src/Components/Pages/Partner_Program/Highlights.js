@@ -6,19 +6,19 @@ const highlightsData = [
     id: 1,
     amount: "₹ 30,000+",
     description: "Average earnings in a month",
-    backgroundColor: "#18a388", // Replace with actual color if needed
+    backgroundColor: "#18a388",
   },
   {
     id: 2,
     amount: "2,000+",
-    description: "Classplus Partners have already joined us",
-    backgroundColor: "#f2a33a", // Replace with actual color if needed
+    description: "Innovartan Partners have already joined us",
+    backgroundColor: "#f2a33a",
   },
   {
     id: 3,
     amount: "₹ 10,000",
     description: "You can earn for every 3 successful referrals",
-    backgroundColor: "#8c68db", // Replace with actual color if needed
+    backgroundColor: "#8c68db",
   },
 ];
 
@@ -26,7 +26,7 @@ const Highlights = () => {
   return (
     <div className={styles.highlightsSection}>
       <h2 className={styles.sectionTitle}>
-        Highlights of Classplus Partner Program
+        Highlights of Innovartan Partner Program
       </h2>
       <div className={styles.highlightsContainer}>
         {highlightsData.map((highlight) => (
