@@ -10,7 +10,7 @@ const highlightsData = [
   },
   {
     id: 2,
-    amount: "2,000+",
+    amount: "5,500+",
     description: "Innovartan Partners have already joined us",
     backgroundColor: "#f2a33a",
   },

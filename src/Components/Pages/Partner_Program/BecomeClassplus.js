@@ -9,7 +9,15 @@ const BecomeClassplus = () => {
         Be the Innovartan Ambassador, help tutors understand the benefits of
         digital education, and earn money.
       </p>
-      <button className={styles.signupButton}>Sign Up</button>
+      <button
+        className={styles.signupButton}
+        onClick={() => {
+          window.location.href =
+            "https://app.innovartan.com/affiliation/signup";
+        }}
+      >
+        Sign Up
+      </button>
     </div>
   );
 };
