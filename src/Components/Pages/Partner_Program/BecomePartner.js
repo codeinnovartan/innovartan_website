@@ -35,7 +35,7 @@ const BecomePartner = () => {
           <div className={classes.subHeadings}>
             <i className={`fa-solid fa-circle-check ${classes.tickIcon}`}></i>
             <p className={classes.subHeading}>
-              Earn <strong>₹1000</strong> on Every Deal
+              Earn <strong>₹10000</strong> on Every Deal
             </p>
           </div>
           <div className={classes.subHeadings}>
