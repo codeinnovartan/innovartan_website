@@ -1,0 +1,57 @@
+.highlightsSection {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #faf3f0;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222222;
+}
+
+.highlightsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.highlightCard {
+  border-radius: 10px;
+  padding: 40px;
+  width: 28%;
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .highlightCard {
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .highlightCard {
+    width: 100%;
+  }
+}
+
+.highlightAmount {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 150%;
+  padding: 3rem 2rem 1rem 30px;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.highlightDescription {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #fff;
+  padding: 0px 10px 0px 30px;
+}

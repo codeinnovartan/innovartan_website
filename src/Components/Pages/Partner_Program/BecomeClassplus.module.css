@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+  padding: 2rem;
+  margin: 30px 20px;
+}
+
+.BCheading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.BCdesc {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 36px;
+  color: #7c7c82;
+  text-align: center;
+}
+
+.signupButton {
+  font-family: "Circular Std";
+  font-style: normal;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.5rem;
+  width: 200px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.signupButton:hover {
+  background-color: #0056b3;
+}
