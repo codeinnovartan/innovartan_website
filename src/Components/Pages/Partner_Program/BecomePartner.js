@@ -55,7 +55,7 @@ const BecomePartner = () => {
       </div>
       <div className={classes.righContainer}>
         <img
-          src="./Images/Asserts/patnerProgram.jpeg"
+          src="https://innovartan.s3.amazonaws.com/92a6cfa2e7442529a6f4d558a5c5f7a1426340637/f57ec3aa508067c3e598373f672a8321.jpeg"
           alt="Kuldeep Kataria"
           className={classes.partnerProgamImage}
         />
