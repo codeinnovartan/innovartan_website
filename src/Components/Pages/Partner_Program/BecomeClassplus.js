@@ -6,8 +6,7 @@ const BecomeClassplus = () => {
     <div className={styles.container}>
       <h1 className={styles.BCheading}>Become a Innovartan Partner Now</h1>
       <p className={styles.BCdesc}>
-        Be the Innovartan Ambassador, help tutors understand the benefits of
-        digital education, and earn money.
+      As an Innovartan Ambassador, I empower schools by educating educators on the advantages of hybrid learning, fostering a culture of innovation and growth that benefits both teachers and students.
       </p>
       <button
         className={styles.signupButton}

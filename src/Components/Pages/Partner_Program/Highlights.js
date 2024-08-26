@@ -4,20 +4,20 @@ import styles from "./Highlights.module.css";
 const highlightsData = [
   {
     id: 1,
-    amount: "₹ 30,000+",
+    amount: "Upto ₹ 1,00,000",
     description: "Average earnings in a month",
     backgroundColor: "#18a388",
   },
   {
     id: 2,
-    amount: "5,500+",
+    amount: "121+",
     description: "Innovartan Partners have already joined us",
     backgroundColor: "#f2a33a",
   },
   {
     id: 3,
     amount: "₹ 10,000",
-    description: "You can earn for every 3 successful referrals",
+    description: "You can earn for every successful referrals",
     backgroundColor: "#8c68db",
   },
 ];
