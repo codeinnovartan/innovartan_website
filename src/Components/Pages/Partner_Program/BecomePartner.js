@@ -51,6 +51,13 @@ const BecomePartner = () => {
               Join The League of <strong>Innovartan Partners</strong>
             </p>
           </div>
+          <a href="tel:9718854686" style={{ alignSelf: "center" }}>
+            <img
+              src="./Images/ppContact.png"
+              alt=""
+              className={classes.heading2Image}
+            />
+          </a>
         </div>
       </div>
       <div className={classes.righContainer}>

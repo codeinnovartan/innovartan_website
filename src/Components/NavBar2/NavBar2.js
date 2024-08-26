@@ -136,7 +136,7 @@ const NavBar2 = ({ children }) => {
                 </Dropdown.Menu>
               </Dropdown>
               <li onClick={handleClick}>
-                <Link to="/partner-program">Partner Program</Link>
+                <Link to="/partner-program">Channel Partner</Link>
               </li>
 
               <Button
