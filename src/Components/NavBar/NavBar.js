@@ -171,7 +171,7 @@ const CustomNavbar = ({ children, location, heading, subHeading }) => {
                   </Dropdown.Menu>
                 </Dropdown>
                 <li onClick={handleClick}>
-                  <Link to="/partner-program">Channel Partner</Link>
+                  <Link to="/channel-program">Channel Partner</Link>
                 </li>
                 <Button
                   className="loginButton"

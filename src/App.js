@@ -40,7 +40,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/partner-program"
+          path="/channel-program"
           element={
             <NavBar1 heading={"About Innovartan"} subHeading={" Home / About"}>
               <PartnerProgram />
