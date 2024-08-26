@@ -28,7 +28,7 @@ const Highlights = () => {
       <h2 className={styles.sectionTitle}>
         Highlights of Innovartan{" "}
         <strong className={styles.Become}>Channel</strong>
-        <strong className={styles.A}>Partner</strong> Programr Program
+        <strong className={styles.A}>Partner</strong> Program
       </h2>
       <div className={styles.highlightsContainer}>
         {highlightsData.map((highlight) => (
