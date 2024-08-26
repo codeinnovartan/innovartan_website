@@ -7,7 +7,7 @@ const BecomePartner = () => {
       <div className={classes.leftContainer}>
         <div className={classes.heading1Conatiner}>
           <p className={classes.Become}>Become</p>
-          <p className={classes.A}>A</p>
+          <p className={classes.A}>An</p>
           <img
             src="./Images/innovartan_Logo.png"
             alt=""
