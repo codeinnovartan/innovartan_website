@@ -5,11 +5,17 @@
 }
 
 .BCheading {
-  font-weight: 700;
+  font-family: "Circular Std";
   font-size: 40px;
+  font-weight: 700;
   line-height: 51px;
+  align-items: center;
   text-align: center;
   color: rgba(0, 0, 0, 0.87);
+  /* margin-bottom: 3rem; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .BCdesc {
@@ -38,4 +44,17 @@
 
 .signupButton:hover {
   background-color: #0056b3;
+}
+
+.Become {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: #f46522;
+}
+
+.A {
+  margin-left: 10px;
+  color: #114c9f;
+  margin-bottom: 0px;
+  margin-right: 10px;
 }

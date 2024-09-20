@@ -47,7 +47,11 @@ const benefitsData = [
 const BenefitsJoinning = () => {
   return (
     <div className={styles.benefitsSection}>
-      <h2 className={styles.sectionTitle}>Benefits of Joining</h2>
+      <h2 className={styles.sectionTitle}>
+        Benefits of Joining Innovartan
+        <strong className={styles.Become}>Channel</strong>
+        <strong className={styles.A}>Partner</strong> Program
+      </h2>
       <div className={styles.benefitsContainer}>
         {benefitsData.map((benefit) => (
           <div key={benefit.id} className={styles.benefitCard}>

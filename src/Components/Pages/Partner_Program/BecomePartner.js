@@ -7,7 +7,7 @@ const BecomePartner = () => {
       <div className={classes.leftContainer}>
         <div className={classes.heading1Conatiner}>
           <p className={classes.Become}>Become</p>
-          <p className={classes.A}>A</p>
+          <p className={classes.A}>An</p>
           <img
             src="./Images/innovartan_Logo.png"
             alt=""
@@ -51,11 +51,18 @@ const BecomePartner = () => {
               Join The League of <strong>Innovartan Partners</strong>
             </p>
           </div>
+          <a href="tel:9718854686" style={{ alignSelf: "center" }}>
+            <img
+              src="./Images/ppContact.png"
+              alt=""
+              className={classes.heading2Image}
+            />
+          </a>
         </div>
       </div>
       <div className={classes.righContainer}>
         <img
-          src="./Images/Asserts/patnerProgram.jpeg"
+          src="https://innovartan.s3.amazonaws.com/92a6cfa2e7442529a6f4d558a5c5f7a1426340637/f57ec3aa508067c3e598373f672a8321.jpeg"
           alt="Kuldeep Kataria"
           className={classes.partnerProgamImage}
         />

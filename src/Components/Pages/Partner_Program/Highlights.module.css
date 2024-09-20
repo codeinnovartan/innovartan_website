@@ -5,10 +5,17 @@
 }
 
 .sectionTitle {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: #222222;
+  font-family: "Circular Std";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 51px;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .highlightsContainer {
@@ -54,4 +61,17 @@
   line-height: 150%;
   color: #fff;
   padding: 0px 10px 0px 30px;
+}
+
+.Become {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: #f46522;
+}
+
+.A {
+  margin-left: 10px;
+  color: #114c9f;
+  margin-bottom: 0px;
+  margin-right: 10px;
 }
