@@ -250,6 +250,7 @@ const Home = () => {
             />
           </div>
         </div>
+        {/* 
         <div className={styles.coursesContainer}>
           <p
             style={{
@@ -265,7 +266,7 @@ const Home = () => {
             <EducatorSwiper />
           </div>
         </div>
-        {/* <div className={styles.coursesContainer}>
+        <div className={styles.coursesContainer}>
         <p
           style={{
             fontSize: 20,
