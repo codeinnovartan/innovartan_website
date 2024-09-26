@@ -37,9 +37,9 @@ const School = () => {
         <div className={"transformSchool"}>
           <TransformSchool />
         </div>
-        <div className={"whyUs"}>
+        {/* <div className={"whyUs"}>
           <WhyUs />
-        </div>
+        </div> */}
         <div className={"getEverything"}>
           <GetEverything handleModal={handleModal} />
         </div>
