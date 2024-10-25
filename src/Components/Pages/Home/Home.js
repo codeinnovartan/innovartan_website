@@ -11,6 +11,7 @@ import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
 import ScrollTrigger from "react-scroll-trigger";
 import CommonNavbar from "../../CommonNavbar/CommonNavbar";
+import OurPartners from "../../OurPartners/OurPartners";
 
 const Home = () => {
   const [viewState, setViewState] = React.useState(false);
@@ -283,6 +284,9 @@ const Home = () => {
       </div> */}
         <div className={styles.statsSection}>
           <StatsSection />
+        </div>
+        <div className={styles.ourPartnersSection}>
+          <OurPartners />
         </div>
         <div className={styles.footer}>
           <Footer />
