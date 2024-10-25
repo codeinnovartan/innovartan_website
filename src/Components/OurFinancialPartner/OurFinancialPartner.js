@@ -19,7 +19,7 @@ const OurFinancialPartner = () => {
   return (
     <div className={styles.outerContainer}>
       <p className={styles.financialHeading}> Our Advisors</p>
-      <div style={{ display: "flex", gap: "200px" }}>
+      <div className={styles.advisorCardContainer} >
         <AdvisorCard
           color="#F36421"
           imageUrl="Images/financerImage2.svg"
