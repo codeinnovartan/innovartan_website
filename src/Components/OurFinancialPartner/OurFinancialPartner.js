@@ -10,7 +10,7 @@ const AdvisorCard = ({ color, imageUrl, advisorNames }) => {
       ></div>
       <img src={imageUrl} alt="Advisor" className={styles.image} />
       <p className={styles.cardHeading}>{advisorNames}</p>
-      <p className={styles.cardSubHeading}>Financial Advisor</p>
+      <p className={styles.cardSubHeading}>Advisor</p>
     </div>
   );
 };
@@ -18,7 +18,7 @@ const AdvisorCard = ({ color, imageUrl, advisorNames }) => {
 const OurFinancialPartner = () => {
   return (
     <div className={styles.outerContainer}>
-      <p className={styles.financialHeading}> Our Financial Advisors</p>
+      <p className={styles.financialHeading}> Our Advisors</p>
       <div style={{ display: "flex", gap: "200px" }}>
         <AdvisorCard
           color="#F36421"
