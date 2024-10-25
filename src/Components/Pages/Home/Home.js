@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import ScrollTrigger from "react-scroll-trigger";
 import CommonNavbar from "../../CommonNavbar/CommonNavbar";
 import OurPartners from "../../OurPartners/OurPartners";
+import OurFinancialPartner from "../../OurFinancialPartner/OurFinancialPartner";
 
 const Home = () => {
   const [viewState, setViewState] = React.useState(false);
@@ -287,6 +288,9 @@ const Home = () => {
         </div>
         <div className={styles.ourPartnersSection}>
           <OurPartners />
+        </div>
+        <div className={styles.OurFinancialPartnerSection}>
+          <OurFinancialPartner />
         </div>
         <div className={styles.footer}>
           <Footer />

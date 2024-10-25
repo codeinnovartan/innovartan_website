@@ -1,0 +1,54 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 5rem; */
+}
+.financialHeading {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.cardOuter {
+  position: relative;
+  width: 180px;
+  height: 330px;
+}
+
+.rectangle {
+  position: absolute;
+  top: 20px;
+  left: -45px;
+  width: 224.35px;
+  height: 67.37px;
+  background-color: red;
+  border-radius: 70px;
+  z-index: -1;
+  rotate: -32.35deg;
+}
+
+.image {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  /* margin-top: 20px; */
+}
+
+.cardHeading {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
+
+.cardSubHeading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: #494949;
+}
