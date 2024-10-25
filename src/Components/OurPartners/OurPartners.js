@@ -6,7 +6,8 @@ const OurPartners = () => {
     <div>
       <p className={styles.partnerHeading}>Our Growth Allies</p>
       <div className={styles.imagesContainer} >
-        <img className={styles.partnerImage} src="./Images/ourpartnerLogo.png" alt="" />
+        <img className={styles.partnerImage} src="Images/ourPartnerLogo1.png" alt="" />
+        <img className={styles.partnerImage} src="Images/ourPartnerLogo2.svg" alt="" />
       </div>
     </div>
   );
