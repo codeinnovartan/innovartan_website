@@ -12,6 +12,19 @@
   margin-bottom: 70px;
 }
 
+.advisorCardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+@media (max-width: 600px) {
+  .advisorCardContainer {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+
 .cardOuter {
   position: relative;
   width: 200px;
