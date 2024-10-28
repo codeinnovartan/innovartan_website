@@ -22,6 +22,10 @@ import TermOfUse from "./OLD_Components/Pages/TermOfUse/TermOfUse";
 import PrivacyPolicy from "./OLD_Components/Pages/Privacy Policy/PrivacyPolicy";
 import "./App.css"; // Ensure that this contains your animation CSS
 import ScrollingCarasoule from "./Components/ScrollingCarasoule/ScrollingCarasoule";
+import ReactGA from "react-ga";
+
+const trackingId = "G-QFL919Y39E";
+ReactGA.initialize(trackingId);
 
 function App() {
   const location = useLocation();

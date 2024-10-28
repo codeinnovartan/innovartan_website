@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Home.module.css";
 import { Image } from "react-bootstrap";
 import CategoryIcon from "./CategoryIcon";
@@ -13,8 +13,14 @@ import ScrollTrigger from "react-scroll-trigger";
 import CommonNavbar from "../../CommonNavbar/CommonNavbar";
 import OurPartners from "../../OurPartners/OurPartners";
 import OurFinancialPartner from "../../OurFinancialPartner/OurFinancialPartner";
+import ReactGA from "react-ga";
 
 const Home = () => {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+  
   const [viewState, setViewState] = React.useState(false);
   return (
     <div className={styles.outerContainer}>
