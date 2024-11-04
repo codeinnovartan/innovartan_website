@@ -18,9 +18,9 @@ import ReactGA from "react-ga";
 const Home = () => {
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname);
   }, []);
-  
+
   const [viewState, setViewState] = React.useState(false);
   return (
     <div className={styles.outerContainer}>
