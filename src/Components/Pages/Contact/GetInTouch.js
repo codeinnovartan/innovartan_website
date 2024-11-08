@@ -22,7 +22,7 @@ const contactData = [
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/451d78e92779cc9fcc673e967866919aebdfdb2abbab0b58b92115c0fa8f49d4?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",
     title: "Phone Number",
-    description: "+91 9319888781",
+    description: "+91 8130907972",
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/ab979ad0603d95949b0902f90c01d1db52f877b50858e920532ad69c63444f8b?apiKey=65c3b0a390fd4311b72fcd91fc18e875&",

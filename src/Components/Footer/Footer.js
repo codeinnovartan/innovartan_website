@@ -105,7 +105,7 @@ const Footer = () => {
               />
               <FooterText
                 imgURL={"fa-solid fa-phone fa-lg"}
-                text={"+91 9319888782"}
+                text={"+91 8130907972"}
               />
               <FooterText
                 imgURL={"fa-regular fa-envelope fa-xl"}
