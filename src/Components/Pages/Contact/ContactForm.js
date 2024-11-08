@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import styles from "./ContactForm.module.css";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
+import { sendContactUs } from "../../Store/ApiCall";
+import { set } from "react-ga";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +15,8 @@ const ContactForm = () => {
   });
   const [errors, setErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formSubmitting, setFormSubmitting] = useState(false);
+  const [formNotSubmitted, setFormNotSubmitted] = useState(false);
   const formRef = useRef(null); // Create a ref for the form element
 
   const handleChange = (e) => {
@@ -39,32 +43,48 @@ const ContactForm = () => {
     if (!formData.subject.trim()) {
       newErrors.subject = "Subject is required";
     }
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmite = async (e) => {
+    setFormNotSubmitted(false);
     e.preventDefault();
     const isValid = validateForm();
     if (isValid) {
-      setFormSubmitted(true);
-
-      emailjs
-        .sendForm(
-          "service_umf6b9d", // Your service ID
-          "template_97n4wig", // Your template ID
-          formRef.current, // Pass the form reference
-          "nAWs11i_i9eSe5baV" // Your public key
-        )
-        .then(
-          () => {
-            console.log("Email sent successfully!");
-          },
-          (error) => {
-            console.log("Email sending failed:", error);
-          }
-        );
+      setFormSubmitting(true);
+      console.log(formData);
+      const response = await sendContactUs(formData);
+      console.log(response);
+      if (response.statuscode === "200") {
+        emailjs
+          .sendForm(
+            "service_umf6b9d", // Your service ID
+            "template_97n4wig", // Your template ID
+            formRef.current, // Pass the form reference
+            "nAWs11i_i9eSe5baV" // Your public key
+          )
+          .then(
+            () => {
+              setFormSubmitted(true);
+              setFormSubmitting(false);
+              setFormData({
+                name: "",
+                email: "",
+                phone: "",
+                subject: "",
+                message: "",
+              });
+            },
+            (error) => {
+              setFormNotSubmitted(true);
+            }
+          );
+      }
     }
   };
 
@@ -158,17 +178,26 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Your Message"
           />
+          {errors.message && (
+            <div className={styles.errorMessage}>{errors.message}</div>
+          )}
         </Form.Group>
         <Button
           type="submit"
           variant="outline-warning"
           className={styles.submitButton}
+          disabled={formSubmitting}
         >
-          Send Your Message
+          {!formSubmitting ? "Send Your Message" : "Submitting Your Message"}
         </Button>
         {formSubmitted && (
           <div className={styles.successMessage}>
             Your message has been sent successfully
+          </div>
+        )}
+        {formNotSubmitted && (
+          <div className={styles.errorMessage}>
+            Your message has not been sent, please try again
           </div>
         )}
       </Form>
