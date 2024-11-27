@@ -67,7 +67,7 @@ const Footer = () => {
             <img
               onClick={() =>
                 window.open(
-                  "https://www.facebook.com/innovartanlearning",
+                  "https://www.facebook.com/innovartan",
                   "_blank"
                 )
               }

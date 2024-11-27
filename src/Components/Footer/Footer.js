@@ -140,7 +140,7 @@ const Footer = () => {
             <div className={classes.col2}>
               <FooterHeading heading={"Social Links"} />
               <FooterLink
-                hrefLink={"https://www.facebook.com/innovartanlearning/"}
+                hrefLink={"https://www.facebook.com/innovartan/"}
                 text={"Facebook"}
                 type={"external"}
                 imgURL={"fa-brands fa-facebook fa-lg"}
