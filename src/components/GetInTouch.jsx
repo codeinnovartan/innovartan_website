@@ -191,7 +191,7 @@ export default function GetInTouch() {
         <div className="hidden sm:block relative">
           <div className="absolute w-[80%] h-[80%] top-[10%] left-[10%] -z-10 px-6" />
           <img
-            src="/images/teacher2.svg"
+            src="../Images/teacher2.svg"
             className="relative z-10 max-w-full h-auto md:-bottom-[3.75rem]"
           />
           <div className="absolute top-1/2 right-0 space-y-4 z-20 ">

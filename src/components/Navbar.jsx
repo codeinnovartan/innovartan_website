@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky  top-0 z-50 font-metropolis">
       <div className="flex justify-between items-center mx-auto px-4 sm:px-6  max-w-7xl lg:px-8 py-6">
        <Link to="/" className={getLinkClass("/")}>
-       <img src="/images/header-logo.svg" alt="logo" className="w-28 sm:w-auto" />
+       <img src="../Images/header-logo.svg" alt="logo" className="w-28 sm:w-auto" />
           </Link>
 
         <div className="flex items-center space-x-4">

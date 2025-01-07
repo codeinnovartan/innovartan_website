@@ -4,22 +4,22 @@ import "react-multi-carousel/lib/styles.css";
 
 const logos = [
   {
-    src: "/images/school1.svg",
+    src: "../Images/school1.svg",
     title: "Delhi Public School (DPS)",
     location: "Noida",
   },
   {
-    src: "/images/school2.svg",
+    src: "../Images/school2.svg",
     title: "Delhi Public School (DPS)",
     location: "Noida",
   },
   {
-    src: "/images/school3.svg",
+    src: "../Images/school3.svg",
     title: "Innovartan Global Public School",
     location: "Noida",
   },
   {
-    src: "/images/school4.svg",
+    src: "../Images/school4.svg",
     title: "Summer Valley School",
     location: "Dehradun",
   },

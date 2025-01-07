@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="">
             <img
-              src="/images/footer-logo.svg"
+              src="../Images/footer-logo.svg"
               alt="footer-logo"
               className="w-28 sm:w-auto"
             />
@@ -28,12 +28,12 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-2">Download App</h3>
               <div className="flex space-x-4">
                 <img
-                  src="/images/app-btn.svg"
+                  src="../Images/app-btn.svg"
                   alt="App Store"
                   className="h-10"
                 />
                 <img
-                  src="/images/store-btn.svg"
+                  src="../Images/store-btn.svg"
                   alt="Google Play"
                   className="h-10"
                 />
@@ -148,9 +148,9 @@ const Footer = () => {
         <div className="mt-4 sm:hidden">
           <h3 className="text-lg font-semibold mb-2">Download App</h3>
           <div className="flex space-x-4">
-            <img src="/images/app-btn.svg" alt="App Store" className="h-10" />
+            <img src="../Images/app-btn.svg" alt="App Store" className="h-10" />
             <img
-              src="/images/store-btn.svg"
+              src="../Images/store-btn.svg"
               alt="Google Play"
               className="h-10"
             />

@@ -14,11 +14,11 @@ const DownloadApp = () => {
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-center gap-4 mt-4 md:mt-0 flex-col lg:flex-row pb-10  lg:pb-0">
           <Link to="#">
-            <img src="/images/app-btn.svg" alt="app" className="w-44 md:w-40 lg:w-40 " />
+            <img src="../Images/app-btn.svg" alt="app" className="w-44 md:w-40 lg:w-40 " />
           </Link>
           <Link to="#">
             <img
-              src="/images/store-btn.svg"
+              src="../Images/store-btn.svg"
               alt="store"
               className="w-44 md:w-40 lg:w-40 "
             />
