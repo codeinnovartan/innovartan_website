@@ -10,7 +10,7 @@ const FinancialAdvisors = () => {
         className="absolute -top-1 w-full left-1 object-cover z-0 hidden sm:block"
       />
         <h2 className="text-center text-white text-xl md:text-[40px] leading-[48px] font-semibold">
-          Our <span className="text-[#F36421]">Financial</span> Advisors
+          Our <span className="text-[#F36421]">Advisors</span>
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-6 lg:mt-10">
           <div className="bg-white rounded-lg shadow-lg p-4 lg:p-6 w-52 lg:w-64 flex flex-col items-center">
@@ -22,7 +22,7 @@ const FinancialAdvisors = () => {
             <h3 className="text-base lg:text-xl font-bold text-[#073278] mt-4">
               Gokul Rajaram
             </h3>
-            <p className="text-xs text-[#494949] lg:text-[16px]">Financial Advisor</p>
+            {/* <p className="text-xs text-[#494949] lg:text-[16px]">Financial Advisor</p> */}
           </div>
           <div className="bg-white rounded-lg shadow-lg p-4 lg:p-6 w-52 lg:w-64 flex flex-col items-center">
               <img
@@ -33,7 +33,7 @@ const FinancialAdvisors = () => {
             <h3 className="text-base lg:text-xl font-bold text-[#073278] mt-4">
               Amit Singhal
             </h3>
-            <p className="text-xs text-[#494949] lg:text-[16px]">Financial Advisor</p>
+            {/* <p className="text-xs text-[#494949] lg:text-[16px]">Financial Advisor</p> */}
           </div>
         </div>
       </div>

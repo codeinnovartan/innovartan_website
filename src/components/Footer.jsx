@@ -196,10 +196,10 @@ const Footer = () => {
             <div className="flex items-center bg-white bg-opacity-10 rounded-full gap-2 px-4 py-2">
               <FaPhoneVolume className="text-3xl bg-[#073278] p-2 rounded-full" />
               <a
-                href="tel:+919319888783"
+                href="tel:+919319888781"
                 className="text-sm md:text-base font-medium text-inherit"
               >
-                Call: +91 9319 888 783
+                Call: +91 9319 888 781
               </a>
             </div>
 

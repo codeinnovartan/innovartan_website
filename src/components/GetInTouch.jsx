@@ -202,8 +202,8 @@ export default function GetInTouch() {
                 </button>
               </div>
               <span className="text-base font-medium text-[#0743A3]">
-                <a href="tel:+919319888783" className="text-[#0743A3]">
-                  Call: +91 9319 888 783
+                <a href="tel:+919319888781" className="text-[#0743A3]">
+                  Call: +91 9319 888 781
                 </a>
               </span>
             </div>
@@ -327,8 +327,8 @@ export default function GetInTouch() {
             </button>
           </div>
           <span className="text-base font-medium text-[#0743A3]">
-            <a href="tel:+919319888783" className="text-[#0743A3]">
-              Call: +91 9319 888 783
+            <a href="tel:+919319888781" className="text-[#0743A3]">
+              Call: +91 9319 888 781
             </a>
           </span>
         </div>
