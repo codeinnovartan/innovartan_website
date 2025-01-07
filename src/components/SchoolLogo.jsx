@@ -6,7 +6,7 @@ const logos = [
   {
     src: "/images/school1.svg",
     title: "Delhi Public School (DPS)",
-    location: "Noida",
+    location: "Ghaziabad",
   },
   {
     src: "/images/school2.svg",
@@ -16,7 +16,7 @@ const logos = [
   {
     src: "/images/school3.svg",
     title: "Innovartan Global Public School",
-    location: "Noida",
+    location: "Rewari",
   },
   {
     src: "/images/school4.svg",
@@ -70,20 +70,21 @@ export const SchoolLogo = ({left,middle,right,description}) => {
         itemClass="px-4"
       >
         {logos.map((logo, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center bg-white rounded-2xl px-2 py-4 shadow-sm"
-          >
-            <img
-              src={logo.src}
-              alt={logo.title}
-              className="w-24 h-24 mb-4 object-contain"
-            />
-            <h3 className="text-base font-medium lg:text-base  md:text-lg text-center">
-              {logo.title}
-            </h3>
-            <p className=" text-sm text-[#494949] text-center">{logo.location}</p>
-          </div>
+          <div></div>
+          // <div
+          //   key={index}
+          //   className="flex flex-col items-center bg-white rounded-2xl px-2 py-4 shadow-sm"
+          // >
+          //   <img
+          //     src={logo.src}
+          //     alt={logo.title}
+          //     className="w-24 h-24 mb-4 object-contain"
+          //   />
+          //   <h3 className="text-base font-medium lg:text-base  md:text-lg text-center">
+          //     {logo.title}
+          //   </h3>
+          //   {/* <p className=" text-sm text-[#494949] text-center">{logo.location}</p> */}
+          // </div>
         ))}
       </Carousel>
       </div>
