@@ -1,4 +1,4 @@
-import Home from "/images/home.png";
+import Home from "../Images/home.png";
 import Profile1 from "/images/profe.png";
 import Profile2 from "/images/prof2.png";
 import Image from "/images/img.png";

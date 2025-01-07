@@ -1,6 +1,6 @@
-import Home from "/images/home.png";
-import Profile1 from "/images/profe.png";
-import Profile2 from "/images/prof2.png";
+import Home from "../../Images/home.png";
+import Profile1 from "../../Images/profe.png";
+import Profile2 from "../../Images/prof2.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 const AchiveGoals = () => {

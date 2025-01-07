@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import Star from "/images/star.png";
-import Group from "/images/group.png";
-import Team from "/images/team.png";
-import Presentation from "/images/presentation.png";
-import Teacher from "/images/teacher_1.png";
+import Star from "../../Images/star.png";
+import Group from "../../Images/group.png";
+import Team from "../../Images/team.png";
+import Presentation from "../../Images/presentation.png";
+import Teacher from "../../Images/teacher_1.png";
 
 const features = [
   {

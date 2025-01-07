@@ -5,9 +5,9 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Card from "./Card";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Physics from "../../../public/images/physics.png";
-import Math from "../../../public/images/math.png";
-import Chemistry from "/images/chemistry.png";
+import Physics from "../../Images/physics.png";
+import Math from "../../Images/math.png";
+import Chemistry from "../../Images/chemistry.png";
 
 const multipleCard = [
   {
