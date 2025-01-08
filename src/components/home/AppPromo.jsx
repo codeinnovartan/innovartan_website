@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 export const AppPromo = () => {
   return (
     <>
       <div className="bg-gradient-to-r from-[#4C0087] to-[#001B47] w-full flex  justify-center items-center  md:justify-around lg:py-6  px-6 md:px-30 lg:px-36 font-metropolis ">
         <div>
           <div className="flex flex-col w-full  lg:justify-between justify-center items-center text-white px-4 py-2">
-            <p className="text-sm lg:text-xl font-normal text-center lg:text-left lg:mr-2">
+            <p className="text-sm lg:text-xl font-normal text-center lg:text-left lg:mr-8">
               Download the Innovartan App & unlock the power of seamless
               learning and growth
             </p>
@@ -39,7 +39,7 @@ export const AppPromo = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center gap-4 lg:mt-2 md:mt-0 flex-col lg:flex-row ">
+          {/* <div className="w-full md:w-1/2 flex justify-center items-center gap-4 lg:mt-2 md:mt-0 flex-col lg:flex-row ">
             <Link to="#">
               <img
                 src="/images/app-btn.svg"
@@ -54,7 +54,7 @@ export const AppPromo = () => {
                 className=" "
               />
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="flex z-10 relative lg:-bottom-6">
           <img src="/images/img_innovartan_app.png" alt="mobile image" />

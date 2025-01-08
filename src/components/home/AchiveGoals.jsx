@@ -1,6 +1,3 @@
-import Home from "../../Images/home.png";
-import Profile1 from "../../Images/profe.png";
-import Profile2 from "../../Images/prof2.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 const AchiveGoals = () => {
@@ -26,41 +23,45 @@ const AchiveGoals = () => {
             Lives!!
           </p>
           <div className="w-full max-md:flex items-center justify-center">
-          <button className=" flex justify-center items-center mt-6 bg-[#073278] text-white px-8 py-3 rounded-xl text-sm font-medium shadow-md hover:text-[#073278] hover:bg-transparent hover:border hover:border-[#073278] transition ease-in duration-300 ">
+            <button className=" flex justify-center items-center mt-6 bg-[#073278] text-white px-8 py-3 rounded-xl text-sm font-medium shadow-md hover:text-[#073278] hover:bg-transparent hover:border hover:border-[#073278] transition ease-in duration-300 ">
               <span className="mr-2">Know More</span>
               <IoIosArrowForward className="mt-1" />
             </button>
           </div>
-        </div> 
-         <div className="flex flex-col justify-center items-center lg:w-[30%]  gap-10 mt-8">
-                  <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:mr-20 ">
-                    <img src={Profile1} alt="image" className="w-16  mr-5" />
-                    <div>
-                      <div className="text-[#073278] text-4xl font-bold">600+</div>
-                      <div>
-                        <h3 className="text-[#494949] text-sm">Expert Teachers</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:ml-24">
-                    <img src={Profile2} alt="image" className="w-16 mr-5" />
-                    <div>
-                      <div className="text-[#073278] text-4xl font-bold">12000+</div>
-                      <div>
-                        <h3 className="text-[#494949] text-sm">Students</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:mr-20">
-                    <img src={Home} alt="image" className="w-16  mr-5" />
-                    <div>
-                      <div className="text-[#073278] text-4xl font-bold">45+</div>
-                      <div>
-                        <h3 className="text-[#494949] text-sm">Affiliated Schools</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        </div>
+        <div className="flex flex-col justify-center items-center lg:w-[30%]  gap-10 mt-8">
+          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:mr-20 ">
+            <img src="/images/profe.png" alt="image" className="w-16  mr-5" />
+            <div>
+              <div className="text-[#073278] text-4xl font-bold">600+</div>
+              <div>
+                <h3 className="text-[#494949] text-sm">Expert Teachers</h3>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:ml-24">
+            <img src="/images/prof2.png" alt="image" className="w-16 mr-5" />
+            <div>
+              <div className="text-[#073278] text-4xl font-bold">12000+</div>
+              <div>
+                <h3 className="text-[#494949] text-sm">Students</h3>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:mr-20">
+            <img
+              src="/images/home.png"
+              alt="image"
+              className="w-16  mr-5"
+            />
+            <div>
+              <div className="text-[#073278] text-4xl font-bold">45+</div>
+              <div>
+                <h3 className="text-[#494949] text-sm">Affiliated Schools</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

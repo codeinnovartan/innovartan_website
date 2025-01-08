@@ -24,21 +24,35 @@ const Footer = () => {
               training and support to excel in today’s competitive educational
               landscape.
             </p>
-            <div className="mt-4 hidden sm:block">
+            {/* <div className="mt-4 hidden sm:block">
               <h3 className="text-lg font-semibold mb-2">Download App</h3>
               <div className="flex space-x-4">
-                <img
-                  src="/images/app-btn.svg"
-                  alt="App Store"
-                  className="h-10"
-                />
-                <img
-                  src="/images/store-btn.svg"
-                  alt="Google Play"
-                  className="h-10"
-                />
+                <div
+                  onClick={() =>
+                    window.open("https://innovartan.s3.ap-southeast-1.amazonaws.com/resource/4/file-1720778203-2090305020.apk", "_blank")
+                  }
+                  className="cursor-pointer"
+                >
+                  <img
+                    src="/images/app-btn.svg"
+                    alt="App Store"
+                    className="h-10"
+                  />
+                </div>
+                <div
+                  onClick={() =>
+                    window.open("https://play.google.com/", "_blank")
+                  }
+                  className="cursor-pointer"
+                >
+                  <img
+                    src="/images/download-app.svg"
+                    alt="Google Play"
+                    className="h-10"
+                  />
+                </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-wrap sm:hidden md:justify-start  lg:md:justify-start xl:justify-start  justify-center gap-3">
             <ul className="flex gap-3">
@@ -54,7 +68,7 @@ const Footer = () => {
                 },
                 {
                   icon: FaInstagram,
-                  link: ": https://www.instagram.com/innovartan",
+                  link: " https://www.instagram.com/innovartan",
                 },
                 {
                   icon: FaYoutube,
@@ -65,9 +79,14 @@ const Footer = () => {
                   key={idx}
                   className="bg-[#073278] rounded-lg p-3 text-center flex justify-center items-center"
                 >
-                  <a href={link} target="_blank" rel="noopener noreferrer">
+                  <button
+                    onClick={() =>
+                      window.open(link, "_blank", "noopener,noreferrer")
+                    }
+                    className="cursor-pointer bg-transparent border-none"
+                  >
                     <Icon className="text-base md:text-lg text-white" />
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -77,18 +96,18 @@ const Footer = () => {
               <h3 className="text-lg font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm font-medium">
                 <li>
-                  <Link to="/students-parents" className="hover:underline">
+                  <Link to="/student" className="hover:underline">
                     Students / Parents
                   </Link>
                 </li>
                 <li>
-                  <Link to="/teachers" className="hover:underline">
-                    Teachers
+                  <Link to="/teacher" className="hover:underline">
+                    Teacher
                   </Link>
                 </li>
                 <li>
-                  <Link to="/schools" className="hover:underline">
-                    Schools
+                  <Link to="/school" className="hover:underline">
+                    School
                   </Link>
                 </li>
               </ul>
@@ -97,18 +116,13 @@ const Footer = () => {
               <h3 className="text-lg font-bold mb-4">About</h3>
               <ul className="space-y-2 text-sm font-medium">
                 <li>
-                  <Link to="/mission" className="hover:underline">
-                    Our Mission
+                  <Link to="/blogs" className="hover:underline">
+                    Blogs
                   </Link>
                 </li>
                 <li>
-                  <Link to="/team" className="hover:underline">
-                    Our Team
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/investors" className="hover:underline">
-                    Our Investors
+                  <Link to="/about" className="hover:underline">
+                    About Us
                   </Link>
                 </li>
                 <li>
@@ -131,11 +145,7 @@ const Footer = () => {
                     Terms & Conditions
                   </Link>
                 </li>
-                <li>
-                  <Link to="/sitemap" className="hover:underline">
-                    Sitemap
-                  </Link>
-                </li>
+
                 <li>
                   <Link to="/faqs" className="hover:underline">
                     FAQs
@@ -145,17 +155,30 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4 sm:hidden">
+        {/* <div className="mt-4 sm:hidden">
           <h3 className="text-lg font-semibold mb-2">Download App</h3>
+
           <div className="flex space-x-4">
-            <img src="/images/app-btn.svg" alt="App Store" className="h-10" />
-            <img
-              src="/images/store-btn.svg"
-              alt="Google Play"
-              className="h-10"
-            />
+            <div
+              onClick={() =>
+                window.open("https://innovartan.s3.ap-southeast-1.amazonaws.com/resource/4/file-1720778203-2090305020.apk", "_blank")
+              }
+              className="cursor-pointer"
+            >
+              <img src="/images/app-btn.svg" alt="App Store" className="h-10" />
+            </div>
+            <div
+              onClick={() => window.open("https://play.google.com/", "_blank")}
+              className="cursor-pointer"
+            >
+              <img
+                src="/images/download-app.svg"
+                alt="Google Play"
+                className="h-10"
+              />
+            </div>
           </div>
-        </div>
+        </div> */}
         <h1 className=" hidden sm:flex text-lg md:text-xl font-bold mt-8">
           Follow us
         </h1>
@@ -174,7 +197,7 @@ const Footer = () => {
                 },
                 {
                   icon: FaInstagram,
-                  link: ": https://www.instagram.com/innovartan",
+                  link: " https://www.instagram.com/innovartan",
                 },
                 {
                   icon: FaYoutube,
@@ -185,9 +208,14 @@ const Footer = () => {
                   key={idx}
                   className="bg-[#073278] rounded-lg p-3 text-center flex justify-center items-center"
                 >
-                  <a href={link} target="_blank" rel="noopener noreferrer">
-                    <Icon className="text-base md:text-lg text-white" />
-                  </a>
+                  <button
+                    onClick={() =>
+                      window.open(link, "_blank", "noopener,noreferrer")
+                    }
+                    className="cursor-pointer bg-transparent border-none"
+                  >
+                    <Icon className="text-base md:text-lg text-white " />
+                  </button>
                 </li>
               ))}
             </ul>

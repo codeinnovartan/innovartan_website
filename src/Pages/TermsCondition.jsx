@@ -1,5 +1,4 @@
 
-
 const TermsCondition = () => {
   return (
     <div className="flex flex-col md:flex-row bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-4 font-metropolis lg:-mt-5">
@@ -14,7 +13,7 @@ const TermsCondition = () => {
         <h1 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold mb-6 relative z-10">
         Terms & Conditions
         </h1>
-        <div className="  lg:border lg:border-[#E7EDF6] rounded-2xl lg:px-12 lg:py-8">
+        <div className=" lg:border lg:border-[#E7EDF6] rounded-2xl lg:px-12 lg:py-8">
           <p className="mb-4  text-sm leading-6 lg:text-xl lg:leading-[38px] font-normal relative z-10">
           Welcome to Innovartan. By accessing or using our website and services, you agree to be bound by the following terms and conditions. Please read them carefully.
           </p>

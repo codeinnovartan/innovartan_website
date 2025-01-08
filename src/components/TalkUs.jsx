@@ -1,23 +1,20 @@
-import Home from "../Images/home.png";
-import Profile1 from "/images/profe.png";
-import Profile2 from "/images/prof2.png";
-import Image from "/images/img.png";
+
 const data = [
   {
     id: 1,
-    image: Profile1,
+    image:"/images/profe.png",
     value: "600+",
     title: "Expert Teachers",
   },
   {
     id: 2,
-    image: Profile2,
+    image: "/images/profe2.png",
     value: "12000+",
     title: "Students",
   },
   {
     id: 3,
-    image: Home,
+    image: "/images/home.png",
     value: "45+",
     title: "Affiliated Schools",
   },
@@ -48,7 +45,7 @@ const TalkUs = () => {
         </div>
         <div className="flex justify-center items-center lg:-mt-16">
           <img
-            src={Image}
+            src='/images/img.png'
             alt="image"
             className="lg:w-64 lg:h-80 relative z-10 lg:-bottom-24"
           />

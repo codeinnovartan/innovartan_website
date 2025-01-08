@@ -4,7 +4,7 @@ import StudentMission from "../components/student/StudentMission";
 import StudentResourses from "../components/student/StudentResourses";
 import Testimonials from "../components/Testimonials";
 import GetInTouch from "../components/GetInTouch";
-import DownloadNow from "../components/DownloadNow";
+// import DownloadNow from "../components/DownloadNow";
 
 const Students = () => {
   return (
@@ -40,7 +40,7 @@ const Students = () => {
       </div>
       <Program />
       <StudentMission />
-      <DownloadNow />
+      {/* <DownloadNow /> */}
       <EmpoweringStudent/>
       <Testimonials
         title="Success Stories"

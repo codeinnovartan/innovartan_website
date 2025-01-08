@@ -1,7 +1,4 @@
-import Image from "../../Images/img.png";
-import Home from "../../Images/home.png";
-import Profile1 from "../../Images/profe.png";
-import Profile2 from "../../Images/prof2.png";
+
 import { IoIosArrowForward } from "react-icons/io";
 
 const With_us = () => {
@@ -29,7 +26,7 @@ const With_us = () => {
         </div>
         <div className="flex flex-col justify-center items-center lg:w-[30%]  gap-10 mt-8">
           <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:mr-20 ">
-            <img src={Profile1} alt="image" className="w-16  mr-5" />
+            <img src="/images/profe.png" alt="image" className="w-16  mr-5" />
             <div>
               <div className="text-[#073278] text-4xl font-bold">600+</div>
               <div>
@@ -38,7 +35,7 @@ const With_us = () => {
             </div>
           </div>
           <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:ml-24">
-            <img src={Profile2} alt="image" className="w-16 mr-5" />
+            <img src="/images/prof2.png" alt="image" className="w-16 mr-5" />
             <div>
               <div className="text-[#073278] text-4xl font-bold">12000+</div>
               <div>
@@ -47,7 +44,7 @@ const With_us = () => {
             </div>
           </div>
           <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start gap-2 lg:mr-20">
-            <img src={Home} alt="image" className="w-16  mr-5" />
+            <img src="/images/home.png" alt="image" className="w-16  mr-5" />
             <div>
               <div className="text-[#073278] text-4xl font-bold">45+</div>
               <div>
@@ -58,7 +55,7 @@ const With_us = () => {
         </div>
        <div className=" hidden sm:flex-1 md:flex flex-col items-center lg:w-[30%] relative">
           <img
-            src={Image}
+            src="/images/img.png"
             alt="image"
             className="h-52 md:h-auto relative z-10 md:-bottom-8"
           />

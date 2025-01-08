@@ -10,8 +10,8 @@ import Banner from "../components/teacher/Banner";
 // import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import Excellence from "../components/teacher/Excellence";
-import DownloadApp from "../components/DownloadApp";
-import DownloadNow from "../components/DownloadNow";
+// import DownloadApp from "../components/DownloadApp";
+// import DownloadNow from "../components/DownloadNow";
 
 const Teachers = () => {
   return (
@@ -73,12 +73,12 @@ const Teachers = () => {
       </div>
       <FacultySupport />
       <With_us />
-     <div className="lg:block hidden">
+     {/* <div className="lg:block hidden">
      <DownloadApp/>
      </div>
      <div className=" lg:hidden">
      <DownloadNow/>
-     </div>
+     </div> */}
       <GetInTouch />
     </>
   );

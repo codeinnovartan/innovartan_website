@@ -1,7 +1,7 @@
 import { Main } from "../components/about/Main"
 import Mission from "../components/about/Mission"
-import DownloadApp from "../components/DownloadApp"
-import DownloadNow from "../components/DownloadNow"
+// import DownloadApp from "../components/DownloadApp"
+// import DownloadNow from "../components/DownloadNow"
 export const About = () => {
   return (
     <>
@@ -26,12 +26,12 @@ export const About = () => {
       </div>
       <Main/>
       <Mission/>
-      <div className=" hidden lg:block">
+      {/* <div className=" hidden lg:block">
       <DownloadApp/>
       </div>
       <div className="lg:hidden">
         <DownloadNow/>
-      </div>
+      </div> */}
     </>
   )
 }

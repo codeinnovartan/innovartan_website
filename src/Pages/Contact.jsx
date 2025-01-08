@@ -1,7 +1,7 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
-import DownloadNow from '../components/DownloadNow'
+// import DownloadNow from '../components/DownloadNow'
 import GetInTouch from "../components/GetInTouch";
 
 const ContactUs = () => {
@@ -66,7 +66,7 @@ const ContactUs = () => {
           ></iframe>
         </div>
       </div>
-      <DownloadNow/>
+      {/* <DownloadNow/> */}
       <GetInTouch />
     </>
   );

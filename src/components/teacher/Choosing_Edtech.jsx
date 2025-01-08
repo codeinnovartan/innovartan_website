@@ -1,27 +1,24 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import Star from "../../Images/star.png";
-import Group from "../../Images/group.png";
-import Team from "../../Images/team.png";
-import Presentation from "../../Images/presentation.png";
-import Teacher from "../../Images/teacher_1.png";
+
+
 
 const features = [
   {
     title: "Learning and career growth support.",
-    icon: Star,
+    icon: '/images/star.png',
   },
   {
     title: "Placement assistance in top-tier schools.",
-    icon: Group,
+    icon: "/images/group.png",
   },
   {
     title: "Connect & Collaborate - Educator Networks.",
-    icon: Team,
+    icon: "/images/team.png",
   },
   {
     title: "Comprehensive training programs.",
-    icon: Presentation,
+    icon:"presentation.png",
   },
 ];
 
@@ -45,7 +42,7 @@ const Choosing_Edtech = () => {
         <div className="space-y-6">
           <div className="relative max-w-md sm:flex-1 flex-col items-center hidden md:block">
             <img
-              src={Teacher}
+              src='/images/teacher_1.png'
               alt="image"
               className="object-cover rounded-full lg:h-[14rem]"
             />
