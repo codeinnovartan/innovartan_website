@@ -1,5 +1,12 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 const StudentResourses = () => {
+           
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   const resources = [
     {
       img: "/images/ai-icon.svg",
@@ -30,8 +37,8 @@ const StudentResourses = () => {
           <p className="mt-2 text-white text-center text-xs lg:text-xl ">
             Reach out to our student support team for assistance
           </p>
-          <div className="flex  flex-col justify-center items-center text-center lg:flex-row md:flex-row mt-5 lg:mt-6 ">
-            <button className="inline-flex justify-center items-center text-base bg-[#F36421] font-medium gap-2  text-white px-6 py-3 rounded-full  hover:text-[#F36421] hover:border hover:border-[#F36421] hover:bg-transparent transition ease-in duration-300 ">
+          <div  className="flex  flex-col justify-center items-center text-center lg:flex-row md:flex-row mt-5 lg:mt-6 ">
+            <button onClick={handleNavigation} className="inline-flex justify-center items-center text-base bg-[#F36421] font-medium gap-2  text-white px-6 py-3 rounded-full border border-transparent hover:text-[#F36421] hover:border hover:border-[#F36421] hover:bg-transparent transition ease-in duration-300 cursor-pointer ">
               Contact us
               <IoIosArrowForward className="w-4 h-4" />
             </button>

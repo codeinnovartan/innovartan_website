@@ -10,10 +10,21 @@ import Banner from "../components/teacher/Banner";
 // import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import Excellence from "../components/teacher/Excellence";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ModalPopup from "../components/ModalPopup";
 // import DownloadApp from "../components/DownloadApp";
 // import DownloadNow from "../components/DownloadNow";
 
 const Teachers = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+          
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   return (
     <>
       <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
@@ -28,10 +39,10 @@ const Teachers = () => {
               training, certifications, and placement opportunities.
             </p>
             <div className="hidden sm:flex justify-center md:justify-start mt-4 md:mt-8 space-x-4 mb-0 sm:mb-6">
-            <button className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] hover:border hover:border-[#F36421] hover:bg-transparent transition ease-in duration-300">
+            <button onClick={()=>setIsModalOpen(true)} className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] border border-transparent cursor-pointer transition ease-in duration-300 hover:border hover:border-[#F36421] hover:bg-transparent">
                 Get Started
               </button>
-              <button className="bg-[#0743A3] w-52 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-[#0743A3] hover:border hover:border-[#0743A3] hover:bg-transparent transition ease-in duration-300">
+              <button onClick={handleNavigation} className="bg-[#0743A3] w-52 text-white py-2 px-4 border border-transparent cursor-pointer transition ease-in duration-300 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-white hover:border hover:border-white hover:bg-transparent">
              Contact us
               </button>
             </div>
@@ -40,6 +51,7 @@ const Teachers = () => {
             <img src="/images/teacher.png" alt="Teachers" className="relative z-10 lg:-bottom-8" />
           </div>
         </div>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
       {/* <div className="bg-white rounded-tl-xl rounded-tr-xl shadow-md p-3 max-w-md mx-auto sm:hidden">
         <h1 className="text-xl font-bold text-center mb-1 font-metropolis">

@@ -1,6 +1,12 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const EmpowerSchool = () => {
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   return (
     <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 font-metropolis">
       <section className="bg-[#FFF5EF]  rounded-2xl flex flex-col-reverse py-4 md:flex-row items-center md:items-stretch ">
@@ -13,11 +19,11 @@ const EmpowerSchool = () => {
           Partner with Innovartan and bring world-class education to your classrooms
           </p>
           <div className="flex gap-4 flex-col lg:flex-row md:flex-row ">
-          <button className=" inline-flex  justify-center items-center text-base bg-[#F36421] font-medium gap-2  text-white px-6 py-3 hover:text-[#F36421]  hover:border-[#F36421] hover:border hover:bg-transparent  transition ease-in duration-300 rounded-full">
+          <button onClick={handleNavigation}className=" inline-flex border border-transparent justify-center items-center text-base bg-[#F36421] font-medium gap-2  text-white px-6 py-3 hover:text-[#F36421]  hover:border-[#F36421] hover:border hover:bg-transparent  transition ease-in duration-300 rounded-full">
           Contact Us
             <IoIosArrowForward  className="w-4 h-4"/>
           </button>
-          <button className="inline-flex  items-center text-base font-medium gap-2 bg-[#0743A3] text-white px-6 py-3 rounded-full  hover:text-[#0743A3]  hover:border-[#0743A3] hover:border hover:bg-transparent  transition ease-in duration-300 ">
+          <button className="inline-flex  items-center  border border-transparent text-base font-medium gap-2 bg-[#0743A3] text-white px-6 py-3 rounded-full  hover:text-[#0743A3]  hover:border-[#0743A3] hover:border hover:bg-transparent  transition ease-in duration-300 ">
            Download Brochure
               <IoIosArrowForward  className="w-4 h-4"/>
             </button>

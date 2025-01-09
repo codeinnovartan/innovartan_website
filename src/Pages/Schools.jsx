@@ -5,8 +5,13 @@ import SchoolEmpoweringProgram from "../components/school/SchoolEmpoweringProgra
 import TeacherReviews from "../components/school/TeacherReviews";
 import { SchoolLogo } from "../components/SchoolLogo";
 import GetInTouch from "../components/GetInTouch";
+import ModalPopup from "../components/ModalPopup";
+import { useState } from "react";
 
 const Schools = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
@@ -23,7 +28,7 @@ const Schools = () => {
               Transform your school into a center of academic excellence with
               our School Empowering Program
             </p>
-            <button className=" hidden lg:block md:block bg-[#F36421] w-[164px] px-8 sm:px-3 py-3 rounded-xl text-white font-medium  sm:text-base hover:text-[#F36421] hover:border hover:border-[#F36421] hover:bg-transparent transition ease-in duration-400">
+            <button onClick={()=>setIsModalOpen(true)} className="hidden lg:block bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] border border-transparent cursor-pointer transition ease-in duration-300 hover:border hover:border-[#F36421] hover:bg-transparent">
               Partner With Us
             </button>
           </div>
@@ -35,6 +40,7 @@ const Schools = () => {
             />
           </div>
         </div>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
       <SchoolEmpoweringProgram />
       <InnovartanPage />

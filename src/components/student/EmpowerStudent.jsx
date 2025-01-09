@@ -1,5 +1,8 @@
 
+import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
+import ModalPopup from "../ModalPopup";
 const studentsData = [
   {
     id: 1,
@@ -24,6 +27,12 @@ const studentsData = [
 ];
 
 const EmpoweringStudent = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
     return (
       <div className="bg-white max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-10 -mt-10 lg:-mt-0 font-metropolis">
         <div className="text-center mb-8 flex items-center justify-center">
@@ -63,19 +72,19 @@ const EmpoweringStudent = () => {
               deserve
             </p>
             <div className="flex gap-2 lg:gap-4 flex-row lg:mt-6 items-center justify-center lg:items-start lg:justify-start ">
-              <button className="hidden sm:inline-flex justify-center items-center text-base bg-[#F36421] font-medium gap-2 text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full">
+              <button onClick={handleNavigation} className="hidden sm:inline-flex justify-center items-center text-base bg-[#F36421] font-medium gap-2 text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full border border-transparent hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421] transition ease-in duration-300 cursor-pointer">
                 Enroll Now
                 <IoIosArrowForward className="w-4 h-4" />
               </button>
-              <button className="inline-flex sm:hidden justify-center items-center text-base bg-[#F36421] font-medium gap-2 text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full">
+              <button onClick={handleNavigation}  className="inline-flex sm:hidden justify-center items-center text-base bg-[#F36421] font-medium gap-2 text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full border border-transparent hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421] transition ease-in duration-300 cursor-pointer">
                 Contact Us
                 <IoIosArrowForward className="w-4 h-4" />
               </button>
-              <button className="inline-flex sm:hidden justify-center items-center text-base font-medium gap-2 bg-[#0743A3] text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full">
+              <button onClick={()=>setIsModalOpen(true)} className="inline-flex sm:hidden justify-center items-center text-base font-medium gap-2 bg-[#0743A3] text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full border border-transparent hover:text-[#0743A3] hover:bg-transparent hover:border hover:border-[#0743A3] transition ease-in duration-300 cursor-pointer ">
                 Talk to Us
                 <IoIosArrowForward className="w-4 h-4" />
               </button>
-              <button className="hidden sm:inline-flex justify-center items-center text-base font-medium gap-2 bg-[#0743A3] text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full">
+              <button onClick={()=>setIsModalOpen(true)} className="hidden sm:inline-flex justify-center items-center text-base font-medium gap-2 bg-[#0743A3] text-white px-4 lg:px-6 lg:py-3 py-2 rounded-full border border-transparent hover:text-[#0743A3] hover:bg-transparent hover:border hover:border-[#0743A3] transition ease-in duration-300 cursor-pointer ">
                 Talk to our Counsellor
                 <IoIosArrowForward className="w-4 h-4" />
               </button>
@@ -89,6 +98,7 @@ const EmpoweringStudent = () => {
             />
           </div>
         </div>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
     );
   };

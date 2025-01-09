@@ -1,5 +1,16 @@
+import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
+import ModalPopup from "../ModalPopup";
+
 const InnovartanPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+          
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   return (
     <div className="bg-white max-w-7xl mx-auto sm:px-6 lg:px-8 py-4 font-metropolis">
       <div className=" bg-gradient-to-r from-[#002A6C] to-[#001A44]  relative overflow-hidden lg:rounded-2xl ">
@@ -74,17 +85,18 @@ const InnovartanPage = () => {
           </div>
 
           <div className="flex gap-4 flex-col lg:flex-row md:flex-row ">
-            <button className="inline-flex  items-center text-base font-medium gap-2 bg-[#0743A3] md:bg-[#0743A3]  text-white px-6 py-3 hover:border hover:border-[#0743A3]  hover:bg-transparent hover:text-[#0743A3] transition ease-in duration-400  rounded-full">
+            <button onClick={handleNavigation} className="inline-flex  border border-transparent items-center text-base font-medium gap-2 bg-[#0743A3] md:bg-[#0743A3]  text-white px-6 py-3 hover:border hover:border-white  hover:bg-transparent hover:text-white transition ease-in duration-400  rounded-full">
               Let&apos;s Connect
               <IoIosArrowForward className="w-4 h-4" />
             </button>
-            <button className="lg:inline-flex items-center text-base bg-[#F36421] font-medium gap-2  text-white px-6 py-3 hover:border hover:border-[#F36421]  hover:bg-transparent hover:text-[#F36421] transition ease-in duration-400 rounded-full hidden ">
+            <button onClick={()=>setIsModalOpen(true)} className="lg:inline-flex items-center text-base bg-[#F36421] font-medium gap-2  text-white border border-transparent px-6 py-3 hover:border hover:border-[#F36421]  hover:bg-transparent hover:text-[#F36421] transition ease-in duration-400 rounded-full hidden ">
               Schedule a Call
               <IoIosArrowForward className="w-4 h-4" />
             </button>
           </div>
         </div>
       </div>
+      <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
     </div>
   );
 };

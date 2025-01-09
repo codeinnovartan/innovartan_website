@@ -26,7 +26,6 @@ export default function GetInTouch() {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
 
-    // Reset error for the field being modified
     setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
@@ -47,7 +46,6 @@ export default function GetInTouch() {
     const formErrors = validateForm();
     setErrors(formErrors);
 
-    // If there are errors, stop submission
     if (Object.keys(formErrors).length > 0) {
       setIsSubmitting(false);
       return;
@@ -84,7 +82,7 @@ export default function GetInTouch() {
   };
 
   return (
-    <div className="w-full mx-auto px-4 py-12 font-metropolis lg:px-36 bg-[#E7EDF6] lg:bg-transparent -mt-10">
+    <div className="w-full mx-auto px-4 py-12 font-metropolis lg:px-36 bg-[#E7EDF6] lg:bg-transparent mt-5 lg:-mt-10">
       <div id="talk-to-us" className="grid lg:grid-cols-2 gap-8 items-center mb-3">
         <div className="hidden sm:block relative">
           <div className="absolute w-[80%] h-[80%] top-[10%] left-[10%] -z-10 px-6" />
@@ -96,7 +94,7 @@ export default function GetInTouch() {
             <div className="bg-white rounded-full py-1 px-2 shadow-lg flex items-center gap-3">
               <div className="bg-[#0743A3] p-2 rounded-full">
                 <button className="p-1 rounded-full flex justify-center items-center shadow-md">
-                  <MdWifiCalling3 className="w-4 h-4 text-white" />
+                  <MdWifiCalling3 className="w-5 h-5 text-white" />
                 </button>
               </div>
               <span className="text-base font-medium text-[#0743A3]">
@@ -108,7 +106,7 @@ export default function GetInTouch() {
             <div className="bg-white rounded-full py-1 px-2 shadow-lg flex items-center gap-3">
               <div className=" bg-[#0743A3] p-2 rounded-full">
                 <button className="p-1 rounded-full flex justify-center items-center shadow-md">
-                  <MdOutlineMailOutline className="w-4 h-4 text-white" />
+                  <MdOutlineMailOutline className="w-5 h-5 text-white" />
                 </button>
               </div>
               <span className="text-base font-medium">
@@ -211,7 +209,7 @@ export default function GetInTouch() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full lg:w-1/3 py-2 px-4 text-base font-medium bg-[#0743A3] text-white rounded-xl hover:text-[#0743A3] hover:border hover:border-[#0743A3] hover:bg-white ${
+                className={`w-full lg:w-1/3 py-2 px-4 text-base font-medium border border-transparent bg-[#0743A3] text-white rounded-xl hover:text-[#0743A3] hover:border hover:border-[#0743A3] hover:bg-white ${
                   isSubmitting ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
@@ -219,6 +217,32 @@ export default function GetInTouch() {
               </button>
             </form>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col sm:hidden gap-3">
+        <div className="bg-white rounded-full py-1 px-2 shadow-lg flex items-center gap-3">
+          <div className="bg-[#0743A3] p-2 rounded-full">
+            <button className="p-1 rounded-full flex justify-center items-center shadow-md">
+              <MdWifiCalling3 className="w-5 h-5 text-white" />
+            </button>
+          </div>
+          <span className="text-base font-medium text-[#0743A3]">
+            <a href="tel:+919319888781" className="text-[#0743A3]">
+              Call:+919319888781
+            </a>
+          </span>
+        </div>
+        <div className="bg-white rounded-full py-1 px-2 shadow-lg flex items-center gap-3">
+          <div className=" bg-[#0743A3] p-2 rounded-full">
+            <button className="p-1 rounded-full flex justify-center items-center shadow-md">
+              <MdOutlineMailOutline className="w-5 h-5 text-white" />
+            </button>
+          </div>
+          <span className="text-base font-medium">
+            <a href="mailto:info@innovartan.com" className="text-[#0743A3]">
+              Email: info@innovartan.com
+            </a>
+          </span>
         </div>
       </div>
     </div>

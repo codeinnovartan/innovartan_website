@@ -1,4 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 const features = [
   {
     id: 1,
@@ -31,10 +32,16 @@ const features = [
 ];
 
 function RedifiningEd() {
+
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   return (
     <div className="flex flex-col items-center font-metropolis mx-auto px-4 sm:px-6 lg:px-36 py-10">
       <div className="flex flex-col justify-center items-center">
-        <p className="text-sm text-white md:text-base font-bold bg-[#74AE42] inline-block px-2 md:px-3 py-1 md:py-2 rounded-lg mb-4 text-center"> Redefining Education</p>
+        <p className="text-xs text-white lg:text-sm font-bold bg-[#74AE42] inline-block px-2 md:px-3 py-1 md:py-2 rounded-xl mb-4 text-center"> Redefining Education</p>
         <h1 className="text-[24px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-center w-[80%]">
           <span className="text-[#F36421]">Empowering </span>{" "}
           Schools, Teachers,and Students Together
@@ -60,8 +67,8 @@ function RedifiningEd() {
       </div>
         ))}
       </section>
-      <div className="mt-5 flex justify-center items-end">
-        <button className=" inline-flex justify-center items-center gap-2  text-[#F36421] py-3 px-6 w-64 rounded-full border border-1 border-[#F36421] font-medium text-base md:text-base shadow-md">
+      <div className="mt-10 flex justify-center items-end">
+        <button onClick={handleNavigation} className=" inline-flex justify-center items-center gap-2  text-[#F36421] py-3 px-6 w-64 rounded-full border border-1 border-[#F36421] font-medium text-base md:text-base shadow-md">
           Know More
            <IoIosArrowForward  className="w-4 h-4"/>
         </button>

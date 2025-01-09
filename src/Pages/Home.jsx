@@ -13,9 +13,19 @@ import Collaborators from "../components/home/Collaborators";
 import CertifiedEducator from "../components/home/CertifiedEducator";
 import NewsArticles from "../components/home/NewsArticles";
 import { SchoolBanner } from "../components/home/SchoolBanner";
-
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import ModalPopup from "../components/ModalPopup";
 
 export default function Home(){
+  const [isModalOpen, setIsModalOpen] = useState(false);
+          
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
+
   return (
     <>
     <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
@@ -25,10 +35,10 @@ export default function Home(){
             Transforming <span className="text-[#F36421]">schools</span> into centers of excellence <br /> where <span className="text-[#F36421]">teachers</span> lead and{" "} <span className="text-[#F36421]">students </span>shine.
             </h1>
             <div className="hidden sm:flex justify-center md:justify-start mt-4 md:mt-8 space-x-4 mb-0 sm:mb-6">
-               <button className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] border border-transparent cursor-pointer transition ease-in duration-300 hover:border hover:border-[#F36421] hover:bg-transparent">
+               <button onClick={()=>setIsModalOpen(true)} className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] border border-transparent cursor-pointer transition ease-in duration-300 hover:border hover:border-[#F36421] hover:bg-transparent">
                 Get Started
               </button>
-              <button className="bg-[#0743A3] w-52 text-white py-2 px-4 border border-transparent cursor-pointer transition ease-in duration-300 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-white hover:border hover:border-white hover:bg-transparent">
+              <button onClick={handleNavigation} className="bg-[#0743A3] w-52 text-white py-2 px-4 border border-transparent cursor-pointer transition ease-in duration-300 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-white hover:border hover:border-white hover:bg-transparent">
              Contact us
               </button>
             </div>
@@ -37,6 +47,7 @@ export default function Home(){
             <img src="/images/home-img.png" alt="Teachers" className="relative z-10 lg:-bottom-8" />
           </div>
         </div>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
       <Pathway/>
       <BannerHome/>

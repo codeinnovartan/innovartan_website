@@ -2,7 +2,7 @@
 
 const Card = ({ img, title }) => {
   return (
-    <div className="flex flex-col px-4 py-4 shadow-lg w-full rounded-xl ">
+    <div className="flex flex-col px-4 py-4 shadow-lg w-full rounded-xl -mt-5 ">
       <div className="flex items-center justify-center">
         <img src={img} alt="physics" />
       </div>

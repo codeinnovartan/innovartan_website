@@ -1,9 +1,19 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ModalPopup from "../ModalPopup";
 
 
 export const SchoolBanner = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+          
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   return (
     <div className=" bg-[#E7EDF6] flex flex-col justify-between items-center w-full mx-auto px-4 sm:px-6 lg:px-8 font-metropolis">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-10 py-6 -mt-10  w-full lg:-mt-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-10 py-4 -mt-10  w-full lg:-mt-10 mb-2">
         <section className="bg-[#001C4A] text-white rounded-2xl flex flex-col md:flex-row items-center md:items-stretch ">
           <div className="flex flex-col justify-center items-center md:items-start w-full md:w-[50%] py-8 md:py-12 px-6 md:pl-12">
             <p className="text-xs md:text-sm font-bold bg-[#74AE42] inline-block px-2 md:px-3 py-1 md:py-2 rounded-xl mb-4 text-center">
@@ -18,11 +28,11 @@ export const SchoolBanner = () => {
               Empowering schools today for the leaders of tomorrow.
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center md:justify-start lg:justify-start gap-2 mb-0">
-              <button className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] hover:border hover:border-[#F36421] hover:bg-transparent">
+            <button onClick={()=>setIsModalOpen(true)} className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] border border-transparent cursor-pointer transition ease-in duration-300 hover:border hover:border-[#F36421] hover:bg-transparent">
                 Get Started
               </button>
-              <button className="bg-[#0743A3] w-52 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-[#F36421] hover:border hover:border-[#F36421] hover:bg-transparent">
-              Learn More
+              <button onClick={handleNavigation} className="bg-[#0743A3] w-52 text-white py-2 px-4 border border-transparent cursor-pointer transition ease-in duration-300 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-white hover:border hover:border-white hover:bg-transparent">
+             Learn More
               </button>
             </div>
           </div>
@@ -35,10 +45,11 @@ export const SchoolBanner = () => {
             <img
               src="/images/teacher4.png"
               alt="Educator"
-              className="relative z-10 h-52 md:h-[18.25rem] md:-bottom-5 lg:-bottom-5 md:left-5"
+              className="relative z-10 h-52 md:h-[18.25rem] md:-bottom-5 lg:-bottom-5 md:left-5 hidden lg:block"
             />
           </div>
         </section>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
     </div>
   )

@@ -1,9 +1,13 @@
 
 import { IoIosArrowForward } from "react-icons/io";
 import MissionCard from "./MissionCard";
+import ModalPopup from "../ModalPopup";
+import { useState } from "react";
 
 
 const StudentMission = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const missions = [
     {
       imageSrc: "/images/laptop1.svg",
@@ -63,13 +67,14 @@ const StudentMission = () => {
               ))}
             </div>
             <div className="text-center">
-              <button className="inline-flex justify-center items-center gap-2 bg-[#F36421]  py-2 px-4 rounded-full w-60  font-medium text-base md:text-base text-white">
+              <button  onClick={()=>setIsModalOpen(true)} className="inline-flex justify-center items-center gap-2 bg-[#F36421]  py-3 px-4 rounded-full w-60  font-medium text-base md:text-base text-white border border-transparent hover:bg-transparent hover:text-[#F36421] hover:border hover:border-[#F36421] transition ease-in duration-300 cursor-pointer">
                 Talk to Us
                 <IoIosArrowForward className="w-4 h-4 flex-shrink-0" />
               </button>
             </div>
           </div>
         </div>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
     </>
   );

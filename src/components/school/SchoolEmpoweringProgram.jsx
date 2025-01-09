@@ -1,7 +1,8 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { useState, useEffect } from 'react';
+import ModalPopup from "../ModalPopup";
 const SchoolEmpoweringProgram = () => {
-  
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const features = [
     {
       img: "/images/empower-school1.svg",
@@ -39,7 +40,7 @@ const SchoolEmpoweringProgram = () => {
       preparation into the school system.
     </p>
     <div className="mt-5 hidden lg:block">
-      <button className="inline-flex justify-center items-center gap-2 hover:text-[#F36421] py-3 px-8 rounded-full hover:border hover:border-[#F36421] hover:bg-transparent font-medium text-base text-white bg-[#F36421] shadow-md transition ease-in duration-300">
+      <button onClick={()=>setIsModalOpen(true)} className="inline-flex justify-center items-center border border-transparent gap-2 hover:text-[#F36421] py-3 px-8 rounded-full hover:border hover:border-[#F36421] hover:bg-transparent font-medium text-base text-white bg-[#F36421] shadow-md transition ease-in duration-300">
         Talk to Us
         <IoIosArrowForward className="w-4 h-4" />
       </button>
@@ -59,12 +60,13 @@ const SchoolEmpoweringProgram = () => {
       </div>
     ))}
    <div className=" lg:hidden flex justify-center -mb-5">
-  <button className="inline-flex justify-center items-center text-center gap-2 hover:text-[#F36421] py-3 px-8 rounded-full hover:border hover:border-[#F36421] hover:bg-transparent font-medium text-base text-white bg-[#F36421] shadow-md transition ease-in duration-300">
+  <button onClick={()=>setIsModalOpen(true)}className="inline-flex justify-center items-center border border-transparent text-center gap-2 hover:text-[#F36421] py-3 px-8 rounded-full hover:border hover:border-[#F36421] hover:bg-transparent font-medium text-base text-white bg-[#F36421] shadow-md transition ease-in duration-300">
     Talk to Us
     <IoIosArrowForward className="w-4 h-4" />
   </button>
 </div>
   </div>
+  <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
 </section>
 
   );

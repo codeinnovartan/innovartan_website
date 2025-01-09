@@ -1,5 +1,5 @@
-import { IoIosArrowForward } from "react-icons/io";
-import { IoShareSocialOutline } from "react-icons/io5";
+// import { IoIosArrowForward } from "react-icons/io";
+// import { IoShareSocialOutline } from "react-icons/io5";
 
 const NewsArticles = () => {
   const articles = [
@@ -58,7 +58,7 @@ const NewsArticles = () => {
                 <h3 className="lg:text-xl font-semibold mt-2">
                   {article.title}
                 </h3>
-                <div className="flex items-center mt-4 space-x-4 -bottom-0">
+                {/* <div className="flex items-center mt-4 space-x-4 -bottom-0">
                   <button className="hidden md:inline-flex justify-center items-center gap-2 text-[#0743A3] mt-4 py-2 px-4 rounded-full border border-1 w-44 border-[#0743A3] font-medium text-base md:text-base">
                     <IoShareSocialOutline className="w-4 h-4 flex-shrink-0" />
                     Share
@@ -67,16 +67,16 @@ const NewsArticles = () => {
                     View Details
                     <IoIosArrowForward className="w-4 h-4 flex-shrink-0" />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
         </div>
-        <div className="text-center mt-10">
+{/* <div className="text-center mt-10">
           <button className="hidden md:inline-flex justify-center items-center gap-2 text-[#F36421] mt-4 py-2 px-4 rounded-full border border-1 w-64 border-[#F36421]  font-medium text-base md:text-base">
             View All
           </button>
-        </div>
+        </div>         */}
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -18,11 +19,17 @@ const features = [
   },
   {
     title: "Comprehensive training programs.",
-    icon:"presentation.png",
+    icon:"/images/presentation.png",
   },
 ];
 
 const Choosing_Edtech = () => {
+
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   const [isMd, setIsMd] = useState(false);
 
   useEffect(() => {
@@ -58,7 +65,7 @@ const Choosing_Edtech = () => {
               fulfilling careers & impactful educators.
             </p>
             <div className="hidden lg:block">
-              <button className="flex items-center justify-center font-medium gap-2 bg-[#F36421] text-white px-8 py-3 rounded-full  hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  transition ease-in duration-300">
+              <button onClick={handleNavigation} className="flex items-center justify-center  border border-transparent font-medium gap-2 bg-[#F36421] text-white px-8 py-3 rounded-full  hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  transition ease-in duration-300">
                 Explore Now
                 <IoIosArrowForward className="w-4 h-4" />
               </button>
@@ -107,7 +114,7 @@ const Choosing_Edtech = () => {
           })}
         </div>
         <div className=" lg:hidden flex justify-center -mt-10">
-          <button className="flex items-center justify-center font-medium gap-2 bg-[#F36421] text-white px-8 py-3 rounded-full  hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  transition ease-in duration-300">
+          <button onClick={handleNavigation} className="flex items-center border border-transparent justify-center font-medium gap-2 bg-[#F36421] text-white px-8 py-3 rounded-full  hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  transition ease-in duration-300">
             Know More
             <IoIosArrowForward className="w-4 h-4" />
           </button>

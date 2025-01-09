@@ -86,8 +86,11 @@ const Navbar = () => {
           >
             Talk to Us
           </button>
-          <button className="bg-[#0743A3] text-white px-4 py-2 rounded-xl border border-transparent hover:text-[#0743A3] hover:border hover:border-[#0743A3] cursor-pointer hover:bg-transparent transition ease-in duration-300">
-            Login/Signup
+          <button className="bg-[#0743A3] text-white px-4 py-2 rounded-xl border border-transparent hover:text-[#0743A3] hover:border hover:border-[#0743A3] cursor-pointer hover:bg-transparent transition ease-in duration-300"  onClick={() => {
+                window.open("https://tests.innovartan.com")
+            }
+            }>
+            Login
           </button>
         </div>
       </div>
@@ -134,9 +137,12 @@ const Navbar = () => {
           </Link>
           <button
             className="bg-[#0743A3] text-white px-4 py-2 rounded-xl border border-transparent hover:text-[#0743A3] hover:border hover:border-[#0743A3] hover:bg-transparent transition ease-in duration-300 cursor-pointer"
-            onClick={toggleMenu}
+            onClick={() => {
+                window.open("https://tests.innovartan.com")
+            }
+            }
           >
-            Login/Signup
+            Login
           </button>
         </div>
       )}

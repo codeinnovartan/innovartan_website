@@ -4,9 +4,20 @@ import StudentMission from "../components/student/StudentMission";
 import StudentResourses from "../components/student/StudentResourses";
 import Testimonials from "../components/Testimonials";
 import GetInTouch from "../components/GetInTouch";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ModalPopup from "../components/ModalPopup";
 // import DownloadNow from "../components/DownloadNow";
 
 const Students = () => {
+  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+          
+  const navigate =useNavigate();
+
+  const handleNavigation=()=>{
+    navigate("/contact")
+  }
   return (
     <>
       <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
@@ -21,11 +32,11 @@ const Students = () => {
               starts here.
             </p>
             <div className="hidden sm:flex justify-center md:justify-start mt-4 md:mt-8 space-x-4 mb-0 sm:mb-6">
-              <button className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] hover:border hover:border-[#F36421] hover:bg-transparent transition ease-in duration-300">
+            <button onClick={()=>setIsModalOpen(true)} className="bg-[#F36421] w-52 md:w-40 lg:w-44 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#F36421] border border-transparent cursor-pointer transition ease-in duration-300 hover:border hover:border-[#F36421] hover:bg-transparent">
                 Get Started
               </button>
-              <button className="bg-[#0743A3] w-52 text-white py-2 px-4 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-[#0743A3] hover:border hover:border-[#0743A3] hover:bg-transparent transition ease-in duration-300">
-                Contact us
+              <button onClick={handleNavigation} className="bg-[#0743A3] w-52 text-white py-2 px-4 border border-transparent cursor-pointer transition ease-in duration-300 rounded-xl font-medium text-base md:text-base shadow-md md:w-40 lg:w-44 hover:text-white hover:border hover:border-white hover:bg-transparent">
+             Contact us
               </button>
             </div>
           </div>
@@ -37,6 +48,7 @@ const Students = () => {
             />
           </div>
         </div>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
       <Program />
       <StudentMission />

@@ -72,7 +72,7 @@ const TestimonialsCarousel = ({title,description}) => {
       >
         {testimonials.map((testimonial, index) => (
           <div key={index} className="relative w-full max-w-md pt-12 p-7 mx-auto">
-            <div className="absolute -top-0 left-36 lg:left-48 transform -translate-x-1/2 z-10">
+            <div className="absolute -top-0 left-40 lg:left-48 transform -translate-x-1/2 z-10">
               <div className="h-20 w-20 lg:h-24 lg:w-24  rounded-full overflow-hidden">
                 <img
                   src={testimonial.image}
@@ -84,7 +84,7 @@ const TestimonialsCarousel = ({title,description}) => {
             <div className="relative bg-white rounded-xl shadow-md p-4 lg:px-6 lg:py-6  text-center border-l-4 border-[#F36421]">
               <div className=" pt-5 lg:pt-10">
                 <div className="absolute top-10 lg:top-16 text-center left-1/4">
-                  <h3 className="text-lg lg:text-2xl font-semibold text-[#073278]">
+                  <h3 className="text-lg lg:text-2xl  font-semibold text-[#073278]">
                     {testimonial.name}
                   </h3>
                   <p className="text-sm lg:text-base text-[#494949]">

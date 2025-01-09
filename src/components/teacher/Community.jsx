@@ -1,4 +1,10 @@
+import { useState } from "react";
+import ModalPopup from "../ModalPopup";
+
+
 const Community = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="w-full bg-white px-4 md:px-20 lg:px-36 font-metropolis">
       <section className="bg-[#001C4A] text-white rounded-2xl flex flex-col md:flex-row items-center md:items-stretch ">
@@ -10,10 +16,10 @@ const Community = () => {
             Be Part of a Growing Network of
             <span className="text-[#F36421] ml-2 md:ml-3">Educators</span>
           </h2>
-          <p className=" text-sm md:text-base mb-6 text-center md:text-left">
+          <p className=" text-sm md:text-lg mb-4 text-center md:text-left">
             Collaborate, share, and learn with like-minded professionals.
           </p>
-          <button className="bg-[#F36421] text-white px-10 py-2 lg:py-2 lg:px-6 rounded-xl font-medium text-base md:text-base  hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  shadow-md">
+          <button onClick={()=>setIsModalOpen(true)} className="bg-[#F36421] text-white px-10 py-2 lg:py-2 lg:px-6 rounded-xl font-medium text-base md:text-base border border-transparent transition ease-in duration-300 cursor-pointer hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  shadow-md">
             Sign Up Today
           </button>
         </div>
@@ -30,8 +36,10 @@ const Community = () => {
           />
         </div>
       </section>
+      <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
     </div>
   );
 };
 
 export default Community;
+

@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import ModalPopup from "../ModalPopup";
 
 const programData = [
   {
@@ -25,6 +27,7 @@ const programData = [
 ];
 
 const  Program = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 font-metropolis ">
@@ -75,14 +78,14 @@ const  Program = () => {
                   <span>{program.mode}</span>
                 </li>
               </ul>
-              <button className="inline-flex w-full bottom-0 justify-center items-center gap-2 bg-[#0743A3] text-white mt-4 py-2 px-4 rounded-xl font-medium text-base md:text-base hover:text-[#0743A3] hover:bg-white hover:border hover:border-[#0743A3] transition ease-in duration-300">
+              <button className="inline-flex w-full bottom-0 justify-center items-center gap-2 bg-[#0743A3] text-white mt-4 py-2 px-4 rounded-xl border border-transparent font-medium text-base md:text-base hover:text-[#0743A3] hover:bg-white hover:border hover:border-[#0743A3] transition ease-in duration-300">
                 Enroll Now
               </button>
             </div>
           ))}
         </div>
         <div className=" hidden lg:block text-center mt-5">
-          <button className="  inline-flex justify-center items-center gap-2 bg-[#F36421] text-white mt-4 py-2 px-4 rounded-full border border-1 w-60 border-[#F36421] font-medium text-base md:text-base">
+          <button onClick={()=>setIsModalOpen(true)}  className="inline-flex justify-center items-center gap-2 bg-[#F36421] text-white mt-4 py-3 px-4 rounded-full border border-transparent w-60 border-[#F36421] font-medium text-base md:text-base hover:bg-transparent hover:border hover:border-[#F36421] hover:text-[#F36421] transition ease-in duration-300 cursor-pointer">
             Explore Programs
             <IoIosArrowForward className="w-4 h-4 flex-shrink-0" />
           </button>
@@ -125,6 +128,7 @@ const  Program = () => {
             </div>
           </div>
         </div>
+        <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>
     </>
   );
