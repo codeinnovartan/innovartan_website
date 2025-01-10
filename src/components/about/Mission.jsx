@@ -1,8 +1,8 @@
 const Mission = () => {
   return (
     <>
-      <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-16 py-6 font-metropolis  ">
-      <h1 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-center -mt-2 mb-8 lg:mt-5 ">
+      <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-16 py-6 font-metropolis mb-5  ">
+      <h1 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-center p-2 mb-8 lg:-mt-2 ">
         Shaping a Brighter <span className="text-[#F36421]">Tomorrow</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -11,9 +11,9 @@ const With_us = () => {
   return (
     <>
       <div className="bg-white flex flex-col md:flex-row items-center max-h-screen font-metropolis  mx-auto px-4 sm:px-6 lg:px-40 py-8">
-        <div className="text-center lg:text-left flex flex-col items-center lg:w-[40%] justify-center lg:-ml-16">
+        <div className="text-center lg:text-left flex flex-col items-center lg:w-[40%] justify-center lg:-ml-16 lg:pt-20">
           <h1
-            className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold"
+            className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold -mt-4 lg:-mt-0 "
           >
             Achieve Your <span className="text-[#F36421]">Goals</span>
             <br />

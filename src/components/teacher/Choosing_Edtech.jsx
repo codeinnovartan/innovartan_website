@@ -44,8 +44,8 @@ const Choosing_Edtech = () => {
   }, []);
 
   return (
-    <div className="bg-[#fff9f5] w-full relative md:p-2 max-md:px-4 font-metropolis">
-      <div className="grid gap-12 lg:grid-cols-2 mx-auto bg-[#fff9f5] py-6 md:px-36">
+    <div className="bg-[#fff9f5] w-full relative md:p-2 max-md:px-4 font-metropolis lg:mt-5 ">
+      <div className="grid lg:gap-12 py-4 lg:grid-cols-2 mx-auto bg-[#fff9f5] md:px-36 ">
         <div className="space-y-6">
           <div className="relative max-w-md sm:flex-1 flex-col items-center hidden md:block">
             <img
@@ -54,17 +54,17 @@ const Choosing_Edtech = () => {
               className="object-cover rounded-full lg:h-[14rem]"
             />
           </div>
-          <div className="space-y-6 w-full flex flex-col justify-center items-center text-center md:text-left md:items-start">
-            <h2 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold lg:w-[80%]">
+          <div className="space-y-2 w-full flex flex-col justify-center items-center text-center md:text-left md:items-start">
+            <h2 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold w-[70%] lg:w-[80%]">
               Why <span className="text-[#F36421]">Teachers</span> Choose
               Innovartan
             </h2>
-            <p className="text-[#494949] text-sm lg:text-xl font-normal">
+            <p className="text-[#494949] text-sm lg:text-xl font-normal ">
               Innovartan empowers teachers with advanced training, recognized
               certifications, and seamless placements in schools—shaping
               fulfilling careers & impactful educators.
             </p>
-            <div className="hidden lg:block">
+            <div className="hidden lg:block p-2">
               <button onClick={handleNavigation} className="flex items-center justify-center  border border-transparent font-medium gap-2 bg-[#F36421] text-white px-8 py-3 rounded-full  hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  transition ease-in duration-300">
                 Explore Now
                 <IoIosArrowForward className="w-4 h-4" />
@@ -113,7 +113,7 @@ const Choosing_Edtech = () => {
             );
           })}
         </div>
-        <div className=" lg:hidden flex justify-center -mt-10">
+        <div className=" lg:hidden flex justify-center  ">
           <button onClick={handleNavigation} className="flex items-center border border-transparent justify-center font-medium gap-2 bg-[#F36421] text-white px-8 py-3 rounded-full  hover:text-[#F36421] hover:bg-transparent hover:border hover:border-[#F36421]  transition ease-in duration-300">
             Know More
             <IoIosArrowForward className="w-4 h-4" />

@@ -30,7 +30,7 @@ const Benefits = () => {
 
   return (
     <section className=" font-metropolis px-4 md:px-36 lg:px-36 py-8 bg-white">
-      <h2 className="text-center text-xl md:text-2xl lg:text-[40px] lg:leading-[48px] font-bold mb-10">
+      <h2 className="text-center text-xl md:text-2xl lg:text-[40px] lg:leading-[48px] font-bold lg:p-6 mb-10">
         Benefits for Teachers
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-16 lg:px-24 ">

@@ -11,8 +11,8 @@ const Banner = () => {
     navigate("/contact")
   }
   return (
-    <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-40 lg:py-4  w-full font-metropolis">
-      <div className=" bg-gradient-to-b from-[#001A44] to-[#002A6C] text-white px-10 py-4 md:px-12 flex flex-col md:flex-row lg:flex-row items-center justify-between rounded-2xl shadow-lg">
+    <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-40 lg:py-4  w-full font-metropolis lg:-mt-5">
+      <div className=" bg-gradient-to-b from-[#001A44] to-[#002A6C] text-white px-10 py-4 md:px-12 flex flex-col md:flex-row lg:flex-row items-center justify-between rounded-2xl shadow-lg ">
         <div className="flex items-center mb-4 md:mb-0">
             <img
               src="/images/announcement 1.png"

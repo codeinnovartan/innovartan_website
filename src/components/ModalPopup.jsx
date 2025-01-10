@@ -1,15 +1,16 @@
-
-
 import { RxCross2 } from "react-icons/rx";
 import axios from "axios";
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
 const ModalPopup = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
+  const formRef = useRef(null);
 
-  const roles = ["Student", "Parents", "Teacher", "Principal"];
-
+   // eslint-disable-next-line react-hooks/rules-of-hooks
+   const [isSubmitting, setIsSubmitting] = useState(false);
+   // eslint-disable-next-line react-hooks/rules-of-hooks
+   const [errors, setErrors] = useState({});
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [formData, setFormData] = useState({
     owner_name: "",
@@ -19,10 +20,10 @@ const ModalPopup = ({ isOpen, onClose }) => {
     enquiry_message: "",
   });
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [errors, setErrors] = useState({});
+ 
+  if (!isOpen) return null;
+
+  const roles = ["Student", "Parents", "Teacher", "Principal"];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,14 +36,25 @@ const ModalPopup = ({ isOpen, onClose }) => {
     let tempErrors = {};
     let isValid = true;
 
+  const nameRegex = /^[A-Za-z\s]{3,50}$/; 
+  const mobileRegex = /^[6-9]\d{9}$/;
+
     if (!formData.owner_name) {
-      tempErrors.owner_name = "Owner name is required.";
+      tempErrors.owner_name = "Full Name is required.";
+      isValid = false;
+    }else if (!nameRegex.test(formData.owner_name)) {
+      tempErrors.owner_name = "Enter Your name";
       isValid = false;
     }
+
     if (!formData.owner_number) {
-      tempErrors.owner_number = "Owner number is required.";
+      tempErrors.owner_number = "Mobile Number is required.";
+      isValid = false;
+    }else if (!mobileRegex.test(formData.owner_number)) {
+      tempErrors.owner_number = "Enter a valid  mobile number .";
       isValid = false;
     }
+
     if (!formData.school_name) {
       tempErrors.school_name = "School name is required.";
       isValid = false;
@@ -54,8 +66,10 @@ const ModalPopup = ({ isOpen, onClose }) => {
     if (!formData.enquiry_message) {
       tempErrors.enquiry_message = "Enquiry message is required.";
       isValid = false;
+    }else if (formData.enquiry_message.length < 10) {
+      tempErrors.enquiry_message = "Message should be at least 10 characters.";
+      isValid = false;
     }
-
     setErrors(tempErrors);
     return isValid;
   };
@@ -86,6 +100,21 @@ const ModalPopup = ({ isOpen, onClose }) => {
           enquiry_message: "",
         });
         setErrors({});
+        emailjs
+          .sendForm(
+            "service_umf6b9d",
+            "template_97n4wig",
+            formRef.current,
+            "nAWs11i_i9eSe5baV"
+          )
+          .then(
+            () => {
+              console.log("email send successfully");
+            },
+            (error) => {
+              console.log("An error occurred.", error);
+            }
+          );
       } else {
         setErrors({ submit: "Something went wrong. Please try again." });
       }
@@ -122,16 +151,16 @@ const ModalPopup = ({ isOpen, onClose }) => {
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <h2 className="text-base w-[80%] lg:text-xl font-bold text-center lg:text-left">
+            <h2 className="text-base w-[80%] lg:text-xl font-bold text-center lg:text-left ml-5 lg:ml-2">
               Achieve Your Goals With Innovartan
             </h2>
-            <p className="text-sm lg:text-base text-[#494949] mb-0 lg:mb-2 text-center lg:text-left">
+            <p className="text-sm lg:text-base text-[#494949] mb-0 lg:mb-2 text-center lg:text-left ml-5 lg:ml-2">
               Share your details, our team will reach out to you shortly.
             </p>
 
-            <form className="space-y-1" onSubmit={handleSubmit}>
+            <form className="space-y-1" ref={formRef} onSubmit={handleSubmit}>
               <div>
-                <label className="block text-sm lg:text-base font-medium mb-1">
+                <label className="block text-sm lg:text-base font-medium mb-1 ml-2">
                   Full Name
                 </label>
                 <input
@@ -148,12 +177,12 @@ const ModalPopup = ({ isOpen, onClose }) => {
               </div>
 
               <div>
-                <label className="block text-sm lg:text-base font-medium mb-1">
+                <label className="block text-sm lg:text-base font-medium mb-1 ml-2">
                   Are you
                 </label>
                 <div className="flex flex-wrap gap-3 lg:gap-4">
                   {roles.map((role) => (
-                    <label key={role} className="flex items-center">
+                    <label key={role} className="flex items-center ml-2">
                       <input
                         type="radio"
                         name="role"
@@ -172,7 +201,7 @@ const ModalPopup = ({ isOpen, onClose }) => {
               </div>
 
               <div>
-                <label className="block text-sm lg:text-base font-medium mb-1">
+                <label className="block text-sm lg:text-base font-medium mb-1 ml-2">
                   School Name
                 </label>
                 <input
@@ -189,7 +218,7 @@ const ModalPopup = ({ isOpen, onClose }) => {
               </div>
 
               <div>
-                <label className="block text-sm lg:text-base font-medium mb-1">
+                <label className="block text-sm lg:text-base font-medium mb-1 ml-2">
                   Mobile Number
                 </label>
                 <input
@@ -206,7 +235,7 @@ const ModalPopup = ({ isOpen, onClose }) => {
               </div>
 
               <div>
-                <label className="block text-sm lg:text-base font-medium mb-1">
+                <label className="block text-sm lg:text-base font-medium mb-1 ml-2">
                   Message
                 </label>
                 <textarea
@@ -218,7 +247,9 @@ const ModalPopup = ({ isOpen, onClose }) => {
                   rows="3"
                 ></textarea>
                 {errors.enquiry_message && (
-                  <p className="text-red-500 text-sm">{errors.enquiry_message}</p>
+                  <p className="text-red-500 text-sm">
+                    {errors.enquiry_message}
+                  </p>
                 )}
               </div>
 

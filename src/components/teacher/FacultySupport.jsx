@@ -27,7 +27,7 @@ const FacultySupport = () => {
   return (
     <section className="bg-white py-8 px-2 md:px-20 lg:px-36  ">
       <div className="w-full mx-auto px-6 sm:px-12 font-metropolis">
-        <h2 className="text-center text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold mb-10 ">
+        <h2 className="text-center text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold -mt-8 mb-8 lg:mt-1 lg:p-6">
         Our Faculty {" "} 
           <span className="text-[#F36421]">Support </span>
           System & Resources

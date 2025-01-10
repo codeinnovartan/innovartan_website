@@ -1,10 +1,12 @@
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { MdWifiCalling3 } from "react-icons/md";
 import { MdOutlineMailOutline } from "react-icons/md";
 import axios from "axios";
 
 export default function GetInTouch() {
+   const formRef = useRef(null);
+
   const [formData, setFormData] = useState({
     owner_name: "",
     owner_number: "",
@@ -12,15 +14,8 @@ export default function GetInTouch() {
     role: "",
     enquiry_message: "",
   });
-
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errors, setErrors] = useState({
-    owner_name: "",
-    owner_number: "",
-    email: "",
-    role: "",
-    enquiry_message: "",
-  });
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,26 +25,62 @@ export default function GetInTouch() {
   };
 
   const validateForm = () => {
-    let formErrors = {};
-    if (!formData.owner_name) formErrors.owner_name = "Full Name is required.";
-    if (!formData.owner_number) formErrors.owner_number = "Mobile Number is required.";
-    if (!formData.email) formErrors.email = "Email is required.";
-    if (!formData.role || formData.role === "select") formErrors.role = "Please select your role.";
-    if (!formData.enquiry_message) formErrors.enquiry_message = "Message is required.";
-    return formErrors;
+    let formErrors = {}; 
+    let isValid = true; 
+
+   const nameRegex = /^[A-Za-z\s]{3,50}$/; 
+  const mobileRegex = /^[6-9]\d{9}$/; 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+  if (!formData.owner_name) {
+    formErrors.owner_name = "Full Name is required.";
+    isValid = false;
+  } else if (!nameRegex.test(formData.owner_name)) {
+    formErrors.owner_name =
+      "Enter Your name ";
+      isValid = false;
+  }
+
+  if (!formData.owner_number) {
+    formErrors.owner_number = "Mobile Number is required.";
+    isValid = false;
+  }else if (!mobileRegex.test(formData.owner_number)) {
+    formErrors.owner_number = "Enter a valid mobile number ";
+    isValid = false;
+  }
+
+  if (!formData.email) {
+    formErrors.email = "Email is required.";
+    isValid = false;
+  } else if (!emailRegex.test(formData.email)) {
+    formErrors.email = "Enter a valid email address.";
+    isValid = false;
+  }
+
+  if (!formData.role || formData.role === "select") {
+    formErrors.role = "Please select your role.";
+    isValid = false;
+  }
+
+  if (!formData.enquiry_message) {
+    formErrors.enquiry_message = "Message is required.";
+    isValid = false;
+  } else if (formData.enquiry_message.length < 10) {
+    formErrors.enquiry_message =
+      "Message should be at least 10 characters.";
+      isValid = false;
+  }
+
+  setErrors(formErrors);
+  return isValid;
+
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if(!validateForm()) return;
     setIsSubmitting(true);
 
-    const formErrors = validateForm();
-    setErrors(formErrors);
-
-    if (Object.keys(formErrors).length > 0) {
-      setIsSubmitting(false);
-      return;
-    }
 
     try {
       const response = await axios.post(
@@ -61,25 +92,41 @@ export default function GetInTouch() {
           },
         }
       );
-      if (response.status === 200) {
-        alert("Form submitted successfully!");
-        setFormData({
-          owner_name: "",
-          owner_number: "",
-          email: "",
-          role: "",
-          enquiry_message: "",
-        });
-      } else {
-        setErrors({ general: "Something went wrong. Please try again." });
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setErrors({ general: "An error occurred. Please try again." });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+
+  if (response.status === 200) {
+    setFormData({
+      owner_name: "",
+      owner_number: "",
+      email: "",
+      role: "",
+      enquiry_message: "",
+    });
+    setErrors({});
+    emailjs
+      .sendForm(
+        "service_umf6b9d",
+        "template_97n4wig",
+        formRef.current,
+        "nAWs11i_i9eSe5baV"
+      )
+      .then(
+        () => {
+          console.log("email send successfully");
+        },
+        (error) => {
+          console.log("An error occurred.", error);
+        }
+      );
+  } else {
+    setErrors({ submit: "Something went wrong. Please try again." });
+  }
+} catch (error) {
+  console.error("Error submitting form:", error);
+  setErrors({ submit: "An error occurred. Please try again." });
+} finally {
+  setIsSubmitting(false);
+}
+};  
 
   return (
     <div className="w-full mx-auto px-4 py-12 font-metropolis lg:px-36 bg-[#E7EDF6] lg:bg-transparent mt-5 lg:-mt-10">
@@ -162,7 +209,7 @@ export default function GetInTouch() {
                   <label className="block text-base font-medium mb-2">Email</label>
                   <input
                     name="email"
-                    type="email"
+                    type="text"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Enter your Email"

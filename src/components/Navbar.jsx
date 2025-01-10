@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
     <nav className="bg-white shadow-md sticky  top-0 z-50 font-metropolis">
-      <div className="flex justify-between items-center mx-auto px-4 sm:px-6  max-w-7xl lg:px-8 py-6">
+      <div className="flex justify-between items-center mx-auto px-4 sm:px-6  max-w-7xl lg:px-8 lg:py-6 py-4">
         <Link to="/" className={getLinkClass("/")}>
           <img
             src="/images/header-logo.svg"
@@ -52,7 +52,7 @@ const Navbar = () => {
             aria-label="Toggle Menu"
           >
             {isOpen ? (
-              <FiX className="text-[#0743A3]" />
+              <FiX className="" />
             ) : (
               <FiMenu className="text-[#0743A3]" />
             )}

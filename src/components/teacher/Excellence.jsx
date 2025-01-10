@@ -2,9 +2,9 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 
 const Excellence = () => {
   return (
-    <section className="bg-white font-metropolis lg:mb-14 px-4 ">
+    <section className="bg-white font-metropolis lg:mb-14 px-4 lg:pb-0 pb-6">
       <div className="flex flex-col justify-center items-center text-center px-4 lg:px-0  lg:mt-4">
-        <h2 className="text-xl w-[70%] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold mt-6">
+        <h2 className="text-xl w-[80%] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold mt-6 lg:mt-10">
           Your Path to <span className="text-[#F36421]">Teaching</span>{" "}
           Excellence
         </h2>

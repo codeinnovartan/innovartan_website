@@ -105,7 +105,7 @@ const  Program = () => {
               <h1 className="text-base w-[80%] lg:w-full lg:text-xl font-bold">
                 NCERT Solved Questions & Solutions
               </h1>
-              <button className=" px-4 py-2  border-2 border-[#F36421] rounded-2xl">
+              <button className=" p-2  border-2 border-[#F36421] rounded-xl">
                 <IoIosArrowForward className="w-4 h-4 text-[#F36421]" />
               </button>
             </div>
@@ -122,7 +122,7 @@ const  Program = () => {
               <h1 className=" text-base w-[80%] lg:text-xl font-bold lg:w-full">
                 Free Quizzes & Previous Year Question Papers
               </h1>
-              <button className=" px-4 py-2 border-2 border-[#9821F3] rounded-2xl">
+              <button className=" p-2 border-2 border-[#9821F3] rounded-xl">
                 <IoIosArrowForward className="w-4 h-4 text-[#9821F3]" />{" "}
               </button>
             </div>

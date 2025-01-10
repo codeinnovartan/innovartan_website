@@ -1,7 +1,7 @@
 export const Main = () => {
   return (
     <>
-      <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mb-14 font-metropolis ">
+      <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mb-16 font-metropolis ">
         <div className="text-center mx-auto">
           <h2 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold">
             <span className="text-[#F36421]">About </span>Innovartan
@@ -46,7 +46,7 @@ export const Main = () => {
               &ldquo;
             </div>
             <div className="text-center lg:text-left flex-1 lg:px-20 lg:py-4 lg:w-1/3 ">
-              <h2 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold">
+              <h2 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold p-2">
                 About@
                 <span className="text-[#F36421]">Founder</span>
               </h2>

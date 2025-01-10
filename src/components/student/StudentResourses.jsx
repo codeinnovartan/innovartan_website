@@ -21,7 +21,7 @@ const StudentResourses = () => {
     {
       img: "/images/class-icon.svg",
       title: "Class Videos",
-      backgroundColor: "white",
+      backgroundColor: "white", 
     },
   ];
   return (
@@ -57,7 +57,7 @@ const StudentResourses = () => {
             <div
               key={index}
               style={{ backgroundColor: resource.backgroundColor }}
-              className="flex lg:flex-col  items-center justify-evenly text-center lg:p-4 p-2  rounded-2xl lg:w-[320px]"
+              className={`flex lg:flex-col items-center lg:justify-evenly text-center lg:p-4 p-2  rounded-2xl lg:w-[320px]`}
             >
               <img
                 src={resource.img}
