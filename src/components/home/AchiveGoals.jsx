@@ -1,5 +1,6 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import CountUp from "react-countup";
 
 const AchiveGoals = () => {
   const navigate = useNavigate();
@@ -37,28 +38,36 @@ const AchiveGoals = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center lg:w-[30%]  lg:gap-10  gap-4 lg:mt-8">
-          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8 lg:mr-20  lg">
-            <img src="/images/profe.png" alt="image" className="w-16  mr-5" />
+          <div
+            className="bg-white lg:shadow-xl max-w-sm rounded-xl p-6 sm:px-8 flex md:flex-col xl:flex-row items-center lg:gap-6 gap-8 lg:mr-20 "
+          >
+            <img src="/images/achivegoals1.svg" alt="image" className="w-16  mr-5" />
             <div>
-              <div className="text-[#073278] text-4xl font-bold">600+</div>
+              <div className="text-[#073278] text-4xl font-bold">
+                <CountUp end={600} duration={2} separator="," suffix="+" />
+              </div>
               <div>
                 <h3 className="text-[#494949] text-sm">Expert Teachers</h3>
               </div>
             </div>
           </div>
           <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8  lg:ml-24">
-            <img src="/images/prof2.png" alt="image" className="w-16 mr-5" />
+            <img src="/images/achivegoals2.svg" alt="image" className="w-16 mr-5" />
             <div>
-              <div className="text-[#073278] text-4xl font-bold -mr-2 lg:-mr-0">12000+</div>
+              <div className="text-[#073278] text-4xl font-bold -mr-2 lg:-mr-0">
+                <CountUp end={12000} duration={2} separator="," suffix="+" />
+              </div>
               <div>
                 <h3 className="text-[#494949] text-sm">Students</h3>
               </div>
             </div>
           </div>
           <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8  lg:mr-20">
-            <img src="/images/home.png" alt="image" className="w-16  mr-5" />
+            <img src="/images/achivegoals3.svg" alt="image" className="w-16  mr-5" />
             <div>
-              <div className="text-[#073278] text-4xl font-bold">45+</div>
+              <div className="text-[#073278] text-4xl font-bold">
+                <CountUp end={45} duration={2} suffix="+" />
+              </div>
               <div>
                 <h3 className="text-[#494949] text-sm">Affiliated Schools</h3>
               </div>

@@ -10,10 +10,10 @@ const Collaborators = () => {
   };
 
   return (
-    <section className="w-full bg-white py-3 lg:my-12 px-6  lg:px-36 font-metropolis relative z-10">
-      <div className="mx-auto flex flex-col lg:flex-row items-center justify-between bg-gradient-to-r from-[#E7EDF6] to-[#f1f5fb] rounded-xl py-10 lg:py-6 lg:px-12">
+    <section className="w-full bg-white py-3 lg:my-12 px-6  lg:px-40 font-metropolis relative z-10">
+      <div className="mx-auto flex flex-col lg:flex-row items-center justify-between bg-gradient-to-r from-[#E7EDF6] to-[#f1f5fb] rounded-xl py-10 px-2 lg:py-6 lg:px-12">
         <div className="w-full lg:w-[40%] lg:text-left text-center">
-          <h2 className="text-xl lg:text-[40px] lg:leading-[48px] md:text-3xl font-bold">
+          <h2 className="text-xl lg:text-[40px] lg:leading-[48px] md:text-3xl font-bold ">
             Our Collaborators in <span className="text-[#F36421]">Growth</span>
           </h2>
           <p className="text-[#494949] text-sm lg:text-xl px-2 lg:px-0">

@@ -1,7 +1,11 @@
 // import { IoIosArrowForward } from "react-icons/io";
 // import { IoShareSocialOutline } from "react-icons/io5";
 
+import { useNavigate } from "react-router-dom";
+
 const NewsArticles = () => {
+  const navigate = useNavigate();
+
   const articles = [
     {
       id: 1,
@@ -9,6 +13,7 @@ const NewsArticles = () => {
       category: "ENTRACKR",
       date: "05 Nov 2024",
       title: "Innovartan Learning raised Rs 5 Cr in pre-seed round",
+      link:"https://indianstartupnews.com/funding/innovartan-learning-solutions-raises-rs-5-crore-funding-in-a-pre-seed-funding-round-7452415"
     },
     {
       id: 2,
@@ -36,7 +41,16 @@ const NewsArticles = () => {
           {articles.map((article) => (
             <div
               key={article.id}
-              className="bg-white rounded-xl shadow-md overflow-hidden"
+              onClick={() => {
+                if (article.link) {
+                  if (article.link.startsWith("http")) {
+                    window.open(article.link, "_blank", "noopener,noreferrer");
+                  } else {
+                    navigate(article.link);
+                  }
+                }
+              }}
+              className="bg-white rounded-xl shadow-md cursor-pointer overflow-hidden"
             >
               <img
                 src={article.image}
@@ -58,6 +72,7 @@ const NewsArticles = () => {
                 <h3 className="lg:text-xl font-semibold mt-2">
                   {article.title}
                 </h3>
+                
                 {/* <div className="flex items-center mt-4 space-x-4 -bottom-0">
                   <button className="hidden md:inline-flex justify-center items-center gap-2 text-[#0743A3] mt-4 py-2 px-4 rounded-full border border-1 w-44 border-[#0743A3] font-medium text-base md:text-base">
                     <IoShareSocialOutline className="w-4 h-4 flex-shrink-0" />

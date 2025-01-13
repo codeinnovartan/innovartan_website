@@ -6,22 +6,22 @@ import ModalPopup from "../ModalPopup";
 const studentsData = [
   {
     id: 1,
-    img: "/images/student-icon1.png",
+    img: "/images/student-icon1.svg",
     title: "Tailored learning programs to meet student goals",
   },
   {
     id: 2,
-    img: "/images/student-icon2.png",
+    img: "/images/student-icon2.svg",
     title: "Removing the coaching stress, exam preparation in school time ",
   },
   {
     id: 3,
-    img: "/images/student-icon3.png",
+    img: "/images/student-icon3.svg",
     title: "Continuous assessment and progress tracking to improve performance",
   },
   {
     id: 4,
-    img: "/images/student-icon4.png",
+    img: "/images/student-icon4.svg",
     title: "Dedicated support for school boards and competitive exams",
   },
 ];

@@ -27,9 +27,14 @@ const Teachers = () => {
   }
   return (
     <>
-      <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
+      {/* <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
         <div className="flex flex-col md:flex-row justify-center items-center pt-6 px-4 lg:py-8 mx-auto sm:px-6 lg:px-32">
-          <div className="text-center md:text-left w-full md:w-[50%] md:mb-0 px-6">
+          <div className="text-center md:text-left w-full md:w-[50%] md:mb-0 px-6"> */}
+          <div className="relative h-[70vh] lg:min-h-screen w-full font-metropolis">
+  <div className="absolute inset-0 bg-[url('/images/innovartan_teacher.png')] bg-cover bg-center" />
+  <div className="relative z-10 flex justify-center text-center lg:text-left lg:justify-start items-center lg:w-[50%] h-full  px-4 lg:py-24 mr-auto sm:px-6 lg:px-32 lg:mx-6">
+    <div className="flex flex-col justify-center h-full ">
+      <div className="text-[26px] leading-[32px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-white mb-2 sm:mb-4 ">
             <h1 className="text-[26px] leading-[32px] md:text-3xl  lg:text-[40px] lg:leading-[48px] font-bold text-white ">
               Empowering <span className="text-[#F36421]">Teachers</span>,
               Transforming Education
@@ -47,9 +52,10 @@ const Teachers = () => {
               </button>
             </div>
           </div>
-          <div className="relative w-full md:w-[50%] flex justify-center md:justify-end items-center">
+          {/* <div className="relative w-full md:w-[50%] flex justify-center md:justify-end items-center">
             <img src="/images/teacher.png" alt="Teachers" className="relative z-10 lg:-bottom-8" />
-          </div>
+          </div> */}
+        </div>
         </div>
         <ModalPopup isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
       </div>

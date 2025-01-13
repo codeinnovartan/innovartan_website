@@ -2,13 +2,13 @@
 
 const FinancialAdvisors = () => {
   return (
-    <div className="w-full py-3 px-6 xl:px-32 font-metropolis mb-4">
+    <div className="w-full py-3 px-6  lg:px-40 font-metropolis mb-4">
       <div className="bg-gradient-to-r from-[#01255F] to-[#001A44] p-6 lg:p-10 rounded-xl relative z-10">
-        <img
+        {/* <img
         src="/images/ellipse-advisor.png"
         alt="background eclipse"
         className="absolute -top-1 w-full left-1 object-cover z-0 hidden sm:block"
-      />
+      /> */}
         <h2 className="text-center text-white text-xl md:text-[40px] leading-[48px] font-semibold -mt-3 lg:-mt-0">
           Our <span className="text-[#F36421]">Advisors</span>
         </h2>
