@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <>
     <div className="relative h-[70vh] lg:min-h-screen w-full font-metropolis">
-        <div className="absolute inset-0 bg-[url('/images/about-bg.png')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/images/innovartan_about.png')] bg-cover bg-center" />
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
           <span className="bg-[#1CB2B7] lg:text-2xl font-medium
           text-white text-sm px-4 py-2 rounded-xl mb-4">About Innovartan</span>

@@ -50,7 +50,7 @@ const NewsArticles = () => {
                   }
                 }
               }}
-              className="bg-white rounded-xl shadow-md cursor-pointer overflow-hidden"
+              className="bg-white rounded-xl shadow-md cursor-pointer overflow-hidden transform transition-transform duration-300 hover:scale-105"
             >
               <img
                 src={article.image}
