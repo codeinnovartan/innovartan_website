@@ -31,9 +31,9 @@ const With_us = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center lg:w-[30%]  lg:gap-10 gap-4 lg:mt-8">
-          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8 lg:mr-20 ">
-            <img src="/images/achivegoals1.svg" alt="image" className="w-16  mr-5" />
+        <div className="flex flex-col justify-center items-center lg:w-[30%]  lg:gap-10 mt-2 gap-2 lg:mt-8">
+          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-6 lg:mr-20 ">
+            <img src="/images/achivegoals1.svg" alt="image" className="w-16  mr-2 lg:mr-5" />
             <div>
               <div className="text-[#073278] text-4xl font-bold">
               <CountUp end={600} duration={2} separator="," suffix="+" />
@@ -43,10 +43,10 @@ const With_us = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8 lg:ml-24">
-            <img src="/images/achivegoals2.svg" alt="image" className="w-16 mr-5" />
+          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-6 lg:ml-24">
+            <img src="/images/achivegoals2.svg" alt="image" className="w-16 lg:mr-5" />
             <div>
-              <div className="text-[#073278] text-4xl font-bold -mr-2 lg:-mr-0">
+              <div className="text-[#073278] text-4xl font-bold -mr-4 lg:-mr-0">
               <CountUp end={12000} duration={2} separator="," suffix="+" />
               </div>
               <div>
@@ -54,8 +54,8 @@ const With_us = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8 lg:mr-20">
-            <img src="/images/achivegoals3.svg" alt="image" className="w-16  mr-5" />
+          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-6 lg:mr-20">
+            <img src="/images/achivegoals3.svg" alt="image" className="w-16  lg:mr-5" />
             <div>
               <div className="text-[#073278] text-4xl font-bold">
               <CountUp end={45} duration={2} suffix="+" />

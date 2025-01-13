@@ -59,7 +59,7 @@ const Choosing_Edtech = () => {
               Why <span className="text-[#F36421]">Teachers</span> Choose
               Innovartan
             </h2>
-            <p className="text-[#494949] text-sm lg:text-xl font-normal ">
+            <p className="text-[#494949] text-sm lg:text-xl font-normal pb-4 lg:pb-0">
               Innovartan empowers teachers with advanced training, recognized
               certifications, and seamless placements in schools—shaping
               fulfilling careers & impactful educators.

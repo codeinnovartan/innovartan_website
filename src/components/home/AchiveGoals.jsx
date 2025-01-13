@@ -19,7 +19,7 @@ const AchiveGoals = () => {
             className="h-52 md:h-auto relative z-10 md:-bottom-8"
           />
         </div>
-        <div className="text-center md:text-left flex-1 lg:w-[40%] lg:pt-14 ">
+        <div className="text-center md:text-left flex-1 lg:w-[40%] lg:pt-14 px-6 ">
           <h1 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold  -mt-10 lg:-mt-0">
             Achieve Your <span className="text-[#F36421]">Goals</span> With Us
           </h1>
@@ -37,11 +37,11 @@ const AchiveGoals = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center lg:w-[30%]  lg:gap-10  gap-4 lg:mt-8">
+        <div className="flex flex-col justify-center items-center lg:w-[30%]  lg:gap-10  -mt-2  gap-2 lg:mt-8">
           <div
-            className="bg-white lg:shadow-xl max-w-sm rounded-xl p-6 sm:px-8 flex md:flex-col xl:flex-row items-center lg:gap-6 gap-8 lg:mr-20 "
+            className="bg-white  lg:shadow-xl max-w-sm rounded-xl p-2 sm:px-8 flex md:flex-col xl:flex-row items-center lg:gap-2 gap-6 lg:mr-20 "
           >
-            <img src="/images/achivegoals1.svg" alt="image" className="w-16  mr-5" />
+            <img src="/images/achivegoals1.svg" alt="image" className="w-16 mr-2  lg:mr-5" />
             <div>
               <div className="text-[#073278] text-4xl font-bold">
                 <CountUp end={600} duration={2} separator="," suffix="+" />
@@ -51,10 +51,10 @@ const AchiveGoals = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8  lg:ml-24">
-            <img src="/images/achivegoals2.svg" alt="image" className="w-16 mr-5" />
+          <div className="bg-white  lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-6  lg:ml-24">
+            <img src="/images/achivegoals2.svg" alt="image" className="w-16  lg:mr-5" />
             <div>
-              <div className="text-[#073278] text-4xl font-bold -mr-2 lg:-mr-0">
+              <div className="text-[#073278] text-4xl font-bold -mr-4 lg:-mr-0">
                 <CountUp end={12000} duration={2} separator="," suffix="+" />
               </div>
               <div>
@@ -62,8 +62,8 @@ const AchiveGoals = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-8  lg:mr-20">
-            <img src="/images/achivegoals3.svg" alt="image" className="w-16  mr-5" />
+          <div className="bg-white lg:shadow-md max-w-sm rounded-xl p-2 sm:px-6 flex md:flex-col xl:flex-row items-start lg:gap-2 gap-6  lg:mr-20">
+            <img src="/images/achivegoals3.svg" alt="image" className="w-16  lg:mr-5" />
             <div>
               <div className="text-[#073278] text-4xl font-bold">
                 <CountUp end={45} duration={2} suffix="+" />
