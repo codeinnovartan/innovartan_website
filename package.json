@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "aos": "^2.3.4",
     "axios": "^1.7.9",
     "framer-motion": "^11.17.0",
     "react": "^18.3.1",
@@ -22,6 +23,7 @@
     "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^7.1.0",
     "react-slick": "^0.30.2",
+    "react-toastify": "^11.0.2",
     "react-tooltip": "^5.28.0",
     "slick-carousel": "^1.8.1"
   },

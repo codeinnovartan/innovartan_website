@@ -2,6 +2,8 @@
 import { useRef, useState } from "react";
 import { MdWifiCalling3 } from "react-icons/md";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 export default function GetInTouch() {
@@ -84,7 +86,7 @@ export default function GetInTouch() {
 
     try {
       const response = await axios.post(
-        "http://qa.edvanz.com/api/mobile/affiliation/create-web-lead",
+        "https://app.innovartan.com/api/mobile/affiliation/create-web-lead",
         formData,
         {
           headers: {
@@ -102,6 +104,7 @@ export default function GetInTouch() {
       enquiry_message: "",
     });
     setErrors({});
+    toast.success("Form submitted successfully!");
     emailjs
       .sendForm(
         "service_umf6b9d",
@@ -118,11 +121,11 @@ export default function GetInTouch() {
         }
       );
   } else {
-    setErrors({ submit: "Something went wrong. Please try again." });
+    toast.error("Something went wrong. Please try again.");
   }
 } catch (error) {
   console.error("Error submitting form:", error);
-  setErrors({ submit: "An error occurred. Please try again." });
+  toast.error("An error occurred. Please try again.");
 } finally {
   setIsSubmitting(false);
 }
@@ -130,11 +133,12 @@ export default function GetInTouch() {
 
   return (
     <div className="w-full mx-auto px-4 py-12 font-metropolis lg:px-36 bg-[#E7EDF6] lg:bg-transparent mt-5 lg:-mt-10">
+       <ToastContainer />
       <div id="talk-to-us" className="grid lg:grid-cols-2 gap-8 items-center mb-3">
         <div className="hidden sm:block relative">
           <div className="absolute w-[80%] h-[80%] top-[10%] left-[10%] -z-10 px-6" />
           <img
-            src="/images/teacher2.svg"
+            src="/images/innovartan_form_img.png"
             className="relative z-10 max-w-full h-auto md:-bottom-[3.75rem]"
           />
           <div className="absolute top-1/2 right-0 space-y-4 z-20">
@@ -181,7 +185,7 @@ export default function GetInTouch() {
               )}
               <div className="grid md:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-base font-medium mb-2">Full Name</label>
+                  <label className="block text-base font-medium mb-2 ml-4 ">Full Name</label>
                   <input
                     name="owner_name"
                     value={formData.owner_name}
@@ -193,7 +197,7 @@ export default function GetInTouch() {
                   {errors.owner_name && <div className="text-red-500 text-sm">{errors.owner_name}</div>}
                 </div>
                 <div>
-                  <label className="block text-base font-medium mb-2">Mobile Number</label>
+                  <label className="block text-base font-medium mb-2 ml-4">Mobile Number</label>
                   <input
                     type="text"
                     name="owner_number"
@@ -206,7 +210,7 @@ export default function GetInTouch() {
                   {errors.owner_number && <div className="text-red-500 text-sm">{errors.owner_number}</div>}
                 </div>
                 <div>
-                  <label className="block text-base font-medium mb-2">Email</label>
+                  <label className="block text-base font-medium mb-2 ml-4">Email</label>
                   <input
                     name="email"
                     type="text"
@@ -219,7 +223,7 @@ export default function GetInTouch() {
                   {errors.email && <div className="text-red-500 text-sm">{errors.email}</div>}
                 </div>
                 <div className="flex flex-col">
-                  <label className="text-base font-medium mb-2">Are you?</label>
+                  <label className="text-base font-medium mb-2 ml-4">I am</label>
                   <select
                     name="role"
                     value={formData.role}
@@ -240,15 +244,14 @@ export default function GetInTouch() {
                 </div>
               </div>
               <div className="w-full">
-                <label className="text-base font-medium">Message</label>
+                <label className="text-base font-medium ml-4 ">Message</label>
                 <textarea
                   name="enquiry_message"
                   value={formData.enquiry_message}
                   onChange={handleChange}
                   placeholder="Enter your Message"
                   className="w-full rounded-2xl py-2 mt-2 px-4 border-2 text-[#494949] border-[#E7EDF6]"
-                 
-                ></textarea>
+                 ></textarea>
                 {errors.enquiry_message && (
                   <div className="text-red-500 text-sm">{errors.enquiry_message}</div>
                 )}

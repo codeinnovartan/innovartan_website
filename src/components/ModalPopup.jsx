@@ -2,16 +2,16 @@ import { RxCross2 } from "react-icons/rx";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-// eslint-disable-next-line react/prop-types
+
 const ModalPopup = ({ isOpen, onClose }) => {
   const formRef = useRef(null);
 
-   // eslint-disable-next-line react-hooks/rules-of-hooks
    const [isSubmitting, setIsSubmitting] = useState(false);
-   // eslint-disable-next-line react-hooks/rules-of-hooks
    const [errors, setErrors] = useState({});
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+
   const [formData, setFormData] = useState({
     owner_name: "",
     owner_number: "",
@@ -82,7 +82,7 @@ const ModalPopup = ({ isOpen, onClose }) => {
 
     try {
       const response = await axios.post(
-        "http://qa.edvanz.com/api/mobile/affiliation/create-web-lead",
+        "https://app.innovartan.com/api/mobile/affiliation/create-web-lead",
         formData,
         {
           headers: {
@@ -100,6 +100,7 @@ const ModalPopup = ({ isOpen, onClose }) => {
           enquiry_message: "",
         });
         setErrors({});
+        toast.success("Form submitted successfully!");
         emailjs
           .sendForm(
             "service_umf6b9d",
@@ -116,11 +117,11 @@ const ModalPopup = ({ isOpen, onClose }) => {
             }
           );
       } else {
-        setErrors({ submit: "Something went wrong. Please try again." });
+        toast.error("Something went wrong. Please try again.");
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
-      setErrors({ submit: "An error occurred. Please try again." });
+  console.error("Error submitting form:", error);
+  toast.error("An error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -131,6 +132,7 @@ const ModalPopup = ({ isOpen, onClose }) => {
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
       onClick={onClose}
     >
+      <ToastContainer/>
       <div
         className="bg-white rounded-xl shadow-lg w-11/12 sm:w-2/3 lg:w-3/5 p-6 lg:p-4 overflow-y-auto relative max-h-[95vh] "
         onClick={(e) => e.stopPropagation()}
@@ -178,7 +180,7 @@ const ModalPopup = ({ isOpen, onClose }) => {
 
               <div>
                 <label className="block text-sm lg:text-base font-medium mb-1 ml-2">
-                  Are you
+                  I am
                 </label>
                 <div className="flex flex-wrap gap-3 lg:gap-4">
                   {roles.map((role) => (

@@ -39,7 +39,7 @@ function RedifiningEd() {
     navigate("/contact")
   }
   return (
-    <div className="flex flex-col items-center font-metropolis mx-auto px-4 sm:px-6 lg:px-36 py-10">
+    <div className="flex flex-col items-center font-metropolis mx-auto px-4 sm:px-6 lg:px-36 py-10" data-aos="zoom-in">
       <div className="flex flex-col justify-center items-center">
         <p className="text-xs text-white lg:text-sm font-bold bg-[#74AE42] inline-block px-2 md:px-3 py-1 md:py-2 rounded-xl mb-4 text-center"> Redefining Education</p>
         <h1 className="text-[24px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-center w-[80%]">
@@ -47,7 +47,7 @@ function RedifiningEd() {
           Schools, Teachers,and Students Together
         </h1>
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 mt-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 mt-4" data-aos="fade-left">
         {features.map((feature) => (
         <div
         key={feature.id}

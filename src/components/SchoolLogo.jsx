@@ -80,10 +80,10 @@ const responsive = {
 // eslint-disable-next-line react/prop-types
 export const SchoolLogo = ({left,middle,right,description}) => {
   return (
-    <div className=" bg-[#E7EDF6] flex flex-col justify-between items-center w-full mx-auto px-4 sm:px-6 lg:px-8 py-8  font-metropolis ">
+    <div className=" bg-[#E7EDF6] flex flex-col justify-between items-center w-full mx-auto px-4 sm:px-6 lg:px-8 py-8  font-metropolis">
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 w-full ">
       <div className="text-center mb-8 flex flex-col justify-center items-center ">
-        <h2 className="text-xl font-bold  md:text-3xl lg:text-[40px] lg:leading-[48px] lg:w-full -mt-5 ">
+        <h2 className="text-xl font-bold  md:text-3xl lg:text-[40px] lg:leading-[48px] lg:w-full -mt-5">
           {left} <span className="text-[#F36421]">{middle}</span> {right}
         </h2>
         <p className="text-sm text-[#494949] md:text-base lg:text-base mt-2 w-full">

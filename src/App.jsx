@@ -13,9 +13,16 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsCondition from "./Pages/TermsCondition";
 import { CommonIcons } from "./components/CommonIcons";
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const location = useLocation();
+
+ 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
