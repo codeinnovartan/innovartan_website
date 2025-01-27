@@ -13,11 +13,12 @@ const ModalPopup = ({ isOpen, onClose }) => {
    const [errors, setErrors] = useState({});
 
   const [formData, setFormData] = useState({
-    owner_name: "",
+   name: "",
     owner_number: "",
     school_name: "",
     role: "",
-    enquiry_message: "",
+    message: "",
+    user_id:"4",
   });
 
  
@@ -39,11 +40,11 @@ const ModalPopup = ({ isOpen, onClose }) => {
   const nameRegex = /^[A-Za-z\s]{3,50}$/; 
   const mobileRegex = /^[6-9]\d{9}$/;
 
-    if (!formData.owner_name) {
-      tempErrors.owner_name = "Full Name is required.";
+    if (!formData.name) {
+      tempErrors.name = "Full Name is required.";
       isValid = false;
-    }else if (!nameRegex.test(formData.owner_name)) {
-      tempErrors.owner_name = "Enter Your name";
+    }else if (!nameRegex.test(formData.name)) {
+      tempErrors.name = "Enter Your name";
       isValid = false;
     }
 
@@ -63,11 +64,11 @@ const ModalPopup = ({ isOpen, onClose }) => {
       tempErrors.role = "Role is required.";
       isValid = false;
     }
-    if (!formData.enquiry_message) {
-      tempErrors.enquiry_message = "Enquiry message is required.";
+    if (!formData.message) {
+      tempErrors.message = "Enquiry message is required.";
       isValid = false;
-    }else if (formData.enquiry_message.length < 10) {
-      tempErrors.enquiry_message = "Message should be at least 10 characters.";
+    }else if (formData.message.length < 10) {
+      tempErrors.message = "Message should be at least 10 characters.";
       isValid = false;
     }
     setErrors(tempErrors);
@@ -80,10 +81,20 @@ const ModalPopup = ({ isOpen, onClose }) => {
 
     setIsSubmitting(true);
 
+    const apiData = {
+      owner_name: formData.name,
+      owner_number: formData.owner_number,
+      email: formData.email,
+      role: formData.role,
+      enquiry_message: formData.message,
+      user_id: formData.user_id,
+    };
+
+
     try {
       const response = await axios.post(
         "https://app.innovartan.com/api/mobile/affiliation/create-web-lead",
-        formData,
+        apiData,
         {
           headers: {
             "Content-Type": "application/json",
@@ -93,11 +104,12 @@ const ModalPopup = ({ isOpen, onClose }) => {
 
       if (response.status === 200) {
         setFormData({
-          owner_name: "",
+          name: "",
           owner_number: "",
           school_name: "",
           role: "",
-          enquiry_message: "",
+          message: "",
+          user_id:"4",
         });
         setErrors({});
         toast.success("Form submitted successfully!");
@@ -167,14 +179,14 @@ const ModalPopup = ({ isOpen, onClose }) => {
                 </label>
                 <input
                   type="text"
-                  name="owner_name"
-                  value={formData.owner_name}
+                  name="name"
+                  value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your Name"
                   className="w-full rounded-xl py-1 lg:py-2 px-2 lg:px-4 border-2 border-[#E7EDF6]"
                 />
-                {errors.owner_name && (
-                  <p className="text-red-500 text-sm">{errors.owner_name}</p>
+                {errors.name && (
+                  <p className="text-red-500 text-sm">{errors.name}</p>
                 )}
               </div>
 
@@ -241,16 +253,16 @@ const ModalPopup = ({ isOpen, onClose }) => {
                   Message
                 </label>
                 <textarea
-                  name="enquiry_message"
-                  value={formData.enquiry_message}
+                  name="message"
+                  value={formData.message}
                   onChange={handleChange}
                   placeholder="Enter your Message"
                   className="w-full resize-none rounded-xl py-1 lg:py-2 px-2 lg:px-4 border-2 border-[#E7EDF6]"
                   rows="3"
                 ></textarea>
-                {errors.enquiry_message && (
+                {errors.message && (
                   <p className="text-red-500 text-sm">
-                    {errors.enquiry_message}
+                    {errors.message}
                   </p>
                 )}
               </div>

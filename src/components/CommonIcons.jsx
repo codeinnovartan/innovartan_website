@@ -7,19 +7,21 @@ import { Tooltip } from 'react-tooltip';
 
 export const CommonIcons = () => {
   const handleEmailClick = () => {
-    window.location.href = "mailto:info@innovartan.com"; 
+    window.open("mailto:info@innovartan.com", "_blank")
   };
 
   const handleCallClick = () => {
-    window.location.href = "tel:+919319888781"; 
+    window.open("tel:+919319888781", "_blank")
+    
   };
 
+
   const handleWhatsappClick = () => {
-    window.location.href = "https://wa.me/918130907972";
+    window.open("https://wa.me/918130907972", "_blank")
   };
 
   const handleMessageClick = () => {
-    window.location.href = "sms:+919319888781"; 
+    window.open("sms:+91931988878", "_blank") 
   };
 
   return (
