@@ -7,6 +7,8 @@ import { SchoolLogo } from "../components/SchoolLogo";
 import GetInTouch from "../components/GetInTouch";
 import ModalPopup from "../components/ModalPopup";
 import { useState } from "react";
+import  JeeResult  from "../components/school/JeeResult";
+
 
 const Schools = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -61,6 +63,7 @@ const Schools = () => {
         right="Together"
         description="Join a growing network of schools that trust Innovartan for educational transformation."
       />
+       <JeeResult />
       <TeacherReviews />
       <GetInTouch />
     </>

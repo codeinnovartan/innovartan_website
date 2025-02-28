@@ -7,12 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        metropolis: ["Metropolis"," sans-serif"]
+        metropolis: ["Metropolis"," sans-serif"],
+        satisfy: ["Satisfy","sans-serif"]
       },
     },
   },
-  plugins: [],
+plugins:[],
 }
-
-
-
