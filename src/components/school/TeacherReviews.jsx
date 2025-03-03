@@ -1,10 +1,9 @@
 
-
 const TeacherReviews = () => {
   return (
     <>
     <section className="max-w-7xl mx-auto px-8 py-10 font-metropolis lg:-mb-10">
-      <h2 className="text-center text-xl lg:text-[40px] lg:leading-[48px] font-bold mb-12">
+      <h2 className="text-center text-base lg:text-[32px] lg:leading-[40px] font-bold mb-12">
         Hear from <span className="text-[#F36421]">Schools</span> Like Yours
       </h2>
       <div className="grid md:grid-cols-2 gap-6">

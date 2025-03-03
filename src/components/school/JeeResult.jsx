@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { schools } from "./SchoolData";
+import GetInTouch from "../GetInTouch";
 export default function JeeResult() {
   const [activeSchool, setActiveSchool] = useState(schools[0]);
 
   return (
     // <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
+    <>
     <div className="w-full bg-no-repeat bg-cover bg-bottom font-metropolis pb-16 lg:pb-10" style={{ backgroundImage: "url('/images/bg-jee-result.png')" }}>
       <div className="flex flex-col md:flex justify-center items-center pt-6 px-4 lg:py-8 mx-auto sm:px-6 lg:px-32 xl:px-32">
         <div className="text-center  w-full md:w-[50%] md:mb-6 px-6 py-3 ">
-          <h2 className=" text-2xl lg:text-[32px] lg:leading-7  text-white font-bold">
+          <h2 className=" text-base lg:text-[32px] lg:leading-[40px]  text-white font-bold">
             Our Results
           </h2>
         </div>
@@ -28,7 +30,7 @@ export default function JeeResult() {
               >
                 {school.name}
                 {activeSchool.id === school.id && (
-                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F36421] "/>
+                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F36421] transition-all duration-300 ease-in-out "/>
                 )}
               </button>
             ))}
@@ -86,8 +88,23 @@ export default function JeeResult() {
           <div className="absolute  -right-32 top-[25vh] -translate-y-1/2 hidden  xl:block">
             <img src="/images/left.png" alt="Trophy" className="h-80" />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-8   mt-2 lg:mt-12 gap-2  max-w-4xl mx-auto  ">
-            {activeSchool.students1.map((student, index) => (
+
+          <div className="grid grid-cols-1  px-6  max-w-4xl mx-auto">
+            {activeSchool?.students4?.map((student, index) => (
+              <div key={index} className="flex justify-center items-center">
+                <div className="relative inline-block">
+                  <img
+                    src={student.image}
+                    alt={student.name}
+                    className="m-4 "
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+       
+          <div className="grid grid-cols-2  px-8   mt-2 lg:mt-12 gap-2  max-w-4xl mx-auto  ">
+            {activeSchool?.students1?.map((student, index) => (
               <div key={index} className="flex justify-center items-center">
                 <div className="relative inline-block">
                   <img
@@ -99,7 +116,7 @@ export default function JeeResult() {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 px-6  max-w-4xl mx-auto">
+          <div className="grid grid-cols-3  px-6  max-w-4xl mx-auto">
             {activeSchool?.students2?.map((student, index) => (
               <div key={index} className="flex justify-center items-center">
                 <div className="relative inline-block">
@@ -112,7 +129,7 @@ export default function JeeResult() {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4  max-w-4xl mx-auto">
+          <div className="grid grid-cols-4  gap-4  max-w-4xl mx-auto">
             {activeSchool?.students3?.map((student, index) => (
               <div key={index} className="flex justify-center items-center">
                 <div className="relative inline-block">
@@ -128,5 +145,7 @@ export default function JeeResult() {
         </div>
       </div>
     </div>
+    <GetInTouch/>
+    </>
   );
 }

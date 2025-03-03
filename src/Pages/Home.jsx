@@ -16,6 +16,7 @@ import { SchoolBanner } from "../components/home/SchoolBanner";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ModalPopup from "../components/ModalPopup";
+import JeeResultBanner from "../components/JeeResultBanner";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,7 +37,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/images/innovartan_home.png')] bg-cover bg-center" />
         <div className="relative z-10 flex justify-center text-center lg:text-left lg:justify-start items-center lg:w-[50%] h-full  px-4 lg:py-24 mr-auto sm:px-6 lg:px-32 lg:mx-6">
           <div className="flex flex-col justify-center h-full ">
-            <h1 className="text-[26px] leading-[32px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-white mb-2 sm:mb-4 ">
+            <h1 className="text-2xl md:text-3xl lg:text-[40px] lg:leading-[44px] font-bold text-white mb-2 sm:mb-4 ">
               Transforming <span className="text-[#F36421]">schools</span> into
               centers of excellence <br /> where{" "}
               <span className="text-[#F36421]">teachers</span> lead and{" "}
@@ -67,7 +68,7 @@ export default function Home() {
       {/* <div className="relative w-full md:w-[50%] flex justify-center md:justify-end items-center">
             <img src="/images/home-img.png" alt="Teachers" className="relative z-10 lg:-bottom-8" />
           </div> */}
-
+<JeeResultBanner/>
       <Pathway />
       <BannerHome />
       <RedifiningEd />

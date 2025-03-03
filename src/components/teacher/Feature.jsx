@@ -60,7 +60,7 @@ const Feature = ({left,right}) => {
 
   return (
     <div className="w-full bg-white md:px-28 lg:px-32 font-metropolis">
-        <h2 className="text-[26px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-center px-4 py-2 -mt-5 ">
+        <h2 className="text-base md:text-3xl lg:text-[32px] lg:leading-[40px] font-bold text-center px-4 py-2 -mt-5 ">
           {left} <span className="text-[#F36421]">{right}</span>
         </h2>
         <div className="relative px-4 py-6">

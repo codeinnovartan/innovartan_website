@@ -20,7 +20,7 @@ const AchiveGoals = () => {
           />
         </div>
         <div className="text-center md:text-left flex-1 lg:w-[40%] lg:pt-14 px-6 ">
-          <h1 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold  -mt-10 lg:-mt-0">
+          <h1 className="text-base md:text-3xl lg:text-[32px] lg:leading-[40px] font-bold  -mt-10 lg:-mt-0">
             Achieve Your <span className="text-[#F36421]">Goals</span> With Us
           </h1>
           <p className="text-[#494949] text-sm lg:text-xl  ">

@@ -178,15 +178,15 @@ export default function GetInTouch() {
             </div>
           </div>
         </div>
-        <div className="lg:pl-8">
-          <h2 className="text-xl text-center sm:text-start sm:text-5xl font-bold mb-2 lg:text-[40px] lg:leading-[48px]">
+        <div className=" pl-0 lg:pl-8">
+          <h2 className="text-base text-center sm:text-start  font-bold mb-2 lg:text-[32px] lg:leading-[40px]">
             Get In <span className="text-[#F36421]">Touch</span>
           </h2>
-          <p className="text-base text-center sm:text-start sm:text-xl font-medium mb-8">
+          <p className="text-sm text-center sm:text-start lg:text-base font-medium mb-8">
             Connect with Us to Start Your Journey in Education Excellence
           </p>
           <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-[#0743A3]">
-            <h3 className="text-[#0743A3] text-xl sm:text-3xl font-bold mb-6 lg:text-3xl">
+            <h3 className="text-[#0743A3] text-sm lg:text-base font-bold mb-6">
               Let Us Know How We Can we help?
             </h3>
             <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>

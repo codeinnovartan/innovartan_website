@@ -16,7 +16,7 @@ export const About = () => {
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
           <span className="bg-[#1CB2B7] lg:text-2xl font-medium
           text-white text-sm px-4 py-2 rounded-xl mb-4">About Innovartan</span>
-          <h1 className="text-[26px] leading-[32px] lg:text-[40px] lg:leading-[48px] font-bold text-white w-full lg:w-1/3">
+          <h1 className="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[44px] font-bold text-white w-full lg:w-1/3">
             Redefining Education, Empowering Futures
           </h1>
           <p className="text-white text-sm lg:text-xl">

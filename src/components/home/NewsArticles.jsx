@@ -34,7 +34,7 @@ const NewsArticles = () => {
   return (
     <section className="py-10 bg-white font-metropolis">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className=" lg:text-[40px] lg:leading-[48px] font-bold text-center -mt-14 mb-5">
+        <h2 className="text-base lg:text-[32px] lg:leading-[40px] font-bold text-center -mt-14 mb-5">
           News & Articles
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

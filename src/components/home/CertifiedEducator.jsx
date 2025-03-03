@@ -9,9 +9,10 @@ const CertifiedEducator = () => {
     <>
       <section className="w-full bg-white my-12 px-3 xl:px-40   font-metropolis">
             <div className=" mx-auto flex flex-col lg:flex-row items-center justify-between bg-gradient-to-r from-[#FFF5EF] to-[#FFFFFF] rounded-2xl px-2 pt-10 lg:px-12 lg:h-80 lg:mt-16 -mt-10 ">
-              <div className=" w-full lg:w-1/2 lg:text-left text-center">
-                <h2 className="text-xl lg:text-[40px] lg:leading-[48px] md:text-3xl  px-2 font-bold">
-                Become a <span className="text-[#F36421]">Certified</span> Educator with Innovartan
+              <div className=" w-full lg:w-[40%] lg:text-left text-center">
+                <h2 className="text-base lg:text-[32px] lg:leading-[40px] md:text-3xl  px-2 font-bold">
+                Become a <span className="text-[#F36421]">Certified</span>
+                <span> Educator with Innovartan</span>
                 </h2>
                 <p className=" text-[#494949] text-sm lg:text-lg px-4 lg:-ml-2 lg:mt-2 ">
                 Join our growing community of skilled educators and unlock new opportunities in teaching

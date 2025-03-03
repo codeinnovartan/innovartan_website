@@ -9,7 +9,7 @@ const FinancialAdvisors = () => {
         alt="background eclipse"
         className="absolute -top-1 w-full left-1 object-cover z-0 hidden sm:block"
       /> */}
-        <h2 className="text-center text-white text-xl md:text-[40px] leading-[48px] font-semibold -mt-3 lg:-mt-0">
+        <h2 className="text-center text-white text-base lg:text-[32px] lg:leading-[40px] font-semibold -mt-3 lg:-mt-0">
           Our <span className="text-[#F36421]">Advisors</span>
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-2 lg:mt-10">
@@ -19,7 +19,7 @@ const FinancialAdvisors = () => {
                 alt="Gokul Rajaram"
                 className="w-24 h-24 border-4 border-white"
               />
-            <h3 className="text-base lg:text-xl font-bold text-[#073278] mt-4">
+            <h3 className="text-sm lg:text-base font-bold text-[#073278] mt-4">
               Gokul Rajaram
             </h3>
             {/* <p className="text-xs text-[#494949] lg:text-[16px]">Financial Advisor</p> */}
@@ -30,7 +30,7 @@ const FinancialAdvisors = () => {
                 alt="Amit Singhal"
                 className="w-24 h-24 border-4 border-white"
               />
-            <h3 className="text-base lg:text-xl font-bold text-[#073278] mt-4">
+            <h3 className="text-sm lg:text-base font-bold text-[#073278] mt-4">
               Amit Singhal
             </h3>
             {/* <p className="text-xs text-[#494949] lg:text-[16px]">Financial Advisor</p> */}

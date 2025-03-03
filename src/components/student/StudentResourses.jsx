@@ -31,7 +31,7 @@ const StudentResourses = () => {
           <img src="/images/student-guidance.png" alt="guidance" />
         </div>
         <div className="flex flex-col  justify-center items-center lg:justify-start lg:items-start lg:mr-48 ">
-          <h2 className="text-xl lg:text-3xl  text-center lg:text-right font-bold text-white">
+          <h2 className="text-base lg:text-3xl  text-center lg:text-right font-bold text-white">
             Have questions? Need guidance?
           </h2>
           <p className="mt-2 text-white text-center text-xs lg:text-xl ">
@@ -47,7 +47,7 @@ const StudentResourses = () => {
       </div>
       <section className="bg-[#FFF5EF] rounded-2xl flex flex-col items-center justify-center lg:h-80 mt-8 lg:mt-10 lg:-mb-20 ">
         <div>
-          <h1 className="text-xl lg:text-[40px] lg:leading-[48px] font-bold text-center px-2 py-4 lg:py-8 ">
+          <h1 className="text-base lg:text-[32px] lg:leading-[40px] font-bold text-center px-2 py-4 lg:py-8 ">
             Advanced <span className="text-[#F36421]">Resources</span> at Your
             Fingertips
           </h1>

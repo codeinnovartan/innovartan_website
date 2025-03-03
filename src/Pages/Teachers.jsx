@@ -34,7 +34,7 @@ const Teachers = () => {
   <div className="absolute inset-0 bg-[url('/images/innovartan_teacher.png')] bg-cover bg-center" />
   <div className="relative z-10 flex justify-center text-center lg:text-left lg:justify-start items-center lg:w-[50%] h-full  px-4 lg:py-24 mr-auto sm:px-6 lg:px-32 lg:mx-6">
     <div className="flex flex-col justify-center h-full ">
-      <div className="text-[26px] leading-[32px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-white mb-2 sm:mb-4 ">
+      <div className="text-[32px] leading-[40px] md:text-3xl lg:text-[40px] lg:leading-[44px] font-bold text-white mb-2 sm:mb-4 ">
             <h1 className="text-[26px] leading-[32px] md:text-3xl  lg:text-[40px] lg:leading-[48px] font-bold text-white ">
               Empowering <span className="text-[#F36421]">Teachers</span>,
               Transforming Education

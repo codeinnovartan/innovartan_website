@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
             className="hidden lg:block md:block"
           />
         </div>
-        <h1 className="  text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold mb-6 relative z-10">
+        <h1 className="  text-[32px] leading-[40px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold mb-6 relative z-10">
           Privacy Policy
         </h1>
         <div className="  lg:border lg:border-[#E7EDF6] rounded-2xl lg:px-12 lg:py-8">

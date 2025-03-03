@@ -30,12 +30,12 @@ const SchoolEmpoweringProgram = () => {
   
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between px-8 py-12 max-w-7xl mx-auto font-metropolis">
-  <div className="lg:w-1/3">
-    <h1 className="text-xl font-bold lg:text-[40px] lg:leading-[48px] text-center lg:text-left">
+  <div className="w-full lg:w-1/4">
+    <h1 className="text-base font-bold lg:text-[32px] lg:leading-[40px] text-center lg:text-left">
       What is the <span className="text-[#F36421]">School Empowering</span>{" "}
       Program?
     </h1>
-    <p className="mt-4 text-sm leading-[18px] lg:text-xl lg:leading-[32px] text-[#494949] text-center lg:text-left">
+    <p className="mt-4 text-sm leading-[18px] lg:text-base  text-[#494949] text-center lg:text-left">
       A comprehensive solution designed to integrate competitive exam
       preparation into the school system.
     </p>

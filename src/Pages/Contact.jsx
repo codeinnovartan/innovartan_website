@@ -10,7 +10,7 @@ const ContactUs = () => {
       <div className="bg-white min-h-screen font-metropolis">
         <div className="flex flex-col items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 lg:py-4 w-full bg-white">
           <header className="flex flex-col items-start justify-start mb-8 w-full">
-            <h1 className="text-2xl lg:text-[40px] lg:leading-[48px] font-bold">
+            <h1 className="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[44px] font-bold">
               Contact Us
             </h1>
           </header>

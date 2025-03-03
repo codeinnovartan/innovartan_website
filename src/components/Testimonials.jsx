@@ -53,7 +53,7 @@ const TestimonialsCarousel = ({title,description}) => {
         <h2 className="text-xs lg:text-2xl text-[#F36421] sm:text-3xl">
          {title}
         </h2>
-        <p className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] mt-2 mb-6 font-bold">
+        <p className="text-base md:text-3xl lg:text-[32px] lg:leading-[40px] mt-2 mb-6 font-bold">
           {description}
         </p>
       </div>

@@ -3,7 +3,7 @@ export const Main = () => {
     <>
       <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mb-16 font-metropolis ">
         <div className="text-center mx-auto">
-          <h2 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold">
+          <h2 className="text-base md:text-3xl lg:text-[32px] lg:leading-[40px] font-bold">
             <span className="text-[#F36421]">About </span>Innovartan
           </h2>
           <p className="text-base md:text-xl lg:text-xl font-normal text-center lg:text-[#494949] mt-6 ">

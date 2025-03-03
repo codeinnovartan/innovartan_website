@@ -35,7 +35,7 @@ const Pathway = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-32 py-10 w-full font-metropolis bg-white" data-aos="zoom-in">
       <header className="text-center mb-8">
-        <h1 className="text-[26px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-center">
+        <h1 className="text-base md:text-3xl lg:text-[32px] lg:leading-[40px] font-bold text-center">
           Building <span className="text-[#F36421]">Pathways</span> to an
           Inclusive &amp;
           <br className="md:block lg:block xl:block" /> Knowledge-Driven{" "}

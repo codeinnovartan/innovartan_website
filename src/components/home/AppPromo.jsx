@@ -5,11 +5,11 @@ export const AppPromo = () => {
       <div className="bg-gradient-to-r from-[#4C0087] to-[#001B47] w-full flex  justify-center items-center  md:justify-around lg:py-6  px-6 md:px-30 lg:px-36 font-metropolis ">
         <div>
           <div className="flex flex-col w-full  lg:justify-between justify-center items-center text-white px-4 py-2">
-            <p className="text-sm lg:text-xl font-normal text-center lg:text-left lg:mr-8">
+            <p className="text-sm lg:text-base font-normal text-center lg:text-left lg:mr-8">
               Download the Innovartan App & unlock the power of seamless
               learning and growth
             </p>
-            <h1 className="text-xl  md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold  text-center lg:text-left ">
+            <h1 className="text-base  md:text-3xl lg:text-[32px] lg:leading-[40px] font-bold  text-center lg:text-left ">
               Learn, Grow, <span className="text-[#F36421]">Succeed</span>{" "}
               —Anytime, Anywhere!
             </h1>

@@ -42,7 +42,7 @@ function RedifiningEd() {
     <div className="flex flex-col items-center font-metropolis mx-auto px-4 sm:px-6 lg:px-36 py-10" data-aos="zoom-in">
       <div className="flex flex-col justify-center items-center">
         <p className="text-xs text-white lg:text-sm font-bold bg-[#74AE42] inline-block px-2 md:px-3 py-1 md:py-2 rounded-xl mb-4 text-center"> Redefining Education</p>
-        <h1 className="text-[24px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-center w-[80%]">
+        <h1 className="text-base md:text-3xl lg:text-[32px] lg:leading-[40px] font-bold text-center w-[80%]">
           <span className="text-[#F36421]">Empowering </span>{" "}
           Schools, Teachers,and Students Together
         </h1>

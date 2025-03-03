@@ -15,10 +15,10 @@ const InnovartanPage = () => {
     <div className="bg-white max-w-7xl mx-auto sm:px-6 lg:px-8 py-4 font-metropolis">
       <div className=" bg-gradient-to-r from-[#002A6C] to-[#001A44]  relative overflow-hidden lg:rounded-2xl ">
         <div className="flex  flex-col justify-center items-center text-white mt-10 ">
-          <h2 className=" text-sm lg:text-xl  font-medium">
+          <h2 className=" text-sm lg:text-base  font-medium">
             Benefits for Your School
           </h2>
-          <h1 className=" text-xl lg:text-[40px] lg:leading-[48px] font-bold">
+          <h1 className=" text-xl lg:text-[32px] lg:leading-[40px] font-bold">
             Innovartan Makes It <span className="text-[#F36421]">Easy</span>
           </h1>
         </div>

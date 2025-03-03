@@ -4,7 +4,7 @@ export const BringInnovartan = () => {
   return (
     <section className="relative bg-white py-6 lg:py-12 lg:mb-24">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-lg lg:text-[40px] lg:leading-[48px] font-bold text-center mb-6 lg:mb-12">
+        <h2 className="text-base lg:text-[32px] lg:leading-[40px] font-bold text-center mb-6 lg:mb-12">
           What Innovartan Brings to Your{" "}
           <span className="text-[#F36421]">School</span>
         </h2>

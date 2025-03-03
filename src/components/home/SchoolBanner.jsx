@@ -19,7 +19,7 @@ export const SchoolBanner = () => {
             <p className="text-xs md:text-sm font-bold bg-[#74AE42] inline-block px-2 md:px-3 py-1 md:py-2 rounded-xl mb-4 text-center">
               Empowering Schools
             </p>
-            <h2 className="text-lg md:text-2xl  lg:text-[40px] lg:leading-[48px] font-bold text-center md:text-left">
+            <h2 className="text-base md:text-2xl  lg:text-[32px] lg:leading-[40px] font-bold text-center md:text-left">
               Transform Your
               <span className="text-[#F36421] ml-2 md:ml-3">School</span> with
               Innovartan
@@ -45,7 +45,7 @@ export const SchoolBanner = () => {
             <img
               src="/images/teacher4.png"
               alt="Educator"
-              className="relative z-10 h-52 md:h-[18.25rem] md:-bottom-5 lg:-bottom-5 md:left-5 hidden lg:block"
+              className="relative z-10 h-52 md:h-[18.25rem] md:-bottom-3 lg:-bottom-3 md:left-5 hidden lg:block"
             />
           </div>
         </section>

@@ -7,12 +7,12 @@ import { SchoolLogo } from "../components/SchoolLogo";
 import GetInTouch from "../components/GetInTouch";
 import ModalPopup from "../components/ModalPopup";
 import { useState } from "react";
-import  JeeResult  from "../components/school/JeeResult";
+import JeeResult from "../components/school/JeeResult"
 
 
 const Schools = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  
   return (
     <>
       {/* <div className="w-full bg-gradient-to-r from-[#01255F] to-[#001A44] font-metropolis">
@@ -22,7 +22,7 @@ const Schools = () => {
         <div className="absolute inset-0 bg-[url('/images/innovartan_school.png')] bg-cover bg-center" />
         <div className="relative z-10 flex justify-center text-center lg:text-left lg:justify-start items-center lg:w-[50%] h-full  px-4 lg:py-24 mr-auto sm:px-6 lg:px-32 lg:mx-6">
           <div className="flex flex-col justify-center ">
-            <div className="text-[26px] leading-[32px] md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold text-white mb-2 sm:mb-4 ">
+            <div>
               <h1 className="text-[26px]  leading-[32px] md:text-3xl lg:text-[40px] lg:leading-[48px]  font-bold text-white mb-2 sm:mb-4">
                 Empowering <span className="text-[#F36421]">Schools</span>{" "}
                 <br />
@@ -64,8 +64,8 @@ const Schools = () => {
         description="Join a growing network of schools that trust Innovartan for educational transformation."
       />
        <JeeResult />
-      <TeacherReviews />
-      <GetInTouch />
+      {/* <TeacherReviews /> */}
+      {/* <GetInTouch /> */}
     </>
   );
 };

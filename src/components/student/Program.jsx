@@ -32,7 +32,7 @@ const  Program = () => {
     <>
       <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 font-metropolis ">
         <div className="text-center lg:my-8">
-          <h1 className="text-xl md:text-3xl lg:text-[40px] lg:leading-[48px] font-bold">
+          <h1 className="text-base md:text-3xl lg:text-[32px] lg:leading-[40px] font-bold">
             Unlock Your <span className="text-[#F36421]">Potential</span> with
             Innovartan
           </h1>

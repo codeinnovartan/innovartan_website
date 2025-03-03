@@ -36,7 +36,7 @@ const EmpoweringStudent = () => {
     return (
       <div className="bg-white max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-10 -mt-10 lg:-mt-0 font-metropolis">
         <div className="text-center mb-8 flex items-center justify-center">
-          <h2 className="text-xl lg:text-[40px] lg:leading-[48px] font-bold lg:w-[50%]">
+          <h2 className="text-base lg:text-[32px] lg:leading-[40px] font-bold lg:w-[50%]">
             A <span className="text-[#F36421]">Empowering</span> Approach to
             Student <span className="text-[#F36421]">Success</span>
           </h2>
@@ -62,7 +62,7 @@ const EmpoweringStudent = () => {
         </div>
         <div className="bg-gradient-to-r from-[#E7EDF6] to-[#FFFFFF] p-4 lg:p-12 rounded-2xl flex flex-col-reverse md:flex-row items-center justify-between lg:h-64 lg:gap-8 mt-8">
           <div className="">
-            <h2 className="text-xl lg:text-[40px] lg:leading-[48px] font-bold text-center">
+            <h2 className="text-base lg:text-[32px] lg:leading-[40px] font-bold text-center">
               Take the <span className="text-[#F36421]">First Step</span> Towards
               Your Dream{" "}
               <span className="text-[#F36421]">Career</span>

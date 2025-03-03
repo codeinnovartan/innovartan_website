@@ -15,6 +15,8 @@ import { CommonIcons } from "./components/CommonIcons";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import JeeResult from "./components/school/JeeResult";
+
 
 function App() {
   const location = useLocation();
@@ -22,7 +24,7 @@ function App() {
  
   useEffect(() => {
     AOS.init({ duration: 1000 });
-  }, []);
+},[]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -39,6 +41,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-conditions" element={<TermsCondition />} />
+        <Route path="/result" element={<JeeResult />} />
+       
       </Routes>
       <CommonIcons />
       <Footer />
