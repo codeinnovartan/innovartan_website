@@ -32,7 +32,7 @@ const Card = ({ img, title }) => {
           <span className="text-[#073278]"> Certifications</span>
         </div>
       </div>
-      <div className="flex  mt-3 gap-4 items-center">
+      {/* <div className="flex  mt-3 gap-4 items-center">
         <button className="w-1/2 font-medium text-[#F36421] border border-[#F36421] lg:p-2 rounded-xl lg:px-4 p-3 ">
           View Course
         </button>
@@ -40,7 +40,7 @@ const Card = ({ img, title }) => {
   Enroll Now
 </button>
 
-      </div>
+      </div> */}
     </div>
   );
 };

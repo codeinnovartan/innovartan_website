@@ -76,7 +76,7 @@ const Feature = ({left,right}) => {
             customRightArrow={<CustomNextArrow />}
           >
             {multipleCard.map((card, index) => (
-              <div key={index} className="p-4">
+              <div key={index} className="p-4 hover:scale-100 active:scale-100 transition-none">
                 <Card img={card.img} title={card.title} />
               </div>
             ))}

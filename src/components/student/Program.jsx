@@ -78,9 +78,9 @@ const  Program = () => {
                   <span>{program.mode}</span>
                 </li>
               </ul>
-              <button className="inline-flex w-full bottom-0 justify-center items-center gap-2 bg-[#0743A3] text-white mt-4 py-2 px-4 rounded-xl border border-transparent font-medium text-base md:text-base hover:text-[#0743A3] hover:bg-white hover:border hover:border-[#0743A3] transition ease-in duration-300">
+              {/* <button className="inline-flex w-full bottom-0 justify-center items-center gap-2 bg-[#0743A3] text-white mt-4 py-2 px-4 rounded-xl border border-transparent font-medium text-base md:text-base hover:text-[#0743A3] hover:bg-white hover:border hover:border-[#0743A3] transition ease-in duration-300">
                 Enroll Now
-              </button>
+              </button> */}
             </div>
           ))}
         </div>
