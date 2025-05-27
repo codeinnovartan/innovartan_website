@@ -87,7 +87,7 @@ const Navbar = () => {
             Talk to Us
           </button>
           <button className="bg-[#0743A3] text-white px-4 py-2 rounded-xl border border-transparent hover:text-[#0743A3] hover:border hover:border-[#0743A3] cursor-pointer hover:bg-transparent transition ease-in duration-300"  onClick={() => {
-                window.open("https://tests.innovartan.com")
+                window.open("https://web.innovartan.com")
             }
             }>
             Login
@@ -138,7 +138,7 @@ const Navbar = () => {
           <button
             className="bg-[#0743A3] text-white px-4 py-2 rounded-xl border border-transparent hover:text-[#0743A3] hover:border hover:border-[#0743A3] hover:bg-transparent transition ease-in duration-300 cursor-pointer"
             onClick={() => {
-                window.open("https://tests.innovartan.com")
+                window.open("https://web.innovartan.com")
             }
             }
           >
